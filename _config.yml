@@ -96,9 +96,9 @@ author:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://likending.com/diego-bonelli"
+      url: "https://likendin.com/diego-bonelli"
     - label: "Email"
-      icon: "fa fa-email"
+      icon: "fab fa-fw fa-email"
       url:  "diego.bonelli@nhh.no"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -114,9 +114,9 @@ footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://likending.com/diego-bonelli"
+      url: "https://likendin.com/diego-bonelli"
     - label: "Email"
-      icon: "fa fa-email"
+      icon: "fab fa-fw fa-email"
       url:  "diego.bonelli@nhh.no"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
