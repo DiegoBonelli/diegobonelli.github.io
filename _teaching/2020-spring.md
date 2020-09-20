@@ -5,6 +5,8 @@ type: "Master course"
 date: "2020-06-01"
 permalink: /teaching/2020-spring
 venue: "NHH"
+classes: wide
+
 ---
 
 
