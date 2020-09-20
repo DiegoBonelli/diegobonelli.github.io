@@ -4,6 +4,9 @@
     {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
+         {% if site.author.email %}	
+      <li><a href="emailto:{{ site.author.email }}"><i class="fa fa-fw fa-mail" aria-hidden="true"></i> Email</a></li>	
+    {% endif %}	
      {% if site.facebook.username %}	
       <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>	
     {% endif %}	
