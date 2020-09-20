@@ -36,5 +36,5 @@ Research Interest
 Teaching
 ======
   <ul>{% for post in site.teaching %}
-    {% include archive-single.html %}
+    {% include archive-single.cv.html %}
   {% endfor %}</ul>
