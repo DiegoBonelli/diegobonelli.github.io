@@ -5,6 +5,7 @@ type: "Master course"
 date: "2020-08-01"
 permalink: /teaching/2020-autumn
 venue: "NHH"
+classes: wide
 ---
 This course will focus on the applications of predictive analytics and Big Data in finance (as well as other industries where applicable). 
 
