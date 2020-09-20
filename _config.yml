@@ -76,7 +76,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://likending.com/diego-bonelli"
+    - "www.linkedin.com/in/diego-bonelli"
     
 
 # Analytics
@@ -96,7 +96,7 @@ author:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://likendin.com/diego-bonelli"
+      url: "www.linkedin.com/in/diego-bonelli"
     - label: "Email"
       icon: "fab fa-fw fa-email"
       url:  "diego.bonelli@nhh.no"
@@ -114,7 +114,7 @@ footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://likendin.com/diego-bonelli"
+      url: "www.linkedin.com/in/diego-bonelli"
     - label: "Email"
       icon: "fab fa-fw fa-email"
       url:  "diego.bonelli@nhh.no"
