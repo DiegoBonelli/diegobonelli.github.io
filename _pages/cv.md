@@ -9,9 +9,9 @@ redirect_from:
 
 
 <br>
-<html lang="en" style="width:100%; height:50000px;">
-  <body style="width:100%; height:50000px; margin:0;">
-    <iframe src="https://docs.google.com/gview?url=https://diegobonelli.github.io/files/CV.pdf&embedded=true" style="width:100%; height:50000px;" frameborder="0"></iframe>
+<html lang="en" style="width:100%; height:500px;">
+  <body style="width:100%; height:500px; margin:0;">
+    <iframe src="https://docs.google.com/gview?url=https://diegobonelli.github.io/files/CV.pdf&embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>
   </body>
 </html>
 
