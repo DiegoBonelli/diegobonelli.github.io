@@ -21,3 +21,4 @@ redirect_from:
 Download Full CV [Here](https://diegobonelli.github.io/files/CV.pdf) 
 ======
 
+{% include feature_row %}
