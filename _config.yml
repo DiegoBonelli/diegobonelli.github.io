@@ -8,7 +8,7 @@
 # Site Settings
 remote_theme             : "mmistakes/minimal-mistakes@4.20.2"
 locale                   : "en-US"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "personal" # "personal" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 title                    : "Diego Bonelli"
 title_separator          : "-"
 name                     : &name "Diego Bonelli"
