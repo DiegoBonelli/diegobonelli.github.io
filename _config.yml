@@ -118,7 +118,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  CV    :  files/CV.pdf
+  CV               :  "/files/CV.pdf"
 
 # Reading Files
 include:
