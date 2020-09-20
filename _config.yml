@@ -76,7 +76,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "www.linkedin.com/in/diego-bonelli"
+    - "https://www.linkedin.com/in/diego-bonelli"
     
 
 # Analytics
@@ -96,10 +96,10 @@ author:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "www.linkedin.com/in/diego-bonelli"
+      url: "https://www.linkedin.com/in/diego-bonelli"
     - label: "Email"
       icon: "fab fa-fw fa-email"
-      url:  "diego.bonelli@nhh.no"
+      url:  "emailto:diego.bonelli@nhh.no"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/DiegoBonelli"
@@ -114,10 +114,10 @@ footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "www.linkedin.com/in/diego-bonelli"
+      url: "https://www.linkedin.com/in/diego-bonelli"
     - label: "Email"
       icon: "fab fa-fw fa-email"
-      url:  "diego.bonelli@nhh.no"
+      url:  "emailto:diego.bonelli@nhh.no"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/DiegoBonelli"
