@@ -1,4 +1,5 @@
 ---
+layout: home
 permalink: /
 title: "Diego Bonelli"
 excerpt: "About me"
