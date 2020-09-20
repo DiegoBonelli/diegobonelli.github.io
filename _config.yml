@@ -84,7 +84,7 @@ analytics:
 # Site Author
 author:
   name             : "Diego Bonelli"
-  avatar           : "DB.jpg"
+  avatar           : "/images/DB.jpg"
   bio              : "PhD Candidate in Finance"
   location         : #"Location"
   employer         :
