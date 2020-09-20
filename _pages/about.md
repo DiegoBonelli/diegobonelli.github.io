@@ -10,18 +10,6 @@ redirect_from:
 ---
 I am a second year Ph.D. student at the Norwegian School of Economics in the Finance department. 
 
-
-
-
-
-
-
-
-
-
-
-
-
 Education
 ======
 * Ph.D. in Finance, Norwegian School of Economics, 2019-Present
