@@ -3,5 +3,4 @@
 {% endif %} {% if site.footer.links %} {% for link in site.footer.links %} {% if link.label and link.url %}
 {{ link.label }}
 {% endif %} {% endfor %} {% endif %}
-{{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}
 © {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. 
