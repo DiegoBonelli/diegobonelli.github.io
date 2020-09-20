@@ -3,4 +3,5 @@
 {% endif %} {% if site.footer.links %} {% for link in site.footer.links %} {% if link.label and link.url %}
 {{ link.label }}
 {% endif %} {% endfor %} {% endif %}
-© {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. 
+
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. </div>
