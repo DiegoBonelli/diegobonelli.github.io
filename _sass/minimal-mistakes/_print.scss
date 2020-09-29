@@ -45,27 +45,27 @@
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: $h-size-1;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: $h-size-2;
   }
 
   h3 {
-    font-size: 1.75rem;
+    font-size: $h-size-3;
   }
 
   h4 {
-    font-size: 1.5rem;
+    font-size: $h-size-4;
   }
 
   h5 {
-    font-size: 1.25rem;
+    font-size: $h-size-5;
   }
 
   h6 {
-    font-size: 1rem;
+    font-size: $h-size-6;
   }
 
   a,
