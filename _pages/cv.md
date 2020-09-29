@@ -7,6 +7,10 @@ redirect_from:
   - /resume
 ---
 
+Download Full CV [Here](https://diegobonelli.github.io/files/CV.pdf) 
+======
+
+
 
 <br>
 <html lang="en" style="width:100%; height:1100px;">
@@ -16,9 +20,5 @@ redirect_from:
 </html>
 
 
-
-
-Download Full CV [Here](https://diegobonelli.github.io/files/CV.pdf) 
-======
 
 {% include feature_row %}
