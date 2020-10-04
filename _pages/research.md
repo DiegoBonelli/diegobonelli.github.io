@@ -1,5 +1,6 @@
 ---
 layout: archive
+collection: Research
 title: "Research"
 permalink: /research/
 author_profile: true
