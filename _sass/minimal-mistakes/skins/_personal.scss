@@ -5,8 +5,8 @@
 /* Colors */
 $text-color: #000 !default;
 $muted-text-color: $text-color !default;
-$code-background-color: mix(#ffffff, $background-color, 15%) !default;
-$code-background-color-dark: mix(#ffffff, $background-color, 20%) !default;
+$code-background-color: #ffffff !default;
+$code-background-color-dark:  #ffffff !default;
 $primary-color: #0000ff !default;
 $border-color: mix(#fff, $text-color, 75%) !default;
 $footer-background-color: #ececec !default;
