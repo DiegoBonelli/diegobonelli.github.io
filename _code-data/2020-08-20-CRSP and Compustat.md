@@ -6,7 +6,7 @@ collection: code-data
 author_profile: true
 permalink: /code-data/CCM/
 toc: true
-related: true
+related: false
 classes: wide
 excerpt: "Learn how to create 25 size and book to market portfolios"
 tags:
