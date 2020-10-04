@@ -40,7 +40,7 @@ To create the 25 Size-BM portfolios we need an access to the "Wharton Research D
 Here we will establish a connection between the R script and WRDS, which will allow us to download directly from the script.\\
 
 
-```r
+```
 wrds <- dbConnect(Postgres(),
                   host='wrds-pgdata.wharton.upenn.edu',
                   port=9737,
