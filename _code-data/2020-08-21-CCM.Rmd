@@ -1,24 +1,19 @@
 ---
 title: "CRSP and Compustat"
 author: "Diego Bonelli"
-date: 2020-09-01
-collection: posts
-permalink: /posts/CCM/
-
+date: 2020-08-20
+collection: code-data
+author_profile: true
+permalink: /code-data/CCM/
+toc: true
+related: false
+classes: wide
 excerpt: "Learn how to create 25 size and book to market portfolios"
 tags:
   - Finance
   - Portfolios
   - R
-
-output:
-  html_document:
-    keep_md: true
-    df_print: paged
-    toc: true
-    toc_float: true
 ---
-
 
 In this post I will quickly explain how to create 25 Size and Book-to-Market (BM) sorted portfolios as in Fama and French (1993).
 Firsly, I will remove existing variables from the environment and upload some useful packages.
