@@ -4,7 +4,7 @@ author: "Diego Bonelli"
 date: 2020-08-20
 collection: code-data
 author_profile: true
-permalink: /code-data/CCM/
+permalink: /code-data/CCM1/
 toc: true
 related: false
 classes: wide
