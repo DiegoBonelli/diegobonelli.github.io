@@ -1697,7 +1697,7 @@ We will create market capitalization in December to be used to create the BM and
 
 
 
-```r
+```{r}
 # Create MRKCAP from BM/ME in December 
 MRK <- CRSP %>% 
   filter(month(date) == 12) %>% 
