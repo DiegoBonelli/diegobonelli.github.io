@@ -18,7 +18,7 @@ tags:
 In this post I will quickly explain how to create 25 Size and Book-to-Market (BM) sorted portfolios as in Fama and French (1993).
 Firsly, I will remove existing variables from the environment and upload some useful packages.
 
-```r
+```
 # Clean Environment
 rm(list = ls(all.names = TRUE))
 
