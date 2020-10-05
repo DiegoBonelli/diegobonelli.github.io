@@ -1,0 +1,377 @@
+---
+title: "CRSP and Compustat"
+author: "Diego Bonelli"
+date: 2020-09-01
+collection: posts
+permalink: /posts/CCM/
+
+excerpt: "Learn how to create 25 size and book to market portfolios"
+tags:
+  - Finance
+  - Portfolios
+  - R
+
+output:
+  html_document:
+    keep_md: true
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+
+In this post I will quickly explain how to create 25 Size and Book-to-Market (BM) sorted portfolios as in Fama and French (1993).
+Firsly, I will remove existing variables from the environment and upload some useful packages.
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+# Clean Environment
+rm(list = ls(all.names = TRUE))
+
+# Load Libraries
+library(tidyverse) # Tidyverse universe (dplyr, ggplot and )
+library(zoo) # Useful package for dates
+library(data.table) # Faster way to use dataframes
+library(lubridate) # Package for dates
+library(matrixStats) # Simple package to do matrix statistics
+library(RPostgres) # Package to download data direcly from WRDS
+library(kableExtra) # Package to print tables
+
+
+```
+
+# Download Data
+
+To create the 25 Size-BM portfolios we need an access to the "Wharton Research Data Service" or WRDS, specifically to the Compustat Fundamental Dataset and the CRSP Dataset. The next chucks of code will explain how to automate the download of CRSP and Compustat datasets. In case you have already downloaded the two mentioned datasets you can skip the next 4 chucks of code and just upload your datasets. I strongly suggest you to download the complete datasets once and then save them in an .RData extention to save memory and time, in case of multiple uses.
+
+
+Here we will establish a connection between the R script and WRDS, which will allow us to download directly from the script.\\
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+wrds <- dbConnect(Postgres(),
+                  host='wrds-pgdata.wharton.upenn.edu',
+                  port=9737,
+                  user='username', # insert your username
+                  password='password', # insert your password
+                  dbname='wrds',
+                  sslmode='require')
+```
+
+
+
+Now let's try to understand. There are:
+
+Libraries
+Dataset
+Columns
+See here and here for further information
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+
+res <- dbSendQuery(wrds, "select distinct table_schema
+                   from information_schema.tables
+                   where table_type ='VIEW'
+                   or table_type ='FOREIGN TABLE'
+                   order by table_schema")
+data <- dbFetch(res, n=-1)
+dbClearResult(res)
+
+# Printing example
+data %>%
+  kable(format="html",escape = F, position = "center") %>%  
+  kable_styling(bootstrap_options = c("striped", "hover")) %>% 
+  scroll_box(width = "500px", height = "200px")
+
+
+```
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+res <- dbSendQuery(wrds, "select distinct table_name
+                   from information_schema.columns
+                   where table_schema='crsp'
+                   order by table_name")
+data <- dbFetch(res, n=-1)
+dbClearResult(res)
+
+# Printing example
+data %>%
+  kable(format="html",escape = F, position = "center") %>%  
+  kable_styling(bootstrap_options = c("striped", "hover")) %>% 
+  scroll_box(width = "500px", height = "200px")
+
+```
+
+
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+res <- dbSendQuery(wrds, "select column_name
+                   from information_schema.columns
+                   where table_schema='crsp'
+                   and table_name='msf'
+                   order by column_name")
+data <- dbFetch(res, n=-1)
+dbClearResult(res)
+
+
+# Printing example
+data %>%
+  kable(format="html",escape = F, position = "center") %>%  
+  kable_styling(bootstrap_options = c("striped", "hover")) %>% 
+  scroll_box(width = "500px", height = "200px")
+```
+
+
+## Download CRSP
+
+After we have connected, we can start download datasets. As these datasets are not particularly small it is vital to indicate which variables to download in order to reduce downloading time. You can explore all the available variables reading the data description guides (Be aware that the naming of the variables might vary from the ones used on WRDS webpage, it is always better to double check on the relative guides).
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+# BE aware the code is slow (10 mins)
+ToDownLoad <- dbSendQuery(wrds, "select DATE, PERMNO, PERMCO, SHROUT, PRC, RETX, BID,ASK,VOL
+                   from CRSP.MSF")
+crsp <- dbFetch(ToDownLoad, n = -1) 
+
+ToDownLoad <- dbSendQuery(wrds, "select DATE, PERMNO, SHRCD, EXCHCD
+                   from CRSP.MSE")
+crsp_codes <- dbFetch(ToDownLoad, n = -1)
+
+ToDownLoad <- dbSendQuery(wrds, "select DLSTDT, PERMNO, DLRET
+                   from crsp.dsedelist")
+delisting_returns <- dbFetch(ToDownLoad, n = -1)
+
+crsp=as.data.table(crsp)
+crsp_codes=as.data.table(crsp_codes)
+delisting_returns=as.data.table(delisting_returns)
+
+# Clean Data
+crsp <- crsp %>%
+  filter(!is.na(prc)) %>%# Remove data with missing prices
+  mutate(date = as.yearmon(as.Date(date)))
+
+crsp_codes <- crsp_codes %>%# Remove data with missing sharecodes
+  filter(!is.na(shrcd)) %>%
+  mutate(date = as.yearmon(as.Date(date)))
+
+delisting_returns <- delisting_returns %>%# Keep only days with delisting returns
+  filter(!is.na(dlret)) %>%
+  mutate(date = as.yearmon(as.Date(dlstdt))) %>%
+  select(-dlstdt)
+
+# Merge datasets
+CRSP <- crsp %>%
+  merge(crsp_codes, by=c("date", "permno"), all=TRUE, allow.cartesian=TRUE) %>%
+  merge(delisting_returns, by=c("date", "permno"), all=TRUE, allow.cartesian=TRUE) 
+
+# Fill share code and exchange code observations  
+CRSP=CRSP%>%group_by(permno)%>%arrange(date)%>%fill(shrcd,.direction = "downup")
+CRSP=CRSP%>%group_by(permno)%>%arrange(date)%>%fill(exchcd,.direction = "downup")
+CRSP=as.data.table(CRSP)
+
+# retreive treasury bonds for risk free rate
+res <- dbSendQuery(wrds, "select *
+                   from crsp.mcti")
+rf <- dbFetch(res, n=-1)
+
+# retreive stock indexes
+res <- dbSendQuery(wrds, "select *
+                   from crsp.msi")
+stockindexes <- dbFetch(res, n=-1)
+
+# Save variables
+save(rf, file = "riskfree.RData")
+save(stockindexes, file = "stockindexes.RData")
+save(CRSP, file = "CRSP.RData")
+rm(crsp,crsp_codes,delisting_returns,res,data,ToDownLoad)
+
+
+```
+
+## Download Compustat
+
+Let's now download the Compustat dataset. With it lets download the CRSP\Compustat linking table. The linking table is provided by WRDS and contains all the links between CRSP and Compustat datasets. We merge the linking table with Compustat and we will only use valid links (linktype) as defined in WRDS and only primary issues (linkprim). Second, we check that the link is contained in the linking dates. (the linking table provides first day of linking and last day).
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Download Compustat and Compustat/Crsp merging link from WRDS
+ToDownLoad <- dbSendQuery(wrds,"select CONM,EXCHG ,GVKEY, CUSIP, DATADATE, FYR, FYEAR, SICH, NAICSH, AT, LT, SEQ, CEQ, PSTKL, PSTKRV, PSTK, TXDITC, TXDB, ITCB,
+                            REVT, COGS, XINT, XSGA, IB, TXDI, DVC, ACT, CHE, LCT, DT, NI,
+                            DLC, TXP, DP, PPEGT, INVT, CSHO, PRCC_F,PRCC_C,DLTT ,CIK,TIC
+                    from COMPM.FUNDA
+                    where INDFMT='INDL' and DATAFMT='STD' and CONSOL='C' and POPSRC='D'") 
+Compustat_Yearly_noncomplete <- dbFetch(ToDownLoad, n = -1) # n=-1 retrieve all record 
+
+
+# Retrieve Merged Compustat/CRSP link table
+ToDownLoad <- dbSendQuery(wrds,"select GVKEY, LPERMCO, LINKDT, LINKENDDT, LINKTYPE, LINKPRIM , LPERMNO
+                    from crsp.ccmxpf_lnkhist")
+LinkingTable <- dbFetch(ToDownLoad, n = -1) 
+
+# Define Datatables
+LinkingTable=as.data.table(LinkingTable)
+Compustat_Yearly_noncomplete=as.data.table(Compustat_Yearly_noncomplete)
+
+# Merge the linked Permno onto Compustat dataset
+# omitting non-primary linktypes led to 1% fewer obs (2,000) but cleaner data (datadate<="2013-12-31" for comparability)
+Compustat <-  LinkingTable %>%
+  filter(linktype %in% c("LU", "LC", "LS")) %>%  
+  filter(linkprim %in% c("P", "C", "J")) %>% # use only primary links
+  merge(Compustat_Yearly_noncomplete, by="gvkey")%>% 
+  mutate(date = as.Date(datadate), 
+         permco=as.numeric(lpermco),
+         permno=as.numeric(lpermno),
+         linkdt = as.Date(linkdt),
+         linkenddt = as.Date(linkenddt),
+         linktype = factor(linktype, levels=c("LC", "LU", "LS")),
+         linkprim = factor(linkprim, levels=c("P", "C", "J"))) %>%
+  filter(date >= linkdt & (date <= linkenddt | is.na(linkenddt))) %>% # remove compustat fiscal ends that do not fall within linked period; linkenddt=NA (from .E) means ongoing  
+  arrange(date, permco, linktype, linkprim) %>%# prioritize linktype, linkprim based on order of preference/primary if duplicate
+  distinct(date, permco, .keep_all = TRUE) %>% 
+  select(-datadate,-lpermco,-lpermno,-linkenddt,-linkdt,-linkprim,-linktype,-gvkey,-permco) %>% 
+  mutate(fyear=as.integer(as.yearmon(date) - 6/12 + 1)-1) # Arrange fiscal year
+
+# Save variable
+save(Compustat, file = "Compustat.RData")
+rm(LinkingTable,Compustat_Yearly_noncomplete,ToDownLoad,wrds)
+
+```
+
+## Download Historical Book Values of Equity 
+
+Since the CSRP dataset begins well before the Compustat dataset, in WRDS we do not have accounting data for the years 1926 to 1950. To partially solve this problem, Prof. Kenneth French gift us with some data from Moodys manuals to cover the period. In this chunck of code, we will connect to his website, download the data and modify it to be similar to the Compustat one. Following Fama and French (1993) we will shift the accounting values of one year.
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Define temporary directory, download and upload data
+temp <- tempfile()
+download.file("http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/Historical_BE_Data.zip",temp)
+HistoricalBook <- read.table(unz(temp, "DFF_BE_With_Nonindust.txt"))
+unlink(temp)
+
+# Adjust names of columns
+x=seq(1926,2001,1)
+colnames(HistoricalBook)=c("permno","FirstY","LastY",x)
+
+# Set missing values to NA
+HistoricalBook[HistoricalBook == -999 | HistoricalBook == -99.99] <- NA
+
+# Adjust data to same format as compustat data
+HistoricalBook <- HistoricalBook %>%
+  select(-FirstY, -LastY) %>%
+  gather(fyear, BEH, -permno, na.rm=TRUE) %>% 
+   mutate(fyear=as.numeric(fyear))# set date June of SAME year when data would have been known (based on French website notes)
+
+
+```
+
+
+# Filters
+## CRSP
+Now we have three complete dataset and we need to clean them. Let's start with the CRSP dataset. First, we will retain only common stocks (shrcd 10 or 11) which trade on NYSE, AMEX or NASDAQ (exchcd 1 or 2 or 3). Then, we will adjust the returns, by first setting the missing values and then adjusting for the delisting returns.
+Lastly, we will compute the market capitalization as sum of the security issues from the same company and we will keep only the largest issue in therm of market value each month.
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+
+CRSP <- CRSP %>% 
+  filter(exchcd %in% c(1, 2, 3)) %>% # Filter NYSE AMEX and NASDAQ
+  filter(shrcd%in%c(10,11)) %>% # Keep Common stocks in CRSP
+  mutate(ret=as.numeric(as.character(retx)),
+       dlret= as.numeric(as.character(dlret)))# Returns in numeric
+
+# Adjust returns for "bad" returns
+CRSP$ret[which(CRSP$ret == -99) | which(CRSP$ret == "C") | which(CRSP$ret == "B")] <- NA
+
+# Adjust for delisting and absolute value of price
+CRSP <- CRSP %>% 
+mutate(ret = ifelse(is.na(ret), dlret, ret),
+       prc = abs(prc)) %>% 
+  select(-dlret,-retx)
+
+# PERMNO = Issue , permco = Company
+# Create the market capitalization
+CRSP <- CRSP %>% 
+mutate(ME=(prc*shrout)/1000) %>% # convert from thousands to millions (consistent with compustat values)
+  group_by(date,permco) %>% 
+  mutate(MKTCAP = sum(ME,na.rm=T),
+        MKTCAP = ifelse(MKTCAP == 0, as.numeric(NA), MKTCAP))
+# %>% 
+# arrange(date, permco, desc(ME)) %>%
+#   group_by(date, permco) %>%
+#   slice(1) %>% # keep only permno with largest ME
+#   ungroup
+CRSP=as.data.table(CRSP)
+
+save(CRSP,file="CRSP.RData")
+
+```
+
+## Compustat 
+We will create the book value of equity as defined by French website and we will select only stocks with positive book value of equity. We will shift the fiscal year one year ahead and we will merge the datasets. Then, we will select the book value of equity first from Compustat and if missing from the historical file.
+
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Create BE, filter existing and positive BE and adjust fiscal year
+Compustat <- Compustat %>%
+  group_by(permno) %>%
+  mutate(BE = coalesce(seq, ceq + pstk, at - lt) + coalesce(txditc, txdb + itcb, 0) - 
+              coalesce(pstkrv, pstkl, pstk, 0), # consistent w/ French website variable definitions
+         OpProf = (revt - coalesce(cogs, 0) - coalesce(xint, 0) - coalesce(xsga,0)),
+         OpProf = as.numeric(ifelse(is.na(cogs) & is.na(xint) & is.na(xsga), NA, OpProf)), # FF condition
+         GrProf = (revt - cogs),
+         Cflow = ib + coalesce(txdi, 0) + dp,  # operating; consistent w/ French website variable definitions
+         Inv = (coalesce(ppegt - lag(ppegt), 0) + coalesce(invt - lag(invt), 0)) / lag(at),
+         AstChg = (at - lag(at)) / lag(at)) %>% ungroup %>%
+  select(fyear, permno, BE) %>%
+  mutate_if(is.numeric, funs(ifelse(is.infinite(.), NA, .))) %>% # replace Inf w/ NA's
+  mutate_if(is.numeric, funs(round(., 5)))%>% # round to 5 decimal places (for some reason, 0's not properly coded in some instances)
+  mutate(fyear=fyear+1)
+
+Compustat=as.data.table(Compustat)
+HistoricalBook=as.data.table(HistoricalBook)
+
+# Merge all datasets and create only one BE
+CRSP <- CRSP %>%
+  mutate(fyear=as.integer(date - 6/12 + 1)-1) %>% # Create fiscal year in CRSP
+  merge(Compustat,by=c("fyear","permno"),all = T,allow.cartesian=T) %>%
+  merge(HistoricalBook,by=c("fyear","permno"),all = T,allow.cartesian=T) %>%
+  mutate(BE=coalesce(BE,BEH)) %>% # Select BE first from Compustat if missing from the historical file
+  select(-BEH)
+
+```
+
+
+## Fama and French (1993)
+
+We will create market capitalization in December to be used to create the BM and in June as the Size following the indication of Fama and French (1993). Then we will create the BM as book value of equity divided by market capitalization in December, and we will select only stock with existing and positive book value of equity, market capitalization in June and market capitalization in December.
+
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+
+# Create MRKCAP from BM/ME in December 
+MRK <- CRSP %>% 
+  filter(month(date) == 12) %>% 
+  group_by(permno,fyear) %>% 
+  transmute(ME_Dec = MKTCAP) %>% 
+  filter(!is.na(ME_Dec)&!is.infinite(ME_Dec)) %>% # Filter existing December ME before merging
+  mutate(fyear=fyear+1)
+
+CRSP <- merge(CRSP, MRK, by = c("permno", "fyear"),all.x = T)
+
+# Create MRKCAP for Size in June
+MRK <- CRSP %>% 
+  filter(month(date) == 6) %>% 
+  group_by(permno,fyear) %>% 
+  transmute(Size = MKTCAP) %>% 
+  filter(!is.na(Size)&!is.infinite(Size)) %>% # Filter existing December ME before merging
+  mutate(fyear=fyear+1)
+
+CRSP <- merge(CRSP, MRK, by = c("permno", "fyear"),all.x=T)
+rm(MRK)
+
+# Create BM/ME
+CRSP <- CRSP %>% 
+  mutate(BM=BE/ME_Dec) %>% 
+  filter(BM>0&!is.na(BM)&!is.na(Size))
