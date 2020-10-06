@@ -1,3 +1,22 @@
+---
+title: "Size and BM
+"
+author: "Diego Bonelli"
+date: 2020-09-01
+collection: code-data
+author_profile: true
+permalink: /code-data/SizeandBM/
+toc: true
+related: false
+classes: wide
+excerpt: "Learn how to create 25 size and book to market portfolios"
+tags:
+  - Finance
+  - Portfolios
+  - R
+---
+
+
 Size and BM
 ================
 Diego Bonelli
