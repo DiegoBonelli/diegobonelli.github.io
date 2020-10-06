@@ -158,7 +158,7 @@ pre {
 
 pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
-  background-color: $code-background-color;
+  background-color: #dcdcdc;
 }
 
 p > code,
@@ -169,7 +169,7 @@ td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-size:$type-size-6;
-  background: $code-background-color;
+  background: #dcdcdc;
   border-radius: $border-radius;
 
   &:before,
