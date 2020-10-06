@@ -155,13 +155,13 @@ samp,
 pre {
   font-family: $monospace;
   font-size:$type-size-8;
-  background: #dcdcdc;
+  background-color:: #dcdcdc;
 }
 
 pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
   font-size:$type-size-8;
-  background: #dcdcdc;
+  background-color: #dcdcdc;
 }
 
 p > code,
