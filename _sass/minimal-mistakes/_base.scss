@@ -154,10 +154,14 @@ kbd,
 samp,
 pre {
   font-family: $monospace;
+  font-size:$type-size-8;
+  background: #dcdcdc;
 }
 
 pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
+  font-size:$type-size-8;
+  background: #dcdcdc;
 }
 
 p > code,
@@ -168,7 +172,7 @@ td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-size:$type-size-8;
-  background-color: #dcdcdc;
+  background: #dcdcdc;
   border-radius: $border-radius;
 
   &:before,
