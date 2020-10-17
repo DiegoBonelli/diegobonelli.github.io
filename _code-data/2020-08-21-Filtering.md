@@ -2,10 +2,6 @@
 title: "Explore and merge the CRSP and Compustat databases"
 author: "Diego Bonelli"
 date: '2020-08-20'
-output:
-  html_document:
-    keep_md: true
-    df_print: paged
 classes: wide
 excerpt: Learn how to filter and visualize the CCM database
 collection: code-data
@@ -17,6 +13,7 @@ tags:
 - R
 author_profile: yes
 toc: yes
+
 ---
 # Explore and merge the CRSP and Compustat databases
 
