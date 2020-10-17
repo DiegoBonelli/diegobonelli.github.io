@@ -183,7 +183,7 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
 ![](Filtering_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 # Historical Book Values of Equity 
 
-Since the CSRP dataset begins well before the Compustat dataset, in WRDS we do not have accounting data for the years 1926 to 1950. To partially solve this problem, Prof. Kenneth French gift us with some data from Moodys manuals to cover the period. In this chunck of code, we will connect to his website, download the data and modify it to be similar to the Compustat one. Following Fama and French (1993)[https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235] we will shift the accounting values of one year.
+Since the CSRP dataset begins well before the Compustat dataset, in WRDS we do not have accounting data for the years 1926 to 1950. To partially solve this problem, Prof. Kenneth French gift us with some data from Moodys manuals to cover the period. In this chunck of code, we will connect to his website, download the data and modify it to be similar to the Compustat one. Following [Fama and French (1993)](https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235) we will shift the accounting values of one year.
 
 
 ```r
@@ -210,7 +210,7 @@ HistoricalBook <- HistoricalBook %>%
 
 # Compustat 
 
-Now, let's load again the Compustat file. Following Kenneth French Website definitions[http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/variable_definitions.html] I create Book to Equity, Operating Profitability, Cash Flow and Investment, while following Novy-Marx (2013[https://www.sciencedirect.com/science/article/abs/pii/S0304405X13000044] I create Gross Profitability. I will shift the fiscal year one year ahead and we will merge the datasets. Then, we will select the book value of equity first from Compustat and if missing from the historical file. I will merge using permno and fiscal year. Using permno in this case is equal to using permco as, in the previous post, I selected only the largest permno per each permco.
+Now, let's load again the Compustat file. Following [Kenneth French Website definitions](http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/variable_definitions.html) I create Book to Equity, Operating Profitability, Cash Flow and Investment, while following [Novy-Marx (2013)](https://www.sciencedirect.com/science/article/abs/pii/S0304405X13000044) I create Gross Profitability. I will shift the fiscal year one year ahead and we will merge the datasets. Then, we will select the book value of equity first from Compustat and if missing from the historical file. I will merge using permno and fiscal year. Using permno in this case is equal to using permco as, in the previous post, I selected only the largest permno per each permco.
 
 
 
