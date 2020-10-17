@@ -128,7 +128,7 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
 
 ## Industries
 
-Using the 4 digit sic codes we can see in which industry each firm operate. Here I tranform the sic codes in the Fama and French 12 industries classication. Afterwards, I will plot the number of firm in each industry through time.
+Using the 4 digit sic codes we can see in which industry each firm operate. Here I tranform the sic codes in the Fama and French 12 [industries classication](http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_12_ind_port.html). Afterwards, I will plot the number of firm in each industry through time.
 
 
 ```r
