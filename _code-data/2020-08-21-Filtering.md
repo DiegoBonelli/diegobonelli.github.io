@@ -17,7 +17,7 @@ toc: yes
 ---
 # Explore and merge the CRSP and Compustat databases
 
-In this post I will exxplain how to merge and CRSP and Compustat, and I will visualize the data. CRSP contains security pricing and market data, while Compustat instead contains accounting data. If you haven't downloaded the data yet have a look at the previous post[https://diegobonelli.github.io/code-data/WRDS]. Firsly, I will remove existing variables from the environment and upload some useful packages.
+In this post I will exxplain how to merge and CRSP and Compustat, and I will visualize the data. CRSP contains security pricing and market data, while Compustat instead contains accounting data. If you haven't downloaded the data yet have a look at the previous [post](https://diegobonelli.github.io/code-data/WRDS). Firsly, I will remove existing variables from the environment and upload some useful packages.
 
 
 ```r
