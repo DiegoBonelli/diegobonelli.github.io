@@ -100,8 +100,7 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
   theme_classic()+
   scale_fill_manual(values=c(pal[1],pal[2],pal[3],pal[5])) 
 ```
-
-![](images/unnamed-chunk-3-1.png)<!-- -->
+{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-3-1.png" alt="">{% endraw %}
 
 ## Market Capitalization
 
@@ -124,7 +123,7 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
   scale_fill_manual(values=c(pal[1],pal[2],pal[3],pal[5])) 
 ```
 
-![](Filtering_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-4-1.png" alt="">{% endraw %}
 
 ## Industries
 
@@ -158,8 +157,7 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
   theme_classic()
 ```
 
-![](images/unnamed-chunk-5-1.png)<!-- -->
-
+{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-5-1.png" alt="">{% endraw %}
 
 I can also plot the market capitalization for each industry.
 
@@ -180,7 +178,8 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
   theme_classic()
 ```
 
-![](images/unnamed-chunk-6-1.png)<!-- -->
+{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-6-1.png" alt="">{% endraw %}
+
 # Historical Book Values of Equity 
 
 Since the CSRP dataset begins well before the Compustat dataset, in WRDS we do not have accounting data for the years 1926 to 1950. To partially solve this problem, Prof. Kenneth French gift us with some [data](http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_historical_be_data.html) from Moodys manuals to cover the period. In this chunck of code, we will connect to his website, download the data and modify it to be similar to the Compustat one. Following [Fama and French (1993)](https://www.sciencedirect.com/science/article/abs/pii/0304405X93900235) we will shift the accounting values of one year.
