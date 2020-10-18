@@ -102,7 +102,8 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
 ```
 {% raw %}![alt]({{site.url}}{{site.baseurl}}/images/unnamed-chunk-3-1.png){% endraw %}
 
-{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-3-1.png" alt="">{% endraw %}
+
+![image-center]({{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-3-1.png){: .align-center}
 
 ## Market Capitalization
 
