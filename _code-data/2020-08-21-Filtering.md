@@ -100,7 +100,6 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
   theme_classic()+
   scale_fill_manual(values=c(pal[1],pal[2],pal[3],pal[5])) 
 ```
-{% raw %}![alt]({{site.url}}{{site.baseurl}}/images/unnamed-chunk-3-1.png){% endraw %}
 ![image-center]({{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-3-1.png){: .align-center}
 
 ## Market Capitalization
@@ -124,7 +123,7 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
   scale_fill_manual(values=c(pal[1],pal[2],pal[3],pal[5])) 
 ```
 
-![image-center]({{ site.url }}{{ site.baseurl }}"/images/unnamed-chunk-4-1.png"){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-4-1.png){: .align-center}
 
 ## Industries
 
@@ -157,7 +156,7 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
   scale_x_date(expand = c(0, 0), date_breaks = "10 years", date_labels = "%Y") +
   theme_classic()
 ```
-![image-center]({{ site.url }}{{ site.baseurl }}"/images/unnamed-chunk-5-1.png"){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-5-1.png){: .align-center}
 
 I can also plot the market capitalization for each industry.
 
@@ -178,7 +177,7 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
   theme_classic()
 ```
 
-![image-center]({{ site.url }}{{ site.baseurl }}"/images/unnamed-chunk-6-1.png"){: .align-center}
+![image-center]({{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-6-1.png){: .align-center}
 
 # Historical Book Values of Equity 
 
