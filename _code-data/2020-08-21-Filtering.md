@@ -100,7 +100,7 @@ CRSP %>%  mutate(date=as.Date(date)) %>%
   theme_classic()+
   scale_fill_manual(values=c(pal[1],pal[2],pal[3],pal[5])) 
 ```
-{% raw %}![alt]({{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-3-1.png){% endraw %}
+{% raw %}![alt]({{site.url}}{{site.baseurl}}/images/unnamed-chunk-3-1.png){% endraw %}
 
 {% raw %}<img src="{{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-3-1.png" alt="">{% endraw %}
 
