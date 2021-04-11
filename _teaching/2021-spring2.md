@@ -2,7 +2,7 @@
 title: "Financial Engineering (TA)"
 collection: teaching
 type: "Master course"
-date: "2020-06-01"
+date: "2021-03-01"
 permalink: /teaching/2021-spring2
 venue: "NHH"
 classes: wide
