@@ -12,6 +12,8 @@ classes: wide
 
 This course develops and examines models for portfolio decisions by investors and the pricing of securities in capital markets. We will develop portfolio theory along the way, and study the extensive empirical work that characterizes movements in security prices, evaluates alternative asset pricing models, and attempts to test whether markets are efficient.
 
+Topics:
+
 * Portfolio Theory and the CAPM
 * Cross-Sectional Asset Pricing Tests
 * Time-Series Asset Pricing Tests
