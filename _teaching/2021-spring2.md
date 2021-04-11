@@ -1,26 +1,24 @@
 ---
-title: "Programming with Applications in Finance (TA)"
+title: "Financial Engineering (TA)"
 collection: teaching
 type: "Master course"
 date: "2020-06-01"
-permalink: /teaching/2021-spring
+permalink: /teaching/2021-spring2
 venue: "NHH"
 classes: wide
 
 ---
+This course provides students with the principals of derivatives pricing using Monte-Carlo simulation.
 
-This course introduces students into programming based on R and demonstrates several useful applications of R in finance. The course gives students an advantage when pursuing a career in the financial industry.
+Topics: 
 
-Topics:
-
-* Principles of programming in R
-* Data processing
-* Volatility models
-* Derivatives pricing
-* Portfolio optimization
-* Single-factor model
-* performance evaluation
+* Principles of derivatives pricing;
+* Principles of Monte Carlo simulation;
+* Building the risk-free discount curve;
+* Pricing of Exotic options;
+* Pricing of Bermudan options;
+* Pricing of interest rate derivatives.
 
 
-[Course Link](https://www.nhh.no/en/courses/programming-with-applications-in-finance/)
+[Course Link](https://www.nhh.no/en/courses/financial-engineering/)
 
