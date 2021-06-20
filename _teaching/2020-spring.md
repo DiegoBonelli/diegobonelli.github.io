@@ -1,5 +1,5 @@
 ---
-title: "Asset Management with Programming Applications (TA)"
+title: "2020 Spring - Asset Management with Programming Applications (TA)"
 collection: teaching
 type: "Master course"
 date: "2020-06-01"

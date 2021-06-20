@@ -1,5 +1,5 @@
 ---
-title: "Programming with Applications in Finance (TA)"
+title: "2021 Spring - Programming with Applications in Finance (TA)"
 collection: teaching
 type: "Master course"
 date: "2021-03-01"
