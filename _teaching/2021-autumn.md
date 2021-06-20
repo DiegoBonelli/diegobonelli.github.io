@@ -1,0 +1,32 @@
+---
+title: "Financial Econometrics (TA)"
+collection: teaching
+type: "Master course"
+date: "2021-03-01"
+permalink: /teaching/2021-autumn
+venue: "NHH"
+classes: wide
+
+---
+This course introduces students to the main econometric methods and techniques. The course focuses on practical applications of econometrics to financial data using R (free programming language). The mathematics of econometrics is introduced only as needed and is not a central focus.
+
+Topics:
+
+* Introduction to R
+* Elements of statistics
+* Simple and multiple regression models
+* Possible application: CAPM and Fama-French three factor asset pricing models
+* Regression with a binary dependent variable
+* Possible application: Determinants of the choice of the mode of payment in M&As
+* Regression with panel data
+* Possible application: Capital structure regressions
+* Instrumental variables regression
+* Possible application: CEO succession decision in family firms
+* Quasi experiments
+* Possible application: Evaluation of macro-prudential policies such as loan-to-value cap for housing loans
+* Presentation of econometric analysis
+* Possible application: Master thesis or any report presenting econometric analysis
+
+
+[Course Link](https://www.nhh.no/en/courses/financial-econometrics/)
+
