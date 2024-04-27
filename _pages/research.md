@@ -6,13 +6,10 @@ author_profile: true
 classes: wide
 ---
 
-PROVA
+## Section 1
+This is some text content for section 1. You can replace it with your own text.
 
-
-### Anchor Tag (aka. Link)
-
-I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation. 
-This is an example of a [link](http://github.com "Github"). <div href="#" class="btn">Click me!</div>
+![Image for Section 1](/images/500x300.png)
 
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
