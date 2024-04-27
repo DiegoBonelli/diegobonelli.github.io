@@ -26,7 +26,7 @@
   .page__inner-wrap {
     @include full();
 
-    .page__content,
+    .page__content
     .page__meta,
     .page__share {
       @include full();
@@ -49,6 +49,7 @@
 }
 
 .page__content {
+  width: 150%;
 
   h2 {
     padding-bottom: 0.5em;
@@ -399,3 +400,4 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
