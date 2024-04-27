@@ -10,10 +10,10 @@ classes: wide
 </div>
 
 <div style="overflow: auto;">
-    <img src="/images/model_plot_all.png" alt="Image for Inflation Risk and Yield Spread Changes" style="float: left; margin-right: 15px; width: 300px; height: 225px;">
+    <img src="/images/model_plot_all.png" alt="Image for Inflation Risk and Yield Spread Changes" style="float: right; margin-right: 15px; width: 300px; height: 225px;">
     <div>
     <div style="text-align: center;">
-    <h1>Inflation Risk and Yield Spread Changes, (SSRN)</h1>
+    <h2>Inflation Risk and Yield Spread Changes, (SSRN)</h2>
 </div>
         <p>
         Inflation risk explains more than 40% of the systematic variation of yield spread changes beyond standard structural factors. I show that changes in expected inflation, volatility, and cyclicality are significant determinants of yield spread changes. A structural model with a stochastic price index and sticky cash flow accounts for these patterns and delivers further implications. In the cross-section, the model predicts increasing loading patterns on leverage and cash-flow flexibility. In the time series, the model predicts diminished effects during periods of high expected inflation. I find empirical support for the model’s predictions.
