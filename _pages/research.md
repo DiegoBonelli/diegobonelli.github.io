@@ -38,7 +38,7 @@ max-height: 350px;">
 
 
 <div style="text-align: left;">
-    <h2>Hedge Funds, Prime Brokers, and Corporate Bond Offerings</h2>
+    <h3>Hedge Funds, Prime Brokers, and Corporate Bond Offerings</h3>
 </div>
 <div style="overflow: auto;">
 <img src="/images/Plot_HF_PB_2019.jpg" alt="Image for Hedge Funds, Prime Brokers, and Corporate Bond Offerings" style="float: right; max-width: 350px;
@@ -55,7 +55,7 @@ Hedge funds make abnormally large and profitable trades in stocks before corpora
 </div>
 
 <div style="text-align: left;">
-    <h2>Momentum Spillovers in Corporate Bonds, with Katsiaryna Falkovich and Nils Friewald</h2>
+    <h3>Momentum Spillovers in Corporate Bonds</h3>, with Katsiaryna Falkovich and Nils Friewald
 </div>
 <div style="overflow: auto;">
 <img src="/images/network_graph.png" alt="Image for Momentum Spillovers in Corporate Bonds" style="float: right; max-width: 350px; max-height: 350px;">
