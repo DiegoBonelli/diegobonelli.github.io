@@ -55,7 +55,7 @@ Hedge funds make abnormally large and profitable trades in stocks before corpora
 </div>
 
 <div style="text-align: left;">
-    <h3>Momentum Spillovers in Corporate Bonds</h3>, with Katsiaryna Falkovich and Nils Friewald
+    <h3>Momentum Spillovers in Corporate Bonds</h3>, <h5>with Katsiaryna Falkovich and Nils Friewald</h5>
 </div>
 <div style="overflow: auto;">
 <img src="/images/network_graph.png" alt="Image for Momentum Spillovers in Corporate Bonds" style="float: right; max-width: 350px; max-height: 350px;">
