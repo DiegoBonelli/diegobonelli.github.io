@@ -80,7 +80,6 @@
     display: table-cell;
     vertical-align: top;
     width: 45px;
-    text-align: center;
     // set width only, for non-square avatars
     // height: 36px;
   
@@ -127,7 +126,7 @@
   .sidebar .author__name {
     font-family: $sans-serif;
     font-size: $type-size-4;
-    text-align: center;
+    //text-align: center;
   }
   
   .sidebar .author__desktop {
@@ -147,7 +146,7 @@
   }
 
   .sidebar .author__pronouns {
-    text-align: center;
+    //text-align: center;
     font-family: $sans-serif;
     font-size: $type-size-5;
   }
