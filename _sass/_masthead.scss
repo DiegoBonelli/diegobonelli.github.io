@@ -2,57 +2,60 @@
    MASTHEAD
    ========================================================================== */
 
-.masthead {
-  position: fixed;
-  background: white;
-  border-bottom: 1px solid $border-color;
-  height: $masthead-height;
-  top: 0;
-  width: 100%;
-
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
-  z-index: 20;
-
-  &__inner-wrap {
-    @include container;
-    @include clearfix;
-    padding: 1em 1em 1em;
-    font-family: $sans-serif-narrow;
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
-
-    nav {
-      z-index: 10;
-    }
-
-    a {
-      text-decoration: none;
+   .masthead {
+    position: fixed; /* Set the position of the masthead to fixed */
+    background: white; /* Set the background color of the masthead to white */
+    border-bottom: 1px solid $background-color; /* Add a bottom border to the masthead */
+    height: $masthead-height; /* Set the height of the masthead */
+    top: 0; /* Position the masthead at the top of the viewport */
+    width: 100%; /* Set the width of the masthead to 100% */
+  
+    -webkit-animation: intro 0.3s both; /* Apply intro animation for WebKit browsers */
+            animation: intro 0.3s both; /* Apply intro animation */
+    -webkit-animation-delay: 0.15s; /* Delay the animation for WebKit browsers */
+            animation-delay: 0.15s; /* Delay the animation */
+    z-index: 20; /* Set the stacking order of the masthead */
+  
+    /* Inner wrap styling */
+    &__inner-wrap {
+      @include container; /* Apply container mixin */
+      @include clearfix; /* Clear floats */
+      padding: 1em 1em 1em; /* Add padding */
+      font-family: $sans-serif-narrow; /* Set font family */
+  
+      @include breakpoint($x-large) { /* Apply breakpoint at large screen sizes */
+        max-width: $x-large; /* Set maximum width */
+      }
+  
+      nav {
+        z-index: 10; /* Set the stacking order for navigation */
+      }
+  
+      a {
+        text-decoration: none; /* Remove underline from links */
+      }
     }
   }
-}
-
-.masthead__menu {
-
-  ul {
-    margin: 0;
-    padding: 0;
-    clear: both;
-    list-style-type: none;
+  
+  .masthead__menu {
+  
+    /* Remove default list styling */
+    ul {
+      margin: 0; /* Reset margin */
+      padding: 0; /* Reset padding */
+      clear: both; /* Clear floats */
+      list-style-type: none; /* Remove bullet points from list items */
+    }
   }
-}
-
-.masthead__menu-item {
-  display: block;
-  list-style-type: none;
-  white-space: nowrap;
-
-  &--lg {
-    padding-right: 2em;
-    font-weight: 700;
+  
+  .masthead__menu-item {
+    display: block; /* Display menu items as block elements */
+    list-style-type: none; /* Remove default list styling */
+    white-space: nowrap; /* Prevent menu items from wrapping */
+  
+    &--lg {
+      padding-right: 2em; /* Add right padding to large menu items */
+      font-weight: 700; /* Set font weight for large menu items */
+    }
   }
-}
+  
