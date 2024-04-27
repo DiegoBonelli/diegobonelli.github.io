@@ -7,8 +7,11 @@ classes: wide
 ---
 
 ## Section 1
-This is some text content for section 1. You can replace it with your own text.
-<img src="/images/bondstockcorr_xcpicov.png" alt="Image for Section 1" style="float: right; margin-left: 15px;">
+<img src="/images/bondstockcorr_xcpicov.png" alt="Image for Section 1" style="float: left; margin-right: 15px; width: 200px; height: 150px;">
+
+Good Inflation, Bad Inflation: Implications for Risky Asset Prices, with Berardino Palazzo and Ram Yamarthy (SSRN)
+
+In times of market-perceived “good inflation,” when inflation news is positively correlated with real economic growth, shocks to expected inflation substantially reduce corporate credit spreads and raise equity valuations. Meanwhile in times of “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics naturally arise from an equilibrium asset pricing model with a time-varying inflation-growth relationship and persistent macroeconomic expectations. Using inflation swap prices we study how expected inflation is priced in firm-level credit spreads and equity returns, and uncover evidence of a time-varying inflation beta.
 
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
