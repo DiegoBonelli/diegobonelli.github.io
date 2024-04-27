@@ -10,7 +10,7 @@ classes: wide
 </div>
 
 <div style="text-align: left;">
-    <h2>Inflation Risk and Yield Spread Changes, (SSRN)</h2>
+    <h3>Inflation Risk and Yield Spread Changes, (SSRN)</h3>
 </div>
 <div style="overflow: auto;">
     <img src="/images/model_plot_all.png" alt="Image for Inflation Risk and Yield Spread Changes" style="float: right;   max-width: 350px;
@@ -24,7 +24,7 @@ max-height: 350px;">
 
 
 <div style="text-align: left;">
-    <h2>Good Inflation, Bad Inflation: Implications for Risky Asset Prices, with Berardino Palazzo and Ram Yamarthy (SSRN)</h2>
+    <h3>Good Inflation, Bad Inflation: Implications for Risky Asset Prices, with Berardino Palazzo and Ram Yamarthy (SSRN)</h3>
 </div>
 <div style="overflow: auto;">
 <img src="/images/bondstockcorr_xcpicov.png" alt="Image for Good Inflation, Bad Inflation: Implications for Risky Asset Prices" style="float: right; max-width: 350px; max-height: 350px;">
