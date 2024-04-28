@@ -27,7 +27,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 <div style="text-align: justify; margin-bottom: 50px;">
     <div>
         <h3 style="display: inline;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices, with Berardino Palazzo and Ram Yamarthy (SSRN)</h3>
-        <button onclick="toggleAbstract()" id="abstractButton" class="custom-button">Abstract</button>
+        <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN Link</button>
     </div>
 </div>
@@ -60,6 +60,18 @@ I will be joining the Banco de España as a Research Economist in the fall.
     function toggleAbstract() {
         var abstractDiv = document.getElementById("abstract");
         var button = document.getElementById("abstractButton");
+        if (abstractDiv.style.display === "none") {
+            abstractDiv.style.display = "block";
+            button.innerText = "Hide Abstract";
+        } else {
+            abstractDiv.style.display = "none";
+            button.innerText = "Abstract";
+        }
+    }
+    
+    function toggleAbstract2() {
+        var abstractDiv = document.getElementById("abstract2");
+        var button = document.getElementById("abstractButton2");
         if (abstractDiv.style.display === "none") {
             abstractDiv.style.display = "block";
             button.innerText = "Hide Abstract";
