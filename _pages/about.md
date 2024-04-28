@@ -16,7 +16,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
     <div>
         <h3 style="display: inline;">Inflation Risk and Yield Spread Changes, (SSRN)</h3>
         <button onclick="toggleAbstract()" class="custom-button">Abstract</button>
-        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN</button>
+        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN Link</button>
     </div>
 </div>
 <div id="abstract" style="display: none; margin-top: 20px;">
@@ -26,31 +26,31 @@ I will be joining the Banco de España as a Research Economist in the fall.
 </div>
 
 <style>
-.custom-button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    font-size: 14px;
-    color: blue;
-    background-color: white;
-    border: 1px solid blue;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
+    .custom-button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: blue;
+        background-color: white;
+        border: 1px solid blue;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s;
+    }
 
-.custom-button:hover {
-    background-color: rgba(0, 0, 255, 0.1);
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
-}
+    .custom-button:hover {
+        background-color: rgba(0, 0, 255, 0.1);
+        box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+    }
 </style>
 
 <script>
-function toggleAbstract() {
-    var abstractDiv = document.getElementById("abstract");
-    if (abstractDiv.style.display === "none") {
-        abstractDiv.style.display = "block";
-    } else {
-        abstractDiv.style.display = "none";
+    function toggleAbstract() {
+        var abstractDiv = document.getElementById("abstract");
+        if (abstractDiv.style.display === "none") {
+            abstractDiv.style.display = "block";
+        } else {
+            abstractDiv.style.display = "none";
+        }
     }
-}
 </script>
