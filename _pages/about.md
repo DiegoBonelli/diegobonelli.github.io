@@ -11,11 +11,10 @@ redirect_from:
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation. 
 
 I will be joining the Banco de España as a Research Economist in the fall.
-
 <div style="text-align: justify; margin-bottom: 50px;">
     <div style="display: inline;">
         <h3 style="display: inline;">Inflation Risk and Yield Spread Changes, (SSRN)</h3>
-        <button onclick="toggleAbstract()" style="display: inline;">Abstract</button>
+        <button onclick="toggleAbstract()" style="display: inline; padding: 5px 10px; font-size: 14px; background-color: blue; color: white; border: none; border-radius: 5px;">Abstract</button>
     </div>
 </div>
 <div id="abstract" style="display: none;">
@@ -34,5 +33,4 @@ function toggleAbstract() {
     }
 }
 </script>
-
 
