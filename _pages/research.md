@@ -5,11 +5,11 @@ permalink: /research/
 author_profile: true
 classes: wide
 ---
-<div style="text-align: center;">
+<div style="text-align: center; margin-bottom: 20px;">
     <h1>Working Papers</h1>
 </div>
 
-<div style="text-align: left;">
+<div style="text-align: left; margin-bottom: 20px;">
     <h3>Inflation Risk and Yield Spread Changes, (SSRN)</h3>
 </div>
 <div style="overflow: auto;">
@@ -23,7 +23,7 @@ max-height: 350px;">
 </div>
 
 
-<div style="text-align: left;">
+<div style="text-align: left; margin-bottom: 20px;">
     <h3>Good Inflation, Bad Inflation: Implications for Risky Asset Prices, with Berardino Palazzo and Ram Yamarthy (SSRN)</h3>
 </div>
 <div style="overflow: auto;">
@@ -37,7 +37,7 @@ max-height: 350px;">
 
 
 
-<div style="text-align: left;">
+<div style="text-align: left; margin-bottom: 100px;">
     <h3>Hedge Funds, Prime Brokers, and Corporate Bond Offerings</h3>
 </div>
 <div style="overflow: auto;">
@@ -54,7 +54,7 @@ Hedge funds make abnormally large and profitable trades in stocks before corpora
     <h1>Work in Progress</h1>
 </div>
 
-<div style="text-align: left;">
+<div style="text-align: left; margin-bottom: 20px;">
     <h5>Momentum Spillovers in Corporate Bonds, with Katsiaryna Falkovich and Nils Friewald</h5>
 </div>
 <div style="overflow: auto;">
