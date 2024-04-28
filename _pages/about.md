@@ -26,7 +26,8 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 <div style="text-align: justify; margin-bottom: 50px; margin-top: 50px;">
     <div>
-        <h3 style="display: inline; margin-bottom: 0;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices, with Berardino Palazzo and Ram Yamarthy</h3>
+       <h3 style="display: inline; margin-bottom: 0;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices,</h3>
+        <span style="font-size: 14px;">with Berardino Palazzo and Ram Yamarthy</span>
         <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN Link</button>
     </div>
