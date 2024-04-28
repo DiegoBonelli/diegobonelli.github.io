@@ -13,7 +13,7 @@ classes: wide
     <h3>Inflation Risk and Yield Spread Changes, (SSRN)</h3>
 </div>
 <div style="overflow: auto;">
-    <img src="/images/model_plot_all.png" alt="Image for Inflation Risk and Yield Spread Changes" style="float: left;   max-width: 350px;
+    <img src="/images/model_plot_all.png" alt="Image for Inflation Risk and Yield Spread Changes" style="float: right;   max-width: 350px;
 max-height: 350px;">
     <div>
         <text>
@@ -27,7 +27,7 @@ max-height: 350px;">
     <h3>Good Inflation, Bad Inflation: Implications for Risky Asset Prices, with Berardino Palazzo and Ram Yamarthy (SSRN)</h3>
 </div>
 <div style="overflow: auto;">
-<img src="/images/bondstockcorr_xcpicov.png" alt="Image for Good Inflation, Bad Inflation: Implications for Risky Asset Prices" style="float: left; max-width: 350px; max-height: 350px;">
+<img src="/images/bondstockcorr_xcpicov.png" alt="Image for Good Inflation, Bad Inflation: Implications for Risky Asset Prices" style="float: right; max-width: 350px; max-height: 350px;">
     <div>
       <text>
       In times of market-perceived “good inflation,” when inflation news is positively correlated with real economic growth, shocks to expected inflation substantially reduce corporate credit spreads and raise equity valuations. Meanwhile in times of “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics naturally arise from an equilibrium asset pricing model with a time-varying inflation-growth relationship and persistent macroeconomic expectations. Using inflation swap prices we study how expected inflation is priced in firm-level credit spreads and equity returns, and uncover evidence of a time-varying inflation beta.
@@ -41,7 +41,7 @@ max-height: 350px;">
     <h3>Hedge Funds, Prime Brokers, and Corporate Bond Offerings</h3>
 </div>
 <div style="overflow: auto;">
-<img src="/images/Plot_HF_PB_2019.jpg" alt="Image for Hedge Funds, Prime Brokers, and Corporate Bond Offerings" style="float: left; max-width: 350px;
+<img src="/images/Plot_HF_PB_2019.jpg" alt="Image for Hedge Funds, Prime Brokers, and Corporate Bond Offerings" style="float: right; max-width: 350px;
 max-height: 350px;">
     <div>
 <text>
@@ -58,7 +58,7 @@ Hedge funds make abnormally large and profitable trades in stocks before corpora
     <h5>Momentum Spillovers in Corporate Bonds, with Katsiaryna Falkovich and Nils Friewald</h5>
 </div>
 <div style="overflow: auto;">
-<img src="/images/network_graph.png" alt="Image for Momentum Spillovers in Corporate Bonds" style="float: left; max-width: 350px; max-height: 350px;">
+<img src="/images/network_graph.png" alt="Image for Momentum Spillovers in Corporate Bonds" style="float: right; max-width: 350px; max-height: 350px;">
     <div>
 <text>
 Connected firms in the stock market respond to common information with a lag, leading to momentum spillovers. While this effect had been significantly reduced in the stock market, we still find strong cross-asset momentum spillovers among corporate bonds. A strategy that buys bonds whose peers had high stock returns last month and sells bonds with underperforming peers generates an excess return of 38 basis points. Consistent with delayed response due to trading frictions, we find that momentum spillovers are larger for bonds characterized by higher search frictions, particularly those intermediated by dealers at the periphery of the dealer network.
