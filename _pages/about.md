@@ -40,6 +40,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
     .custom-button:hover {
         background-color: rgba(0, 0, 255, 0.5);
+        color:white;
     }
 </style>
 
