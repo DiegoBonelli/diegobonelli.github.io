@@ -12,9 +12,9 @@ I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My resea
 
 I will be joining the Banco de España as a Research Economist in the fall.
 
-<div style="text-align: justify; margin-bottom: 20px;">
+<div style="text-align: justify; margin-bottom: 50px;">
     <div>
-        <h3 style="display: inline;">Inflation Risk and Yield Spread Changes, (SSRN)</h3>
+        <h3 style="display: inline;">Inflation Risk and Yield Spread Changes</h3>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN</button>
     </div>
@@ -25,9 +25,9 @@ I will be joining the Banco de España as a Research Economist in the fall.
     </text>
 </div>
 
-<div style="text-align: justify; margin-bottom: 20px;">
+<div style="text-align: justify; margin-bottom: 50px;">
     <div>
-        <h3 style="display: inline;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices, with Berardino Palazzo and Ram Yamarthy (SSRN)</h3>
+        <h3 style="display: inline;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices, with Berardino Palazzo and Ram Yamarthy</h3>
         <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN</button>
     </div>
