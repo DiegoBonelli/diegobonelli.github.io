@@ -14,7 +14,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 <div style="text-align: justify; margin-bottom: 50px;">
     <div>
-        <h3 style="display: inline;">Inflation Risk and Yield Spread Changes, (SSRN)</h3>
+        <h3 style="display: inline;">Inflation Risk and Yield Spread Changes</h3>
         <button onclick="toggleAbstract()" class="custom-button">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN Link</button>
     </div>
@@ -40,7 +40,6 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
     .custom-button:hover {
         background-color: rgba(0, 0, 255, 0.1);
-        box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
     }
 </style>
 
