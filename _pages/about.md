@@ -16,7 +16,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
     <div>
         <h3 style="display: inline;">Inflation Risk and Yield Spread Changes</h3>
         <button onclick="toggleAbstract()" class="custom-button">Abstract</button>
-        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN Link</button>
+        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN</button>
     </div>
 </div>
 <div id="abstract" style="display: none; margin-top: 20px;">
@@ -47,10 +47,13 @@ I will be joining the Banco de España as a Research Economist in the fall.
 <script>
     function toggleAbstract() {
         var abstractDiv = document.getElementById("abstract");
+        var button = document.getElementById("abstractButton");
         if (abstractDiv.style.display === "none") {
             abstractDiv.style.display = "block";
+            button.innerText = "Hide Abstract";
         } else {
             abstractDiv.style.display = "none";
+            button.innerText = "Abstract";
         }
     }
 </script>
