@@ -12,6 +12,11 @@ redirect_from:
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation. 
 
 I will be joining the Banco de España as a Research Economist in the fall.
+
+
+
+<h2 id="working-papers">Working Papers</h2>
+
 <div style="text-align: justify; margin-bottom: 20px;">
     <div>
         <h3 style="display: inline; margin-bottom: 0;">Inflation Risk and Yield Spread Changes</h3>
