@@ -12,15 +12,14 @@ I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My resea
 
 I will be joining the Banco de España as a Research Economist in the fall.
 
-
 <div style="text-align: justify; margin-bottom: 50px;">
-    <div style="display: inline;">
+    <div>
         <h3 style="display: inline;">Inflation Risk and Yield Spread Changes, (SSRN)</h3>
-        <button onclick="toggleAbstract()" style="display: inline; margin-right: 10px; padding: 5px 10px; font-size: 14px; background-color: blue; color: white; border: none; border-radius: 5px;">Abstract</button>
-        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" style="display: inline; padding: 5px 10px; font-size: 14px; background-color: blue; color: white; border: none; border-radius: 5px;">SSRN Link</button>
+        <button onclick="toggleAbstract()" style="margin-left: 10px; padding: 5px 10px; font-size: 14px; background-color: blue; color: white; border: none; border-radius: 5px;">Abstract</button>
+        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" style="margin-left: 10px; padding: 5px 10px; font-size: 14px; background-color: blue; color: white; border: none; border-radius: 5px;">SSRN Link</button>
     </div>
 </div>
-<div id="abstract" style="display: none;">
+<div id="abstract" style="display: none; margin-top: 20px;">
     <text>
     Inflation risk explains more than 40% of the systematic variation of yield spread changes beyond standard structural factors. I show that changes in expected inflation, volatility, and cyclicality are significant determinants of yield spread changes. A structural model with a stochastic price index and sticky cash flow accounts for these patterns and delivers further implications. In the cross-section, the model predicts increasing loading patterns on leverage and cash-flow flexibility. In the time series, the model predicts diminished effects during periods of high expected inflation. I find empirical support for the model’s predictions.
     </text>
@@ -36,4 +35,5 @@ function toggleAbstract() {
     }
 }
 </script>
+
 
