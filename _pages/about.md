@@ -16,7 +16,6 @@ I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My resea
 
 I will be joining the Banco de España as a Research Economist in the fall.
 
-<div class="vertical-space"></div>
 
 
 <h2 id="research" style="margin-bottom: 20px;">Working Papers</h2>
@@ -64,10 +63,6 @@ I will be joining the Banco de España as a Research Economist in the fall.
         background-color: rgba(0, 0, 255, 0.1);
         box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
     }
-.vertical-space {
-    height: 10cm;
-}
-
 
 </style>
 
