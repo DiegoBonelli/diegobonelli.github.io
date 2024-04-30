@@ -14,13 +14,13 @@ I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My resea
 I will be joining the Banco de España as a Research Economist in the fall.
 
 
-<h2 id="#research">Research</h2>
+<h2 id="research" style="margin-bottom: 20px;">Working Papers</h2>
 
 <div style="text-align: justify; margin-bottom: 20px;">
     <div>
         <h3 style="display: inline; margin-bottom: 0;">Inflation Risk and Yield Spread Changes</h3>
-        <button onclick="toggleAbstract()" id="abstractButton" class="custom-button">Abstract</button>
-        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN</button>
+        <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
+        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button>
     </div>
 </div>
 <div id="abstract" style="display: none;">
@@ -32,8 +32,8 @@ I will be joining the Banco de España as a Research Economist in the fall.
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
     <div>
        <h3 style="display: inline; margin-bottom: 0;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</h3>
-        <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button">Abstract</button>
-        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button">SSRN</button><br>
+        <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
+        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
         <span style="font-size: 0.75em;">joint with Berardino Palazzo and Ram Yamarthy</span> 
     </div>
 </div>
@@ -46,8 +46,8 @@ I will be joining the Banco de España as a Research Economist in the fall.
 <style>
     .custom-button {
         margin-left: 10px;
-        padding: 5px 10px;
-        font-size: 14px;
+        padding: 3px 8px; /* Adjusted padding */
+        font-size: 12px; /* Adjusted font size */
         color: blue;
         background-color: white;
         border: 1px solid blue;
