@@ -9,6 +9,9 @@ redirect_from:
   - /about.html
 ---
 
+<h2 id="research" style="margin-bottom: 20px;">About Me</h2>
+
+
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation. 
 
 I will be joining the Banco de España as a Research Economist in the fall.
