@@ -49,8 +49,8 @@ I will be joining the Banco de España as a Research Economist in the fall.
         padding: 3px 8px; /* Adjusted padding */
         color: blue;
         background-color: white;
-        border: 0.5px solid blue;
-        border-radius: 5px;
+        border: 1px solid blue;
+        border-radius: 2px;
         cursor: pointer;
         transition: background-color 0.3s, box-shadow 0.3s;
     }
