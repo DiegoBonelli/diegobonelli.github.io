@@ -47,10 +47,9 @@ I will be joining the Banco de España as a Research Economist in the fall.
     .custom-button {
         margin-left: 10px;
         padding: 3px 8px; /* Adjusted padding */
-        font-size: 12px; /* Adjusted font size */
         color: blue;
         background-color: white;
-        border: 1px solid blue;
+        border: 0.5px solid blue;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s, box-shadow 0.3s;
