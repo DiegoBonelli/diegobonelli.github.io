@@ -43,8 +43,8 @@ classes: wide
     <h1>Work in Progress</h1>
 </div>
 
-<div class="paper-container" style="margin-bottom: 50px text-align: justify;">
-    <div class="text-container" style="flex-basis: 65%;">
+<div class="paper-container" style="margin-bottom: 50px">
+    <div class="text-container" style="flex-basis: 65% text-align: justify;">
         <h5>Momentum Spillovers in Corporate Bonds, with Katsiaryna Falkovich and Nils Friewald</h5>
         <p>Connected firms in the stock market respond to common information with a lag, leading to momentum spillovers. While this effect had been significantly reduced in the stock market, we still find strong cross-asset momentum spillovers among corporate bonds. A strategy that buys bonds whose peers had high stock returns last month and sells bonds with underperforming peers generates an excess return of 38 basis points. Consistent with delayed response due to trading frictions, we find that momentum spillovers are larger for bonds characterized by higher search frictions, particularly those intermediated by dealers at the periphery of the dealer network.</p>
     </div>
