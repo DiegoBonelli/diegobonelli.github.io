@@ -8,9 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<p class="text-darkblue2">Dark Blue Text</p>
-<p class="text-lightblue2">Light Blue Text</p>
-<h2 id="about" style="margin-bottom: 20px; color: darkblue2;">About Me</h2>
+<h2 id="about" style="margin-bottom: 20px; color: $darkblue2;">About Me</h2>
 
 
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation. 
@@ -73,16 +71,8 @@ I will be joining the Banco de España as a Research Economist in the fall.
 </div>
 
 
+
 <style>
-
-.text-darkblue2 {
-   color: $darkblue2;
-}
-
-.text-lightblue2 {
-   color: $ligthblue2;
-}
-
     .custom-button {
         margin-left: 10px;
         padding: 2px 6px; /* Adjusted padding */
