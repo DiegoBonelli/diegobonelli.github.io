@@ -23,7 +23,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 <div style="text-align: justify; margin-bottom: 20px;">
     <div>
-       <h3 style="display: inline; margin-bottom: 0;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</h3>
+       <h3 style="display: inline; margin-bottom: 0;  color: blue;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</h3>
         <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
         <span style="font-size: 1em;">joint with Berardino Palazzo and Ram Yamarthy</span> 
@@ -37,7 +37,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
     <div>
-        <h3 style="display: inline; margin-bottom: 0;">Inflation Risk and Yield Spread Changes</h3>
+        <h3 style="display: inline; margin-bottom: 0;  color: blue;">Inflation Risk and Yield Spread Changes</h3>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button>
     </div>
@@ -51,7 +51,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
     <div>
-        <h3 style="display: inline; margin-bottom: 0;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</h3>
+        <h3 style="display: inline; margin-bottom: 0;  color: blue;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</h3>
         <button onclick="toggleAbstract3()" id="abstractButton3" class="custom-button small">Abstract</button>
     </div>
 </div>
@@ -66,7 +66,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 <div style="text-align: justify; margin-bottom: 20px;">
     <div>
-       <h3 style="display: inline; margin-bottom: 0;">Momentum Spillovers in Corporate Bonds,</h3>
+       <h3 style="display: inline; margin-bottom: 0;   color: blue;">Momentum Spillovers in Corporate Bonds,</h3>
         <span style="font-size: 1em;">joint with Katsiaryna Falkovich and Nils Friewald</span> 
     </div>
 </div>
