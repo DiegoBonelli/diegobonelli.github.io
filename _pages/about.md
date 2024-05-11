@@ -76,9 +76,9 @@ I will be joining the Banco de España as a Research Economist in the fall.
     .custom-button {
         margin-left: 10px;
         padding: 2px 6px; /* Adjusted padding */
-        color: masthead-link--hover;
+        color: $masthead-link--hover;
         background-color: white;
-        border: 1px solid masthead-link-color-hover;
+        border: 1px solid $masthead-link-color-hover;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s, box-shadow 0.3s;
