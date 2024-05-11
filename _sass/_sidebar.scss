@@ -138,7 +138,6 @@
   }
   
   .author__pronouns {
-    color: darkblue;
     margin: 0;
   
     @include breakpoint($large) {
@@ -148,13 +147,11 @@
   }
 
   .sidebar .author__pronouns {
-    color: darkblue;
    // text-align: center;
     font-family: $sans-serif;
     font-size: $type-size-5;
   }
   .author__bio {
-    color: darkblue;
     margin: 0;
     @include breakpoint($large) {
       margin-top: 10px;
@@ -163,7 +160,6 @@
   }
 
   .sidebar .author__bio {
-    color: darkblue;
     font-weight: bold;
     font-family: $sans-serif;
     font-size: $type-size-5;
