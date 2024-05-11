@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 <titlecolor id="about">About Me</titlecolor><br>
-<text style="font-size: $type-size-4;">
+<text style="font-size: $type-size-3;">
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation.  <br>
 I will be joining the Banco de España as a Research Economist in the fall.
  </text> <br>
