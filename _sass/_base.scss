@@ -330,8 +330,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
 /*
    Text with colors 
    ========================================================================== */
-
-.titlecolor{
+titlecolor {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
@@ -340,7 +339,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   color: $primary-color;
 }
 
-.subtitlecolor{
+subtitlecolor {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
