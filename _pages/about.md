@@ -10,7 +10,8 @@ redirect_from:
 ---
 <titlecolor id="about">About Me</titlecolor><br>
 <span style="font-size: $type-size-4;">
-I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation.  <br>
+I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation.
+
 I will be joining the Banco de España as a Research Economist in the fall.
  </span> <br>
 
