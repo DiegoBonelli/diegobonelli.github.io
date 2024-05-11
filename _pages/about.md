@@ -14,6 +14,9 @@ I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My resea
 
 I will be joining the Banco de España as a Research Economist in the fall.
 
+<br>
+
+
 <titlecolor id="research">Working Papers</titlecolor>
 
 
