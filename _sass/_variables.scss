@@ -63,8 +63,6 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
-$darkblue2                  : #1d2988;
-$ligthblue2                 : #3783c1;
 $body-color                 : #fff;
 $background-color           : #fff;
 $code-background-color      : #fafafa;
@@ -110,10 +108,10 @@ $CV-color                   : #000;
 
 /* links */
 $link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 35%);
-$link-color-visited         : mix(#fff, $link-color, 35%);
+$link-color-hover           : mix(#000, $link-color, 25%);
+$link-color-visited         : mix(#fff, $link-color, 25%);
 $masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 35%);
+$masthead-link-color-hover  : mix(#fff, $primary-color, 25%);
 
 
 /*
