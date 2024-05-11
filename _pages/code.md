@@ -1,12 +1,9 @@
 ---
 layout: archive
+title: ""
 permalink: /code/
-title: "Code"
 author_profile: true
 classes: wide
-redirect_from: 
-  - /code/
-  - /code.html
 ---
 
 
