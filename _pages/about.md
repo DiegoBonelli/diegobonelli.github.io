@@ -18,7 +18,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 
 
-<h2 id="research" style="margin-bottom: 20px;">Working Papers</h2>
+<h2 id="research" style="margin-bottom: 40px;">Working Papers</h2>
 
 
 <div style="text-align: justify; margin-bottom: 20px;">
@@ -61,7 +61,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
     </text>
 </div>
 
-<h2 id="research" style="margin-bottom: 20px;margin-top: 200px;">Work in Progress</h2>
+<h2 id="research" style="margin-bottom: 40px;margin-top: 100px;">Work in Progress</h2>
 
 
 <div style="text-align: justify; margin-bottom: 20px;">
