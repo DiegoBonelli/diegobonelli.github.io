@@ -25,8 +25,8 @@ I will be joining the Banco de España as a Research Economist in the fall.
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor>
         <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
-        <text style="font-size: 1em;">April 2024</text> <br>
-        <span style="font-size: 1em;">Joint with Berardino Palazzo and Ram Yamarthy</span> 
+        <h5>April 2024</h5> <br>
+        <h5>Joint with Berardino Palazzo and Ram Yamarthy</h5> 
     </div>
 </div>
 <div id="abstract2" style="display: none;">
@@ -40,7 +40,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
         <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
-                <text style="font-size: 1em;">May 2024</text> 
+        <h5>May 2024</h5> 
 
     </div>
 </div>
@@ -69,7 +69,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds,</subtitlecolor><br>
-        <span style="font-size: 1em;">Joint with Katsiaryna Falkovich and Nils Friewald</span> 
+        <h5>Joint with Katsiaryna Falkovich and Nils Friewald</h5> 
     </div>
 </div>
 
