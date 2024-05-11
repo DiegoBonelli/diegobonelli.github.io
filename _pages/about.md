@@ -43,7 +43,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 </div>
 <div id="abstract" style="display: none;">
     <text>
-    Inflation risk explains a significant share of the systematic variation of yield spread changes beyond standard structural factors. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectation, volatility, and cyclicality are significant determinants of yield spread changes. A model with a stochastic price index and sticky cash flow explains these patterns and delivers additional implications with empirical support. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flex- ibility but weaken during periods of high expected inflation.
+    Inflation risk explains a significant share of the systematic variation of yield spread changes beyond standard structural factors. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectation, volatility, and cyclicality are significant determinants of yield spread changes. A model with a stochastic price index and sticky cash flow explains these patterns and delivers additional implications with empirical support. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken during periods of high expected inflation.
     </text>
 </div>
 
@@ -71,24 +71,6 @@ I will be joining the Banco de España as a Research Economist in the fall.
 </div>
 
 
-
-<style>
-    .custom-button {
-        margin-left: 10px;
-        padding: 2px 6px; /* Adjusted padding */
-        background-color: white;
-      /*border: 1px solid $masthead-link-color-hover;*/
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s, box-shadow 0.3s;
-    }
-
-    .custom-button:hover {
-        background-color: rgba(0, 0, 255, 0.1);
-        box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
-    }
-
-</style>
 
 <script>
     function toggleAbstract() {
