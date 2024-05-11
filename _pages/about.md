@@ -8,8 +8,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<p style="color: $darkblue2;">Text in Dark Blue</p>
-<p style="color: $lightblue2;">Text in Light Blue</p>
+<p class="text-darkblue2">Dark Blue Text</p>
+<p class="text-lightblue2">Light Blue Text</p>
 <h2 id="about" style="margin-bottom: 20px; color: darkblue2;">About Me</h2>
 
 

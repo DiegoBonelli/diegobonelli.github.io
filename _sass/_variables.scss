@@ -108,6 +108,14 @@ $xing-color                 : #006567;
 $CV-color                   : #000;
 
 
+.text-darkblue2 {
+   color: $darkblue2;
+}
+
+.text-lightblue2 {
+   color: $lightblue2;
+}
+
 /* links */
 $link-color                 : $info-color;
 $link-color-hover           : mix(#000, $link-color, 25%);
