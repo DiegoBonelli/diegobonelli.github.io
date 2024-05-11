@@ -55,8 +55,6 @@ $sidebar-link-max-width     : 250px;
    Colors
    ========================================================================== */
    
-$darkblue                  : #155da3;
-$ligthblue2                 : #4682B4;
 $gray                       : #7a8288;
 $black                      : #000;
 $white                      : #fff;
@@ -65,6 +63,8 @@ $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
 
+$darkblue2                  : #155da3;
+$ligthblue2                 : #4682B4;
 $body-color                 : #fff;
 $background-color           : #fff;
 $code-background-color      : #fafafa;
