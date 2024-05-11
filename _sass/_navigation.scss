@@ -374,7 +374,7 @@
   
   .toc {
     font-family: $sans-serif-narrow;
-    color: #1d2988;
+    color: $primary-color;
     text-transform: uppercase;
     letter-spacing: 1px;
     background-color: #fff;
@@ -401,7 +401,7 @@
     a {
       display: block;
       padding: 0.5rem 1rem;
-      color: #1d2988;
+      color:$primary-color;
       font-size: $type-size-7;
       font-weight: bold;
       line-height: 1.5;
