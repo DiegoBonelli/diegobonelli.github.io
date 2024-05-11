@@ -25,8 +25,8 @@ I will be joining the Banco de España as a Research Economist in the fall.
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor>
         <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
-        <h5>April 2024</h5> <br>
-        <h5>Joint with Berardino Palazzo and Ram Yamarthy</h5> 
+        <text style="font-size: $type-size-6;">April 2024</text> <br>
+        <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text> 
     </div>
 </div>
 <div id="abstract2" style="display: none;">
@@ -35,12 +35,12 @@ I will be joining the Banco de España as a Research Economist in the fall.
     </text>
 </div>
 
-<div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
+<div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
-        <h5>May 2024</h5> 
+                <text style="font-size: $type-size-6;">May 2024</text> 
 
     </div>
 </div>
@@ -51,7 +51,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 </div>
 
 
-<div style="text-align: justify; margin-bottom: 50px; margin-top: 20px;">
+<div style="text-align: justify; margin-bottom: 50px; margin-top: 50px;">
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</subtitlecolor>
         <button onclick="toggleAbstract3()" id="abstractButton3" class="custom-button small">Abstract</button>
@@ -69,7 +69,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds,</subtitlecolor><br>
-        <h5>Joint with Katsiaryna Falkovich and Nils Friewald</h5> 
+        <span style="font-size: $type-size-6;">Joint with Katsiaryna Falkovich and Nils Friewald</span> 
     </div>
 </div>
 
