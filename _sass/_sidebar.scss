@@ -117,14 +117,14 @@
   
   .author__name {
     margin: 0;
-    color: $darkblue2;
+    color: $primary-color;
     @include breakpoint($large) {
       margin-top: 10px;
       margin-bottom: 10px;
     }
   }
   .sidebar .author__name {
-    color: $darkblue2;
+    color: $primary-color;
     font-family: $sans-serif;
     font-size: $type-size-4;
     //text-align: center;
@@ -152,7 +152,7 @@
     font-size: $type-size-5;
   }
   .author__bio {
-    color: $darkblue2;
+    color: $primary-color;
 
     margin: 0;
     @include breakpoint($large) {
@@ -162,7 +162,7 @@
   }
 
   .sidebar .author__bio {
-    color: $darkblue2;
+    color: $primary-color;
 
     font-weight: bold;
     font-family: $sans-serif;
