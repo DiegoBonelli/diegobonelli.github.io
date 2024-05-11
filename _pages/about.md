@@ -9,11 +9,10 @@ redirect_from:
   - /about.html
 ---
 <titlecolor id="about">About Me</titlecolor><br>
-<span style="font-size: $type-size-4;">
+
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation.
 
 I will be joining the Banco de España as a Research Economist in the fall.
- </span> <br>
 
 <titlecolor id="research">Working Papers</titlecolor>
 
@@ -49,7 +48,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 </div>
 
 
-<div style="text-align: justify; margin-bottom: 50px; margin-top: 50px;">
+<div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</subtitlecolor>
         <button onclick="toggleAbstract3()" id="abstractButton3" class="custom-button small">Abstract</button>
