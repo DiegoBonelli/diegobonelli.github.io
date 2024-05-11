@@ -324,3 +324,27 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+
+
+/*
+   Text with colors 
+   ========================================================================== */
+
+.titlecolor{
+  margin: 2em 0 0.5em;
+  line-height: 1.2;
+  font-family: $header-font-family;
+  font-weight: bold;
+  font-size: $type-size-4;
+  color: $primary-color;
+}
+
+.subtitlecolor{
+  margin: 2em 0 0.5em;
+  line-height: 1.2;
+  font-family: $header-font-family;
+  font-weight: bold;
+  font-size: $type-size-5;
+  color: $masthead-link-color-hover;
+}

@@ -8,7 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<h2 id="about" style="margin-bottom: 20px; color: primary-color;">About Me</h2>
+<titlecolor id="about" style="margin-bottom: 20px;">About Me</titlecolor>
 
 
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation. 
@@ -17,12 +17,12 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 
 
-<h2 id="research" style="margin-bottom: 40px; color: primary-color;">Working Papers</h2>
+<titlecolor id="research" style="margin-bottom: 40px;">Working Papers</titlecolor>
 
 
 <div style="text-align: justify; margin-bottom: 20px;">
     <div>
-       <h3 style="display: inline; margin-bottom: 0; color: masthead-link-color-hover;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</h3>
+       <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor>
         <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
         <span style="font-size: 1em;">joint with Berardino Palazzo and Ram Yamarthy</span> 
@@ -36,7 +36,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
     <div>
-        <h3 style="display: inline; margin-bottom: 0; color: masthead-link-color-hover;">Inflation Risk and Yield Spread Changes</h3>
+        <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button>
     </div>
@@ -50,7 +50,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
     <div>
-        <h3 style="display: inline; margin-bottom: 0; color: masthead-link-color-hover;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</h3>
+        <subtitlecolor style="display: inline; margin-bottom: 0;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</subtitlecolor>
         <button onclick="toggleAbstract3()" id="abstractButton3" class="custom-button small">Abstract</button>
     </div>
 </div>
@@ -60,12 +60,12 @@ I will be joining the Banco de España as a Research Economist in the fall.
     </text>
 </div>
 
-<h2 id="research" style="margin-bottom: 40px;margin-top: 100px; color: primary-color;">Work in Progress</h2>
+<titlecolor id="research" style="margin-bottom: 40px;margin-top: 100px;">Work in Progress</titlecolor>
 
 
 <div style="text-align: justify; margin-bottom: 20px;">
     <div>
-       <h3 style="display: inline; margin-bottom: 0; color: masthead-link-color-hover;">Momentum Spillovers in Corporate Bonds,</h3><br>
+       <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds,</subtitlecolor><br>
         <span style="font-size: 1em;">joint with Katsiaryna Falkovich and Nils Friewald</span> 
     </div>
 </div>
