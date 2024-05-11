@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-<h2 id="about" style="margin-bottom: 20px; color: $dark-blue;">About Me</h2>
+<h2 id="about" style="margin-bottom: 20px; color: $dark-blue !important;">About Me</h2>
 
 
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation. 
