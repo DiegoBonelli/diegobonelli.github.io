@@ -2,3 +2,6 @@
 main:
   - title: "CV"
     url: /files/CV.pdf
+
+  - title: "Code"
+    url: /Code
