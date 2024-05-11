@@ -21,7 +21,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 <h2 id="research" style="margin-bottom: 20px;">Working Papers</h2>
 
 
-<div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
+<div style="text-align: justify; margin-bottom: 20px;">
     <div>
        <h3 style="display: inline; margin-bottom: 0;">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</h3>
         <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
@@ -35,7 +35,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
     </text>
 </div>
 
-<div style="text-align: justify; margin-bottom: 20px;">
+<div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
     <div>
         <h3 style="display: inline; margin-bottom: 0;">Inflation Risk and Yield Spread Changes</h3>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
