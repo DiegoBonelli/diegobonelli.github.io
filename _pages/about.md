@@ -8,7 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<titlecolor id="about">About Me</titlecolor><br>
+<titlecolor id="about">About Me</titlecolor>
 
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation.
 
@@ -32,7 +32,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
     </text>
 </div>
 
-<div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
+<div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
@@ -48,7 +48,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 </div>
 
 
-<div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
+<div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</subtitlecolor>
         <button onclick="toggleAbstract3()" id="abstractButton3" class="custom-button small">Abstract</button>
@@ -63,7 +63,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 
 
-<titlecolor id="research  margin-top: 50px;">Work in Progress</titlecolor>
+<titlecolor id="research  margin-top: 100px;">Work in Progress</titlecolor>
 
 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
