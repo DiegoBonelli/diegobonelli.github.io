@@ -10,9 +10,7 @@ redirect_from:
 ---
 <titlecolor id="about" style="margin-bottom: 20px;">About Me</titlecolor><br>
 <text style="font-size: $type-size-4;">
-I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation. 
- </text> <br>
- <text style="font-size: $type-size-4;">
+I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation.  <br>
 I will be joining the Banco de España as a Research Economist in the fall.
  </text> <br>
 
@@ -24,8 +22,8 @@ I will be joining the Banco de España as a Research Economist in the fall.
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor>
         <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
-        <text style="font-size: $type-size-6;">April 2024</text> <br>
         <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text> 
+        <text style="font-size: $type-size-6;">April 2024</text> <br>
     </div>
 </div>
 <div id="abstract2" style="display: none;">
