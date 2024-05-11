@@ -8,7 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<h2 id="about" style="margin-bottom: 20px; color: $primary-color;">About Me</h2>
+<h2 id="about" style="margin-bottom: 20px; color: primary-color;">About Me</h2>
 
 
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation. 
@@ -17,7 +17,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 
 
-<h2 id="research" style="margin-bottom: 40px; color: $primary-color;">Working Papers</h2>
+<h2 id="research" style="margin-bottom: 40px; color: primary-color;">Working Papers</h2>
 
 
 <div style="text-align: justify; margin-bottom: 20px;">
@@ -60,7 +60,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
     </text>
 </div>
 
-<h2 id="research" style="margin-bottom: 40px;margin-top: 100px; color: $primary-color;">Work in Progress</h2>
+<h2 id="research" style="margin-bottom: 40px;margin-top: 100px; color: primary-color;">Work in Progress</h2>
 
 
 <div style="text-align: justify; margin-bottom: 20px;">
