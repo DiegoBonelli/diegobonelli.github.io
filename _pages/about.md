@@ -17,10 +17,10 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 
 
-<titlecolor id="research" style="margin-bottom: 40px;">Working Papers</titlecolor>
+<titlecolor id="research">Working Papers</titlecolor>
 
 
-<div style="text-align: justify; margin-bottom: 20px;margin-top: 40px;">
+<div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor>
         <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
@@ -48,7 +48,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 </div>
 
 
-<div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
+<div style="text-align: justify; margin-bottom: 100px; margin-top: 50px;">
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</subtitlecolor>
         <button onclick="toggleAbstract3()" id="abstractButton3" class="custom-button small">Abstract</button>
@@ -60,10 +60,10 @@ I will be joining the Banco de España as a Research Economist in the fall.
     </text>
 </div>
 
-<titlecolor id="research" style="margin-bottom: 40px; margin-top: 100px;">Work in Progress</titlecolor>
+<titlecolor id="research">Work in Progress</titlecolor>
 
 
-<div style="text-align: justify; margin-bottom: 20px;">
+<div style="text-align: justify; margin-bottom: 20px; margin-top: 50px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds,</subtitlecolor><br>
         <span style="font-size: 1em;">joint with Katsiaryna Falkovich and Nils Friewald</span> 
