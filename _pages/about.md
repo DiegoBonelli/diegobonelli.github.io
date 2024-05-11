@@ -63,7 +63,13 @@ I will be joining the Banco de España as a Research Economist in the fall.
     </text>
 </div>
 
-<titlecolor id="research">Work in Progress</titlecolor>
+
+
+
+
+
+
+<titlecolor id="research  margin-top: 50px;">Work in Progress</titlecolor>
 
 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
