@@ -71,7 +71,7 @@ I will be joining the Banco de España as a Research Economist in the fall.
 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
-       <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds,</subtitlecolor><br>
+       <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds</subtitlecolor><br>
         <text style="font-size: $type-size-6;">Joint with Katsiaryna Falkovich and Nils Friewald</text> 
     </div>
 </div>
