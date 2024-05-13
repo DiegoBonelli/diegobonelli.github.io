@@ -120,6 +120,26 @@
   display: block; // Change display to block for large screens (tablets)
 }
 
+// Media query for iPhones (portrait)
+@media only screen and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+  .author__avatar {
+      width: 80%; // Increase width for iPhones
+      max-width: 150px; // Maximum width for iPhones
+      margin: 0 auto; // Center the avatar horizontally
+      display: block; // Change display to block for iPhones
+  }
+}
+
+// Media query for iPhones (landscape)
+@media only screen and (max-device-width: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  .author__avatar {
+      width: 80%; // Increase width for iPhones (landscape)
+      max-width: 150px; // Maximum width for iPhones (landscape)
+      margin: 0 auto; // Center the avatar horizontally
+      display: block; // Change display to block for iPhones (landscape)
+  }
+}
+
 
 
     img {
