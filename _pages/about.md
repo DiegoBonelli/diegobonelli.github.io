@@ -12,7 +12,7 @@ redirect_from:
 
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are asset pricing, market microstructure, and financial intermediation.
 
-I will be joining the  <titlecolor style="font-size: $type-size-5;" >Banco de España </titlecolor> as a Research Economist in the fall.
+I will be joining the  <titlecolor style="font-size: $type-size-5;"> Banco de España </titlecolor> as a Research Economist in the fall.
 
 <br>
 
