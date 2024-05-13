@@ -76,6 +76,7 @@
      Author profile and links
      ========================================================================== */
   
+     /*
   .author__avatar {
     display: table-cell;
     vertical-align: top;
@@ -99,7 +100,34 @@
       }
     }
   }
-  
+  */
+
+  .author__avatar {
+    display: table-cell;
+    vertical-align: top;
+    width: 45px; // Default width
+
+    // Media query for mobile screens
+    @include breakpoint($large) {
+        width: 80%; // Increase width for mobile screens
+        max-width: 150px; // Maximum width for mobile screens
+        height: auto; // Allow height to adjust proportionally
+    }
+
+    img {
+        max-width: 100%; // Maximum width for the image
+        height: auto; // Allow height to adjust proportionally
+        border-radius: 50%;
+
+        // Additional styles for larger screens
+        @include breakpoint($large) {
+            padding: 5px;
+            border: 1px solid $border-color;
+        }
+    }
+}
+
+
   .author__content {
     display: table-cell;
     vertical-align: top;
