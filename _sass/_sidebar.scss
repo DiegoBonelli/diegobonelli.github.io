@@ -75,18 +75,18 @@
       border-radius: 50%;
   }
 
-  // Media query for mobile screens
-  @include breakpoint($large) {
-      display: block;
-      width: 80%; // Increase width for mobile screens
-      max-width: 150px; // Maximum width for mobile screens
-      height: auto; // Allow height to adjust proportionally
+ // Media query for mobile screens
+ @include breakpoint($medium) {
+  width: 100%; // Increase width for mobile screens
+  max-width: 150px; // Maximum width for mobile screens
+  margin: 0 auto; // Center the avatar horizontally
+  display: block; // Change display to block for mobile screens
 
-      img {
-          padding: 5px;
-          border: 1px solid $border-color;
-      }
+  img {
+      padding: 5px;
+      border: 1px solid $border-color;
   }
+}
 }
 
 .author__content {
