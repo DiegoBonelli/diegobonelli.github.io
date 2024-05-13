@@ -109,7 +109,7 @@
 
     // Media query for mobile screens
     @include breakpoint($large) {
-        width: 100%; // Increase width for mobile screens
+        width: 45; // Increase width for mobile screens
         max-width: 150px; // Maximum width for mobile screens
         height: auto; // Allow height to adjust proportionally
     }
