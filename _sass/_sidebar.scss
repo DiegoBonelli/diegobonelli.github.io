@@ -83,42 +83,12 @@
     // set width only, for non-square avatars
     // height: 36px;
   
-  //  @include breakpoint($large) {
-   //   display: block;
-   //   width: auto;
-   //   height: auto;
-   // }
-  // Media query for extra small screens (very small phones)
-@include breakpoint($xsmall) {
-  width: 80%; // Increase width for extra small screens
-  max-width: 150px; // Maximum width for extra small screens
-  margin: 0 auto; // Center the avatar horizontally
-  display: block; // Change display to block for extra small screens
-}
+   @include breakpoint($large) {
+     display: block;
+     width: auto;
+     height: auto;
+   }
 
-// Media query for small screens (phones)
-@include breakpoint($small) {
-  width: 80%; // Increase width for small screens
-  max-width: 150px; // Maximum width for small screens
-  margin: 0 auto; // Center the avatar horizontally
-  display: block; // Change display to block for small screens
-}
-
-// Media query for medium screens (larger phones)
-@include breakpoint($medium) {
-  width: 80%; // Increase width for medium screens
-  max-width: 150px; // Maximum width for medium screens
-  margin: 0 auto; // Center the avatar horizontally
-  display: block; // Change display to block for medium screens
-}
-
-// Media query for large screens (tablets)
-@include breakpoint($large) {
-  width: 80%; // Increase width for large screens (tablets)
-  max-width: 150px; // Maximum width for large screens (tablets)
-  margin: 0 auto; // Center the avatar horizontally
-  display: block; // Change display to block for large screens (tablets)
-}
 
 // Media query for iPhones (portrait)
 @media only screen and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
