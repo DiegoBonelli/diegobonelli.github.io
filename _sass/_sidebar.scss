@@ -91,6 +91,7 @@
     display: block;
     width: auto;
     height: auto;
+    margin: 0 auto; /* Add this line to center the avatar horizontally */
   }
 
     img {
@@ -126,6 +127,7 @@
     }
     @include breakpoint($x-small) {
       display: block;
+      margin: 0 auto; /* Add this line to center the avatar horizontally */
       width: 100%;
       padding-left: 0;
       padding-right: 0;
