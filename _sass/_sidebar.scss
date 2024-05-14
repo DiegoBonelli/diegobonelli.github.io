@@ -76,7 +76,7 @@
      ========================================================================== */
   
   .author__avatar {
-    display: table-cell;
+    display: table;
     vertical-align: top;
     width: 45px;
     // set width only, for non-square avatars
@@ -116,10 +116,10 @@
 
   .author__content {
    // display: table-cell;
-    vertical-align: top;
-    padding-left: 15px;
-    padding-right: 25px;
-    line-height: 1;
+   vertical-align: top;
+   padding-left: 0;
+   padding-right: 0;
+ text-align: center;
   
     @include breakpoint($large) {
       display: block;
@@ -128,14 +128,7 @@
       padding-right: 0;
     }
 
-   /*   
-    @include breakpoint($x-small) {
-      display: block;
-      margin: 0 auto; 
-      width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-    }  */
+   
   }
   
   .author__name {
