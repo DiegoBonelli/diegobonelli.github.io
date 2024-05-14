@@ -30,16 +30,6 @@
         opacity: 1;
       }
     }
-    @include breakpoint($x-small) {
-      @include span(2 of 12);
-      opacity: 1;
-      -webkit-transition: opacity 0.2s ease-in-out;
-              transition: opacity 0.2s ease-in-out;
-  
-      &:hover {
-        opacity: 1;
-      }
-    }
     @include breakpoint($x-large) {
       max-width: $sidebar-link-max-width;
       padding-right: 0;
@@ -235,9 +225,6 @@
     @include breakpoint($large) {
       display: block;
     }
-    @include breakpoint($x-small) {
-      display: block;
-    }
     button {
       margin-bottom: 0;
   
@@ -274,15 +261,7 @@
       background: transparent;
       box-shadow: none;
     }
-    @include breakpoint($x-small) {
-      display: block;
-      position: relative;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      background: transparent;
-      box-shadow: none;
-    }
+
     &:before {
       display: block;
       content: "";
@@ -298,9 +277,7 @@
       @include breakpoint($large) {
         display: none;
       }
-      @include breakpoint($x-small) {
-        display: none;
-      }
+
     }
   
     &:after {
@@ -318,9 +295,7 @@
       @include breakpoint($large) {
         display: none;
       }
-      @include breakpoint($x-small) {
-        display: none;
-      }
+
     }
   
     li {
