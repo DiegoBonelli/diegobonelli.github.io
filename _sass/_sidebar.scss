@@ -88,7 +88,7 @@
      height: auto;
    }
    @include breakpoint($x-small) {
-    display: block;
+    //sdisplay: block;
     width: auto;
     height: auto;
     margin: 0 auto; /* Add this line to center the avatar horizontally */
@@ -145,6 +145,7 @@
     @include breakpoint($x-small) {
       margin-top: 10px;
       margin-bottom: 10px;
+      text-align: center;
     }
   }
   .sidebar .author__name {
@@ -172,6 +173,7 @@
     @include breakpoint($x-small) {
       margin-top: 10px;
       margin-bottom: 10px;
+      text-align: center;
     }
   }
 
@@ -228,6 +230,7 @@
       }
       @include breakpoint($x-small) {
         display: none;
+
       }
 
     }
