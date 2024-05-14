@@ -31,12 +31,6 @@
       }
     }
   
-
-    @include breakpoint($small) {
-      text-align: center; // Center the sidebar content
-    }
-  
-
     @include breakpoint($x-large) {
       max-width: $sidebar-link-max-width;
       padding-right: 0;
@@ -94,16 +88,6 @@
      width: auto;
      height: auto;
    }
-   @include breakpoint($small) {
-    margin: 0 auto; // Center the avatar horizontally on small screens
-    display: block; // Change display to block for mobile screens
-  }
-// Media query for mobile screens
-@include breakpoint($small) {  
-     display: block;
-  width: auto;
-  height: auto;
-  }
 
 
     img {
@@ -125,10 +109,7 @@
     padding-left: 15px;
     padding-right: 25px;
     line-height: 1;
-    
-    @include breakpoint($small) {
-      text-align: left; // Reset text alignment on mobile screens
-    }
+  
     @include breakpoint($large) {
       display: block;
       width: 100%;
