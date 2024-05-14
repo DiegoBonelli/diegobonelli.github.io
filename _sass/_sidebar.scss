@@ -217,7 +217,6 @@
     cursor: pointer;
     text-align: justify; /* Justify the text */
     white-space: nowrap; /* Prevent wrapping to ensure text stays in one line */
-    overflow: hidden; /* Hide any overflow text */
   
     li:last-child {
       a {
