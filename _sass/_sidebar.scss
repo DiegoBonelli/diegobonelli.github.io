@@ -30,7 +30,16 @@
         opacity: 1;
       }
     }
+    @include breakpoint($x-small) {
+      @include span(2 of 12);
+      opacity: 1;
+      -webkit-transition: opacity 0.2s ease-in-out;
+              transition: opacity 0.2s ease-in-out;
   
+      &:hover {
+        opacity: 1;
+      }
+    }
     @include breakpoint($x-large) {
       max-width: $sidebar-link-max-width;
       padding-right: 0;
@@ -66,6 +75,13 @@
       margin-left: span(0.5 of 12);
       z-index: 10;
     }
+    @include breakpoint($x-small) {
+      position: relative;
+      float: right;
+      width: $right-sidebar-width-narrow;
+      margin-left: span(0.5 of 12);
+      z-index: 10;
+    }
   
     @include breakpoint($x-large) {
       width: $right-sidebar-width;
@@ -88,13 +104,22 @@
      width: auto;
      height: auto;
    }
-
+   @include breakpoint($x-small) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
 
     img {
       max-width: 200px;//175px;
       border-radius: 50%;
   
       @include breakpoint($large) {
+        padding: 5px;
+        border: 1px solid $border-color;
+      }
+
+      @include breakpoint($x-small) {
         padding: 5px;
         border: 1px solid $border-color;
       }
@@ -116,12 +141,23 @@
       padding-left: 0;
       padding-right: 0;
     }
+    @include breakpoint($x-small) {
+      display: block;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
   
   .author__name {
     margin: 0;
     color: $primary-color;
     @include breakpoint($large) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    @include breakpoint($x-small) {
       margin-top: 10px;
       margin-bottom: 10px;
     }
@@ -147,6 +183,11 @@
       margin-top: 10px;
       margin-bottom: 10px;
     }
+
+    @include breakpoint($x-small) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 
   .sidebar .author__pronouns {
@@ -159,6 +200,10 @@
 
     margin: 0;
     @include breakpoint($large) {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    @include breakpoint($x-small) {
       margin-top: 10px;
       margin-bottom: 20px;
     }
@@ -190,13 +235,19 @@
     @include breakpoint($large) {
       display: block;
     }
-  
+    @include breakpoint($x-small) {
+      display: block;
+    }
     button {
       margin-bottom: 0;
   
       @include breakpoint($large) {
         display: none;
       }
+      @include breakpoint($x-small) {
+        display: none;
+      }
+
     }
   }
   
@@ -223,7 +274,15 @@
       background: transparent;
       box-shadow: none;
     }
-  
+    @include breakpoint($x-small) {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
     &:before {
       display: block;
       content: "";
@@ -237,6 +296,9 @@
       z-index: 0;
   
       @include breakpoint($large) {
+        display: none;
+      }
+      @include breakpoint($x-small) {
         display: none;
       }
     }
@@ -254,6 +316,9 @@
       z-index: 1;
   
       @include breakpoint($large) {
+        display: none;
+      }
+      @include breakpoint($x-small) {
         display: none;
       }
     }
