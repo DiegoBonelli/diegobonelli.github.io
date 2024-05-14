@@ -89,7 +89,7 @@
    }
   
    @include breakpoint($x-small) {
-    //sdisplay: block;
+    //display: block;
     width: auto;
     height: auto;
     margin: 0 auto; 
@@ -115,7 +115,7 @@
 
 
   .author__content {
-    display: table-cell;
+   // display: table-cell;
     vertical-align: top;
     padding-left: 15px;
     padding-right: 25px;
