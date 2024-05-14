@@ -258,7 +258,8 @@
   .author__urls {
     display: none;
     position: absolute;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
     margin-top: 15px;
     padding: 10px;
     list-style-type: none;
