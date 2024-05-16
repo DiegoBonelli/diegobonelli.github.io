@@ -1,4 +1,4 @@
 
 # Personal Website
 
-www.diegobonelli.github.io
+diegobonelli.github.io
