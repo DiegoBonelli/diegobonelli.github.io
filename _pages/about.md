@@ -38,6 +38,7 @@ I will be joining the <boldcolor> Banco de España </boldcolor> as a Research Ec
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
+        <button onclick="window.location.href='https://diegobonelli.github.io/files/IRYSC.pdf';" class="custom-button small">Slides</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
                 <text style="font-size: $type-size-6;">May 2024</text> 
 
