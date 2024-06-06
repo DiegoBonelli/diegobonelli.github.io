@@ -23,10 +23,10 @@ author:
   # Biographic information
   avatar           : "profiledb.png"
   name             : "Diego Bonelli"
-  pronouns         : "Research Economist <br> Banco de España <br> <br>"  
+  pronouns         : #"Research Economist <br> Banco de España <br> <br>"  
   bio              : "Contact Information"
-  location         : "Alcalá 48 28014 Madrid, Spain"
-  employer         : "Banco de España"
+  location         : # "Alcalá 48 28014 Madrid, Spain"
+  employer         : "NHH" #"Banco de España"
   uri              : # URL
   email            : "diego.bonelli@nhh.no" 
 
