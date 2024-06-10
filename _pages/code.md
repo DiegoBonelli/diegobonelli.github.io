@@ -3,7 +3,13 @@ layout: archive
 title: ""
 permalink: /code/
 author_profile: true
+description: "Diego Bonelli. Code."
+excerpt: "Diego Bonelli. Code."
 classes: wide
+redirect_from: 
+  - /code/
+  - /code.html
+---
 ---
 
 <titlecolor id="about">Code</titlecolor>
