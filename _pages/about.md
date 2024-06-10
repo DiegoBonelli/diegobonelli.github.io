@@ -4,6 +4,7 @@ permalink: /
 title: ""
 author_profile: true
 description: "Diego Bonelli. Ph.D. candidate in Finance at NHH. Contact information: Email, GitHub, LinkedIn, CV. Learn more about my research and work."
+excerpt: "Diego Bonelli. Ph.D. candidate in Finance at NHH. Contact information: Email, GitHub, LinkedIn, CV. Learn more about my research and work."
 classes: wide
 redirect_from: 
   - /about/
