@@ -7,7 +7,6 @@ description: "Diego Bonelli. Code."
 excerpt: "Diego Bonelli. Code."
 classes: wide
 ---
----
 
 <titlecolor id="about">Code</titlecolor>
 
