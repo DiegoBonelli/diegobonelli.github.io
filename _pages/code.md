@@ -6,9 +6,6 @@ author_profile: true
 description: "Diego Bonelli. Code."
 excerpt: "Diego Bonelli. Code."
 classes: wide
-redirect_from: 
-  - /code/
-  - /code.html
 ---
 ---
 
