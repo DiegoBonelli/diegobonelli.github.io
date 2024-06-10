@@ -189,6 +189,7 @@
     margin: 0;
     @include breakpoint($large) {
       margin-top: 10px;
+      margin-left: -10px;
       margin-bottom: 20px;
     }
 
@@ -274,7 +275,7 @@
     @include breakpoint($large) {
       display: block;
       position: relative;
-      margin: 0;
+      margin-left: 10px;
       padding: 0;
       border: 0;
       background: transparent;
