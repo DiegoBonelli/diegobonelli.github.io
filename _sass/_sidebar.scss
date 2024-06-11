@@ -212,7 +212,7 @@
 
   .author__urls-wrapper {
     position: relative;
-    display: block;
+    display: table;
     margin: 0 auto; /* This will horizontally center the element */
     font-family: $sans-serif;
     z-index: 10;
