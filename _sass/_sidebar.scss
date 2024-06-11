@@ -76,14 +76,14 @@
      ========================================================================== */
   
   .author__avatar {
-    display: table;
+    display: block;
     vertical-align: top;
     width: 45px;
     // set width only, for non-square avatars
     // height: 36px;
   
    @include breakpoint($large) {
-     display: table;
+     display: block;
      width: auto;
      height: auto;
    }
@@ -123,7 +123,7 @@
  text-align: center;
   
     @include breakpoint($large) {
-      display: table;
+      display: block;
       width: 100%;
       padding-left: 0;
       padding-right: 0;
@@ -159,7 +159,7 @@
   .sidebar .author__desktop {
     display: none;
     @media screen and (min-width: 1024px) {
-      display: table;
+      display: block;
     }
   }
   
@@ -212,7 +212,7 @@
 
   .author__urls-wrapper {
     position: relative;
-    display: table;
+    display: block;
     margin: 0 auto; /* This will horizontally center the element */
     font-family: $sans-serif;
     z-index: 10;
@@ -227,7 +227,7 @@
     }
   
     @include breakpoint($large) {
-      display: table;
+      display: block;
     }
     button {
       margin-left: 10px;
@@ -274,7 +274,7 @@
     cursor: default;
   
     @include breakpoint($large) {
-      display: table;
+      display: block;
       position: relative;
       margin-left: 10px;
       padding: 0;
@@ -284,7 +284,7 @@
     }
 
     &:before {
-      display: table;
+      display: block;
       content: "";
       position: absolute;
       top: -11px;
@@ -302,7 +302,7 @@
     }
   
     &:after {
-      display: table;
+      display: block;
       content: "";
       position: absolute;
       top: -10px;
@@ -324,7 +324,7 @@
     }
   
     a {
-      display: table;
+      display: block;
       margin-bottom: 5px;
       padding-right: 5px;
       padding-top: 2px;
