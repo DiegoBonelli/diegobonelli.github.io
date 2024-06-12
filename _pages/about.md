@@ -2,7 +2,6 @@
 layout: archive
 permalink: /
 author_profile: true
-title: "<titlecolor> About Me </titlecolor>"
 description: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
 excerpt: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
 classes: wide
@@ -53,6 +52,7 @@ redirect_from:
 </head>
 <body>
 
+<titlecolor id="about">About Me</titlecolor><br><br>
 
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br>
 
