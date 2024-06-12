@@ -10,14 +10,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Diego Bonelli - Finance PhD Candidate at NHH</title>
 <meta name="description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
 <meta name="keywords" content="Diego Bonelli, Finance, PhD, candidate, NHH, asset pricing, intermediation, market microstructure">
 <meta name="author" content="Diego Bonelli">
