@@ -55,14 +55,14 @@ redirect_from:
 </head>
 <body>
 
-<titlecolor id="about">About Me</titlecolor>
+<titlecolor id="about">About Me</titlecolor><br>
 
-I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.
+I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br>
 
-I will be joining the <boldcolor> Banco de España </boldcolor> as a Research Economist in the fall.
+I will be joining the <boldcolor> Banco de España </boldcolor> as a Research Economist in the fall.<br>
 
 
-<titlecolor id="research">Working Papers</titlecolor>
+<titlecolor id="research">Working Papers</titlecolor><br>
 
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
