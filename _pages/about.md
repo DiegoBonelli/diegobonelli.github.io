@@ -16,7 +16,7 @@ redirect_from:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
-<meta name="keywords" content="Diego Bonelli, Finance, PhD, candidate, NHH, asset pricing, intermediation, market microstructure">
+<meta name="keywords" content="Diego Bonelli, Finance, PhD, Banco de Espana, NHH, asset pricing, intermediation, market microstructure">
 <meta name="author" content="Diego Bonelli">
 <link rel="canonical" href="https://diegobonelli.github.io/">
 
@@ -28,7 +28,6 @@ redirect_from:
 
 <!-- Twitter Card Tags -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Diego Bonelli - Finance PhD Candidate at NHH">
 <meta name="twitter:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
 <meta name="twitter:url" content="https://diegobonelli.github.io/">
 
@@ -54,7 +53,7 @@ redirect_from:
 </head>
 <body>
 
-<titlecolor id="about">About Me</titlecolor><br>
+<titlecolor id="about">About Me</titlecolor><br><br>
 
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br><br>
 
