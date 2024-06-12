@@ -50,7 +50,6 @@ redirect_from:
 }
 </script>
 </head>
-<body>
 
 <titlecolor id="about">About Me</titlecolor><br><br>
 
