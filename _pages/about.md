@@ -1,6 +1,7 @@
 ---
 layout: archive
 permalink: /
+title: ""
 author_profile: true
 description: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
 excerpt: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
