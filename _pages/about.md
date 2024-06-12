@@ -21,7 +21,6 @@ redirect_from:
 <link rel="canonical" href="https://diegobonelli.github.io/">
 
 <!-- Open Graph Tags -->
-<meta property="og:title" content="Diego Bonelli - Finance PhD Candidate at NHH">
 <meta property="og:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://diegobonelli.github.io/">
@@ -57,12 +56,12 @@ redirect_from:
 
 <titlecolor id="about">About Me</titlecolor><br>
 
-I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br>
+I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br><br>
 
-I will be joining the <boldcolor> Banco de España </boldcolor> as a Research Economist in the fall.<br>
+I will be joining the <boldcolor> Banco de España </boldcolor> as a Research Economist in the fall. <br><br>
 
 
-<titlecolor id="research">Working Papers</titlecolor><br>
+<titlecolor id="research">Working Papers</titlecolor><br><br>
 
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
