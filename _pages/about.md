@@ -9,48 +9,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
-<meta name="keywords" content="Diego Bonelli, Finance, PhD, Banco de Espana, NHH, asset pricing, intermediation, market microstructure">
-<meta name="author" content="Diego Bonelli">
-<link rel="canonical" href="https://diegobonelli.github.io/">
 
-<!-- Open Graph Tags -->
-<meta property="og:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
-<meta property="og:type" content="profile">
-<meta property="og:url" content="https://diegobonelli.github.io/">
-<meta property="og:image" content="https://diegobonelli.github.io/images/profiledb.png"> <!-- Include a relevant image URL -->
-
-<!-- Twitter Card Tags -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
-<meta name="twitter:url" content="https://diegobonelli.github.io/">
-
-<!-- Schema.org Markup -->
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "name": "Diego Bonelli",
-  "jobTitle": "Ph.D. candidate in Finance",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "Norwegian School of Economics"
-  },
-  "url": "https://diegobonelli.github.io/",
-  "sameAs": [
-    "https://github.com/diegobonelli",
-    "https://www.linkedin.com/in/diego-bonelli",
-    "https://diegobonelli.github.io/files/CV.pdf"
-  ]
-}
-</script>
-</head>
-<body>
 
 <titlecolor id="about">About Me</titlecolor><br><br>
 
