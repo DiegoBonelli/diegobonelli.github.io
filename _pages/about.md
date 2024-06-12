@@ -1,7 +1,6 @@
 ---
 layout: archive
 permalink: /
-title: "Diego Bonelli - Finance PhD Candidate at NHH"
 author_profile: true
 description: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
 excerpt: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
@@ -55,12 +54,12 @@ redirect_from:
 
 <titlecolor id="about">About Me</titlecolor><br><br>
 
-I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br><br>
+I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br>
 
 I will be joining the <boldcolor> Banco de España </boldcolor> as a Research Economist in the fall. <br><br>
 
 
-<titlecolor id="research">Working Papers</titlecolor><br><br>
+<titlecolor id="research">Working Papers</titlecolor><br>
 
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
