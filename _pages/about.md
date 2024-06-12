@@ -52,9 +52,9 @@ redirect_from:
 </head>
 <body>
 
-<titlecolor id="about">About Me</titlecolor><br><br>
+<titlecolor id="about">About Me</titlecolor><br>
 
-I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br>
+I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br><br>
 
 I will be joining the <boldcolor> Banco de España </boldcolor> as a Research Economist in the fall. <br><br>
 
