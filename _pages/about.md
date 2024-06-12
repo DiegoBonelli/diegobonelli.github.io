@@ -28,14 +28,13 @@ redirect_from:
 <meta property="og:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://diegobonelli.github.io/">
-<meta property="og:image" content="https://yourwebsite.com/image.jpg"> <!-- Include a relevant image URL -->
+<meta property="og:image" content="https://diegobonelli.github.io/images/profiledb.png"> <!-- Include a relevant image URL -->
 
 <!-- Twitter Card Tags -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Diego Bonelli - Finance PhD Candidate at NHH">
 <meta name="twitter:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
 <meta name="twitter:url" content="https://diegobonelli.github.io/">
-<meta name="twitter:image" content="https://yourwebsite.com/image.jpg"> <!-- Include a relevant image URL -->
 
 <!-- Schema.org Markup -->
 <script type="application/ld+json">
@@ -51,8 +50,8 @@ redirect_from:
   "url": "https://diegobonelli.github.io/",
   "sameAs": [
     "https://github.com/diegobonelli",
-    "https://www.linkedin.com/in/diegobonelli",
-    "https://yourwebsite.com/CV.pdf" <!-- Include a link to your CV -->
+    "https://www.linkedin.com/in/diego-bonelli",
+    "https://diegobonelli.github.io/files/CV.pdf"
   ]
 }
 </script>
