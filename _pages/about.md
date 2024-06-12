@@ -1,15 +1,64 @@
 ---
 layout: archive
 permalink: /
-title: ""
+title: "Diego Bonelli - Finance PhD Candidate at NHH"
 author_profile: true
-description: "Diego Bonelli. Ph.D. candidate in Finance at NHH. Contact information: Email, GitHub, LinkedIn, CV. Learn more about my research and work."
-excerpt: "Diego Bonelli. Ph.D. candidate in Finance at NHH. Contact information: Email, GitHub, LinkedIn, CV. Learn more about my research and work."
+description: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
+excerpt: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
 classes: wide
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Diego Bonelli - Finance PhD Candidate at NHH</title>
+<meta name="description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
+<meta name="keywords" content="Diego Bonelli, Finance, PhD, candidate, NHH, asset pricing, intermediation, market microstructure">
+<meta name="author" content="Diego Bonelli">
+<link rel="canonical" href="https://diegobonelli.github.io/">
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Diego Bonelli - Finance PhD Candidate at NHH">
+<meta property="og:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://diegobonelli.github.io/">
+<meta property="og:image" content="https://yourwebsite.com/image.jpg"> <!-- Include a relevant image URL -->
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Diego Bonelli - Finance PhD Candidate at NHH">
+<meta name="twitter:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
+<meta name="twitter:url" content="https://diegobonelli.github.io/">
+<meta name="twitter:image" content="https://yourwebsite.com/image.jpg"> <!-- Include a relevant image URL -->
+
+<!-- Schema.org Markup -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Diego Bonelli",
+  "jobTitle": "Ph.D. candidate in Finance",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Norwegian School of Economics"
+  },
+  "url": "https://diegobonelli.github.io/",
+  "sameAs": [
+    "https://github.com/diegobonelli",
+    "https://www.linkedin.com/in/diegobonelli",
+    "https://yourwebsite.com/CV.pdf" <!-- Include a link to your CV -->
+  ]
+}
+</script>
+</head>
+<body>
+
 <titlecolor id="about">About Me</titlecolor>
 
 I am a Ph.D. candidate in Finance at the Norwegian School of Economics. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.
