@@ -3,8 +3,8 @@ layout: archive
 permalink: /
 title: ""
 author_profile: true
-description: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
-excerpt: "Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV."
+description: "Diego Bonelli - Research Economist @ Banco de España. Research interests: asset pricing, intermediation, market microstructure."
+excerpt: "Diego Bonelli - Research Economist @ Banco de España. Research interests: asset pricing, intermediation, market microstructure."
 classes: wide
 redirect_from: 
   - /about/
@@ -15,20 +15,20 @@ redirect_from:
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
+<meta name="description" content="Diego Bonelli - Research Economist @ Banco de España. Research interests: asset pricing, intermediation, market microstructure.">
 <meta name="keywords" content="Diego Bonelli, Finance, PhD, Banco de Espana, NHH, asset pricing, intermediation, market microstructure">
 <meta name="author" content="Diego Bonelli">
 <link rel="canonical" href="https://diegobonelli.github.io/">
 
 <!-- Open Graph Tags -->
-<meta property="og:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
+<meta property="og:description" content="Diego Bonelli - Research Economist @ Banco de España. Research interests: asset pricing, intermediation, market microstructure.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://diegobonelli.github.io/">
 <meta property="og:image" content="https://diegobonelli.github.io/images/profiledb.png"> <!-- Include a relevant image URL -->
 
 <!-- Twitter Card Tags -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:description" content="Diego Bonelli - Ph.D. candidate in Finance at NHH. Research interests: asset pricing, intermediation, market microstructure. Contact information: Email, GitHub, LinkedIn, CV.">
+<meta name="twitter:description" content="Diego Bonelli - Research Economist @ Banco de España. Research interests: asset pricing, intermediation, market microstructure.">
 <meta name="twitter:url" content="https://diegobonelli.github.io/">
 
 <!-- Schema.org Markup -->
@@ -65,8 +65,8 @@ I will be joining the <boldcolor> Banco de España </boldcolor> as a Research Ec
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor>
-        <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
-        <button onclick="window.location.href='https://diegobonelli.github.io/files/BPY_GIBI.pdf';" class="custom-button small">Slides</button>
+       <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
+        <!--  <button onclick="window.location.href='https://diegobonelli.github.io/files/BPY_GIBI.pdf';" class="custom-button small">Slides</button> -->
         <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button><br>
         <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text>  <br>
         <text style="font-size: $type-size-6;">April 2024</text>
@@ -82,7 +82,7 @@ I will be joining the <boldcolor> Banco de España </boldcolor> as a Research Ec
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
-        <button onclick="window.location.href='https://diegobonelli.github.io/files/IRYSC.pdf';" class="custom-button small">Slides</button>
+       <!--   <button onclick="window.location.href='https://diegobonelli.github.io/files/IRYSC.pdf';" class="custom-button small">Slides</button> -->
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
                 <text style="font-size: $type-size-6;">May 2024</text> 
 

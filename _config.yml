@@ -13,11 +13,11 @@ locale                   : "en-US"
 title                    : "Diego Bonelli"
 title_separator          : "-"
 name                     : &name "Diego Bonelli"
-description              : &description "PhD Candidate in Finance"
+description              : &description "Research Economist @ Banco de España"
 url                      : "https://diegobonelli.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "DiegoBonelli/diegobonelli.github.io"
-seo_description          : "Site for Diego Bonelli, Economist"
+seo_description          : "Site for Diego Bonelli, Research Economist"
 avatar           : "profiledb.png"
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
