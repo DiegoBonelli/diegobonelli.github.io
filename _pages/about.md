@@ -52,7 +52,7 @@ redirect_from:
 </script>
 </head>
 
-<titlecolor id="about">About Me</titlecolor><br>
+<titlecolor id="about">About Me</titlecolor><br><br>
 
 I am a Research Economist at Banco de España in the Macro-Financial Analysis and Monetary Policy Department. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br><br>
 
@@ -108,7 +108,7 @@ I am a Research Economist at Banco de España in the Macro-Financial Analysis an
 <br>
 
 
-<titlecolor id="research  margin-top: 40px;">Work in Progress</titlecolor>
+<titlecolor id="research  margin-top: 20px;">Work in Progress</titlecolor>
 
 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
