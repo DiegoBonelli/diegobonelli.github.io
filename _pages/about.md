@@ -57,7 +57,7 @@ redirect_from:
 I am a Research Economist at Banco de España in the Macro-Financial Analysis and Monetary Policy Department. My research interests are <boldcolor> asset pricing</boldcolor>, <boldcolor> intermediation</boldcolor>, and <boldcolor> market microstructure</boldcolor>.<br>
 
 
-<titlecolor id="research margin-top: 20px;">Working Papers</titlecolor><br>
+<titlecolor id="research" style="margin-top: 20px;">Working Papers</titlecolor><br>
 
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
