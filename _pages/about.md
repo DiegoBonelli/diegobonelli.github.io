@@ -72,7 +72,7 @@ I am a Research Economist at Banco de España in the Monetary Policy and Capital
 </div>
 <div id="abstract2" style="display: none; margin-bottom: 20px;">
     <text>
-    Using inflation swap prices, we study how expected inflation is priced in firm-level credit spreads and equity returns, and uncover evidence of a time-varying inflation sensitivity.  In times of market-perceived ``good inflation,"  when inflation news is positively correlated with real economic growth, shocks to expected inflation substantially reduce corporate credit spreads and raise equity valuations. Meanwhile in times of ``bad inflation," these effects are attenuated and the opposite can take place. These dynamics naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth relationship and persistent macroeconomic expectations.
+    Using inflation swap prices, we study how expected inflation is priced in firm-level credit spreads and equity returns, and uncover evidence of a time-varying inflation sensitivity.  In times of market-perceived "good inflation,"  when inflation news is positively correlated with real economic growth, shocks to expected inflation substantially reduce corporate credit spreads and raise equity valuations. Meanwhile in times of "bad inflation," these effects are attenuated and the opposite can take place. These dynamics naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth relationship and persistent macroeconomic expectations.
         </text>
 </div>
 
