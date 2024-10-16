@@ -92,7 +92,7 @@ I am a Research Economist at Banco de España in the Monetary Policy and Capital
     </text>
 </div>
 
-
+<!-- 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</subtitlecolor>
@@ -104,7 +104,7 @@ I am a Research Economist at Banco de España in the Monetary Policy and Capital
     Hedge funds make abnormally large and profitable trades in stocks before corporate bond announcements when their prime broker serves as a bond underwriter, and these trades outperform other trades. The outperformance is not concentrated in announcement periods, nor in funds serviced by prime brokers whose equity analysts follow the firm, and nor in new positions. Bond-market activity by hedge funds represents one possible channel of information transfer. Bonds of firms held by connected hedge funds are associated with higher secondary market volume and number of transactions during their first six months of trading. Evidence suggesting that hedge funds support underwriters in liquidity provision activities during the first months of bonds’ life when lengthy searches for high-valuation investors in the secondary market might be very costly.
     </text>
 </div>
-
+-->
 <br>
 
 
