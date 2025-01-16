@@ -112,7 +112,7 @@ of high expected inflation.
 -->
 <br>
 
-
+<!-- 
 <titlecolor id="research  margin-top: 20px;">Work in Progress</titlecolor>
 
 
@@ -122,7 +122,7 @@ of high expected inflation.
         <text style="font-size: $type-size-6;">Joint with Katsiaryna Falkovich and Nils Friewald</text> 
     </div>
 </div>
-
+-->
 
 
 <script>
