@@ -343,7 +343,7 @@ subtitlecolor {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-size: $type-size-5;
   color: $masthead-link-color-hover;
 }
@@ -354,10 +354,4 @@ boldcolor {
   font-size: $type-size-5;
   color: $primary-color;
   font-weight: 500; /* Default font weight is typically 400 */
-
-}
-
-
-onlycolor {
-  color: $primary-color;
 }
