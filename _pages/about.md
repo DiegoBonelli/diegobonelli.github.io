@@ -112,7 +112,7 @@ of high expected inflation.
 -->
 <br>
 
-<!-- 
+
 <titlecolor id="research  margin-top: 20px;">Work in Progress</titlecolor>
 
 
@@ -122,7 +122,15 @@ of high expected inflation.
         <text style="font-size: $type-size-6;">Joint with Katsiaryna Falkovich and Nils Friewald</text> 
     </div>
 </div>
--->
+
+
+<div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
+    <div>
+       <subtitlecolor style="display: inline; margin-bottom: 0; ">Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</subtitlecolor><br>
+        <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text> 
+    </div>
+</div>
+
 
 
 <script>
