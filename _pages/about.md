@@ -67,7 +67,7 @@ I am a Research Economist at Banco de España in the Monetary Policy and Capital
         <!--  <button onclick="window.location.href='https://diegobonelli.github.io/files/BPY_GIBI.pdf';" class="custom-button small">Slides</button> -->
         <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button><br>
         <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text>  <br>
-        <text style="font-size: $type-size-6;">April 2024</text>
+        <text style="font-size: $type-size-6;">Jan 2025</text>
     </div>
 </div>
 <div id="abstract2" style="display: none; margin-bottom: 20px;">
