@@ -134,70 +134,18 @@ We study incentive contracts used by asset management firms in Norway, focusing 
 </text>
 </div>
 
-
 <script>
-    function toggleAbstract() {
-        var abstractDiv = document.getElementById("abstract");
-        var button = document.getElementById("abstractButton");
-        if (abstractDiv.style.display === "none") {
-            abstractDiv.style.display = "block";
-            button.innerText = "Hide Abstract";
-        } else {
-            abstractDiv.style.display = "none";
-            button.innerText = "Abstract";
-        }
+function toggleAbstract(id) {
+    var abstractDiv = document.getElementById(id);
+    var button = document.getElementById("abstractButton" + id.slice(-1));
+    if (abstractDiv.style.display === "none") {
+        abstractDiv.style.display = "block";
+        button.innerText = "Hide Abstract";
+    } else {
+        abstractDiv.style.display = "none";
+        button.innerText = "Abstract";
     }
-    
-    function toggleAbstract2() {
-        var abstractDiv = document.getElementById("abstract2");
-        var button = document.getElementById("abstractButton2");
-        if (abstractDiv.style.display === "none") {
-            abstractDiv.style.display = "block";
-            button.innerText = "Hide Abstract";
-        } else {
-            abstractDiv.style.display = "none";
-            button.innerText = "Abstract";
-        }
-    }
-
-
-    function toggleAbstract3() {
-        var abstractDiv = document.getElementById("abstract3");
-        var button = document.getElementById("abstractButton3");
-        if (abstractDiv.style.display === "none") {
-            abstractDiv.style.display = "block";
-            button.innerText = "Hide Abstract";
-        } else {
-            abstractDiv.style.display = "none";
-            button.innerText = "Abstract";
-        }
-    }
-
-
-    function toggleAbstract4() {
-        var abstractDiv = document.getElementById("abstract4");
-        var button = document.getElementById("abstractButton4");
-        if (abstractDiv.style.display === "none") {
-            abstractDiv.style.display = "block";
-            button.innerText = "Hide Abstract";
-        } else {
-            abstractDiv.style.display = "none";
-            button.innerText = "Abstract";
-        }
-    }
-
-
-    function toggleAbstract5() {
-        var abstractDiv = document.getElementById("abstract5");
-        var button = document.getElementById("abstractButton5");
-        if (abstractDiv.style.display === "none") {
-            abstractDiv.style.display = "block";
-            button.innerText = "Hide Abstract";
-        } else {
-            abstractDiv.style.display = "none";
-            button.innerText = "Abstract";
-        }
-    }
+}
 </script>
 
 
