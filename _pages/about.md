@@ -54,7 +54,7 @@ redirect_from:
 
  <!-- <titlecolor id="about">About Me</titlecolor><br><br>-->
 <normal>
-I am a research economist at   <subtitlecolor href="https://www.bde.es/" target="_blank" style="text-decoration: none;">
+I am a research economist at   <subtitlecolor onclick="window.location.href='https://www.bde.es/';" target="_blank" style="text-decoration: none;">
     Banco de España
   </subtitlecolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the Norwegian School of Economics.
   </normal><br><br>
