@@ -350,7 +350,7 @@ subtitlecolor {
 }
 
 
-subtitle {
+linkcolor {
   margin: 2em 0 0.5em;
   line-height: 1.2;
   font-family: $header-font-family;
@@ -359,10 +359,10 @@ subtitle {
   font-size: $type-size-5;
   text-decoration: none;
   cursor: pointer;
-  color: $masthead-link-color-hover; /* Default color */
+  color:  $primary-color;
   &:hover {
       text-decoration: underline;
-      color: $primary-color;
+      color: $masthead-link-color-hover; 
   }
 }
 

@@ -53,14 +53,11 @@ redirect_from:
 </head>
  <!-- <titlecolor id="about">About Me</titlecolor><br><br>-->
 <normal>
-I am a research economist at   <subtitle onclick="window.location.href='https://www.bde.es/';">
+I am a research economist at   <linkcolor onclick="window.location.href='https://www.bde.es/';">
     Banco de España
-  </subtitle>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the
- <subtitlecolor onclick="window.location.href='https://www.nhh.no/en/departments/finance/';" 
-               style="text-decoration: none; cursor: pointer;" 
-               onmouseover="this.style.textDecoration='underline';" 
-               onmouseout="this.style.textDecoration='none';">
-    Norwegian School of Economics</subtitlecolor>.
+  </linkcolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the
+ <linkcolor onclick="window.location.href='https://www.nhh.no/en/departments/finance/';">
+    Norwegian School of Economics</linkcolor>.
   </normal><br><br>
 
 
@@ -70,11 +67,9 @@ I am a research economist at   <subtitle onclick="window.location.href='https://
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
-       <subtitlecolor 
-       onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" 
-               style="text-decoration: none; cursor: pointer;display: inline; margin-bottom: 0;" 
-               onmouseover="this.style.textDecoration='underline';" 
-               onmouseout="this.style.textDecoration='none';">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor><button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button><br>
+       <linkcolor 
+       onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">
+       Good Inflation, Bad Inflation: Implications for Risky Asset Prices</linkcolor><button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button><br>
         <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text><br>
     <!--<button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button>
          <text style="font-size: $type-size-6;">Jan 2025</text>-->
