@@ -74,7 +74,7 @@ I am a research economist at   <subtitlecolor onclick="window.location.href='htt
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor>
-       <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
+       <button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button><br>
         <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text>  <br>
         <text style="font-size: $type-size-6;">Jan 2025</text>
@@ -110,7 +110,7 @@ Inflation risk explains a significant share of the systematic variation of yield
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds</subtitlecolor>
-       <button onclick="toggleAbstract4()" id="abstractButton4" class="custom-button small">Abstract</button><br>
+       <button onclick="toggleAbstract('abstract4')" id="abstractButton4" class="custom-button small">Abstract</button><br>
         <text style="font-size: $type-size-6;">Joint with Katsiaryna Falkovich and Nils Friewald</text>  <br>
     </div>
 </div>
@@ -123,7 +123,7 @@ Connected firms in the stock market respond to common information with a lag, le
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</subtitlecolor>
-       <button onclick="toggleAbstract5()" id="abstractButton5" class="custom-button small">Abstract</button><br>
+       <button onclick="toggleAbstract('abstract5')" id="abstractButton5" class="custom-button small">Abstract</button><br>
         <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text>         
         <br>
     </div>
@@ -133,61 +133,6 @@ Connected firms in the stock market respond to common information with a lag, le
 We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures impact performance. The incentive contracts in our sample are heterogeneous, with firms using both quantitative and qualitative targets. We find that higher potential bonuses tied to quantitative targets, such as the information ratio (IR), lead to better year-end IRs. In contrast, placing more weight on qualitative goals tends to reduce IR. Additionally, fund managers at risk of missing mid-year bonus thresholds actively try to boost returns, but these efforts often backfire, resulting in worse overall performance and a lower IR.
 </text>
 </div>
-
-
-<script>
-    
-    function toggleAbstract2() {
-        var abstractDiv = document.getElementById("abstract2");
-        var button = document.getElementById("abstractButton2");
-        if (abstractDiv.style.display === "none") {
-            abstractDiv.style.display = "block";
-            button.innerText = "Hide Abstract";
-        } else {
-            abstractDiv.style.display = "none";
-            button.innerText = "Abstract";
-        }
-    }
-
-
-    function toggleAbstract3() {
-        var abstractDiv = document.getElementById("abstract3");
-        var button = document.getElementById("abstractButton3");
-        if (abstractDiv.style.display === "none") {
-            abstractDiv.style.display = "block";
-            button.innerText = "Hide Abstract";
-        } else {
-            abstractDiv.style.display = "none";
-            button.innerText = "Abstract";
-        }
-    }
-
-
-    function toggleAbstract4() {
-        var abstractDiv = document.getElementById("abstract4");
-        var button = document.getElementById("abstractButton4");
-        if (abstractDiv.style.display === "none") {
-            abstractDiv.style.display = "block";
-            button.innerText = "Hide Abstract";
-        } else {
-            abstractDiv.style.display = "none";
-            button.innerText = "Abstract";
-        }
-    }
-
-
-    function toggleAbstract5() {
-        var abstractDiv = document.getElementById("abstract5");
-        var button = document.getElementById("abstractButton5");
-        if (abstractDiv.style.display === "none") {
-            abstractDiv.style.display = "block";
-            button.innerText = "Hide Abstract";
-        } else {
-            abstractDiv.style.display = "none";
-            button.innerText = "Abstract";
-        }
-    }
-</script>
 
 
 <script>
