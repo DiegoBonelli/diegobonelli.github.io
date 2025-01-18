@@ -89,7 +89,7 @@ I am a research economist at   <subtitlecolor onclick="window.location.href='htt
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
-        <button onclick="toggleAbstract(0)" id="abstractButton0" class="custom-button small">Abstract</button>
+        <button onclick="toggleAbstract('abstract0')" id="abstractButton0" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
                 <text style="font-size: $type-size-6;">May 2024</text> 
 
@@ -136,7 +136,6 @@ We study incentive contracts used by asset management firms in Norway, focusing 
 
 
 <script>
- 
     
     function toggleAbstract2() {
         var abstractDiv = document.getElementById("abstract2");
