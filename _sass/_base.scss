@@ -357,6 +357,14 @@ subtitle {
   /*font-weight: bold;*/
   font-weight: 500; /* Default font weight is typically 400 */
   font-size: $type-size-5;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--masthead-link-color-hover); /* Default color */
+
+  &:hover {
+      text-decoration: underline;
+      color: var(--primary-color);
+  }
 }
 
 boldcolor {
