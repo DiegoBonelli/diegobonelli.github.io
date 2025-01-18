@@ -51,7 +51,6 @@ redirect_from:
 }
 </script>
 </head>
-
  <!-- <titlecolor id="about">About Me</titlecolor><br><br>-->
 <normal>
 I am a research economist at   <subtitlecolor onclick="window.location.href='https://www.bde.es/';" 
