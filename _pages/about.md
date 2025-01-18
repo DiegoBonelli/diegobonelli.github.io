@@ -73,9 +73,9 @@ I am a research economist at   <subtitlecolor onclick="window.location.href='htt
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
-       <subtitlecolor style="display: inline; margin-bottom: 0; "
+       <subtitlecolor 
        onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" 
-               style="text-decoration: none; cursor: pointer;" 
+               style="text-decoration: none; cursor: pointer;display: inline; margin-bottom: 0;" 
                onmouseover="this.style.textDecoration='underline';" 
                onmouseout="this.style.textDecoration='none';">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor><br>
         <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text><br>
