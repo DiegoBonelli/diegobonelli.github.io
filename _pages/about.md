@@ -53,8 +53,8 @@ redirect_from:
 </head>
  <!-- <titlecolor id="about">About Me</titlecolor><br><br>-->
 <normal>
-I am a research economist at   <linkcolor onclick="window.location.href='https://www.bde.es/';">Banco de España</linkcolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the
- <linkcolor onclick="window.location.href='https://www.nhh.no/en/departments/finance/';">Norwegian School of Economics</linkcolor>.
+I am a research economist at <linkcolor onclick="window.location.href='https://www.bde.es/';"> Banco de España</linkcolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the
+ <linkcolor onclick="window.location.href='https://www.nhh.no/en/departments/finance/';"> Norwegian School of Economics</linkcolor>.
   </normal><br><br>
 
 
@@ -113,7 +113,7 @@ Connected firms in the stock market respond to common information with a lag, le
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
-       <linkcolor">Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</linkcolor>
+       <linkcolor>Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</linkcolor>
        <button onclick="toggleAbstract('abstract5')" id="abstractButton5" class="custom-button small">Abstract</button><br>
         <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text>         
         <br>
