@@ -134,11 +134,16 @@ We study incentive contracts used by asset management firms in Norway, focusing 
 </text>
 </div>
 
+
+
+
 <script>
+
 function toggleAbstract(id) {
     var abstractDiv = document.getElementById(id);
-    var button = document.getElementById("abstractButton" + id.slice(-1));
-    if (abstractDiv.style.display === "none") {
+    var button = document.querySelector(`[onclick="toggleAbstract('${id}')"]`);
+
+    if (abstractDiv.style.display === "none" || abstractDiv.style.display === "") {
         abstractDiv.style.display = "block";
         button.innerText = "Hide Abstract";
     } else {
@@ -147,5 +152,3 @@ function toggleAbstract(id) {
     }
 }
 </script>
-
-
