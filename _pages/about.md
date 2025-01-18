@@ -55,7 +55,7 @@ redirect_from:
 <normal>
 I am a research economist at   <subtitlecolor onclick="window.location.href='https://www.bde.es/';" 
                style="text-decoration: none; cursor: pointer;" 
-               onmouseover="this.style.textDecoration='underline';this.style.color=$primary-color;" 
+               onmouseover="this.style.textDecoration='underline';this.style.color='$primary-color';" 
                onmouseout="this.style.textDecoration='none';">
     Banco de España
   </subtitlecolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the
@@ -75,7 +75,6 @@ I am a research economist at   <subtitlecolor onclick="window.location.href='htt
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor>
        <button onclick="toggleAbstract2()" id="abstractButton2" class="custom-button small">Abstract</button>
-        <!--  <button onclick="window.location.href='https://diegobonelli.github.io/files/BPY_GIBI.pdf';" class="custom-button small">Slides</button> -->
         <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button><br>
         <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text>  <br>
         <text style="font-size: $type-size-6;">Jan 2025</text>
@@ -91,7 +90,6 @@ I am a research economist at   <subtitlecolor onclick="window.location.href='htt
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
         <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
-       <!--   <button onclick="window.location.href='https://diegobonelli.github.io/files/IRYSC.pdf';" class="custom-button small">Slides</button> -->
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
                 <text style="font-size: $type-size-6;">May 2024</text> 
 
@@ -102,20 +100,6 @@ I am a research economist at   <subtitlecolor onclick="window.location.href='htt
 Inflation risk explains a significant share of the systematic variation of yield spread changes beyond standard structural factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectation, volatility, and cyclicality are significant determinants of yield spread changes. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity and leverage growth. To rationalize the findings, I show that the same patterns emerge in a structural model of default with stochastic price index and sticky cash flows. 
     </text>
 </div>
-
-<!-- 
-<div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
-    <div>
-        <subtitlecolor style="display: inline; margin-bottom: 0;">Hedge Funds, Prime Brokers, and Corporate Bond Offerings</subtitlecolor>
-        <button onclick="toggleAbstract3()" id="abstractButton3" class="custom-button small">Abstract</button>
-    </div>
-</div>
-<div id="abstract3" style="display: none;  margin-bottom: 20px;">
-    <text >
-    Hedge funds make abnormally large and profitable trades in stocks before corporate bond announcements when their prime broker serves as a bond underwriter, and these trades outperform other trades. The outperformance is not concentrated in announcement periods, nor in funds serviced by prime brokers whose equity analysts follow the firm, and nor in new positions. Bond-market activity by hedge funds represents one possible channel of information transfer. Bonds of firms held by connected hedge funds are associated with higher secondary market volume and number of transactions during their first six months of trading. Evidence suggesting that hedge funds support underwriters in liquidity provision activities during the first months of bonds’ life when lengthy searches for high-valuation investors in the secondary market might be very costly.
-    </text>
-</div>
--->
 <br>
 
 
@@ -127,10 +111,7 @@ Inflation risk explains a significant share of the systematic variation of yield
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds</subtitlecolor>
        <button onclick="toggleAbstract4()" id="abstractButton4" class="custom-button small">Abstract</button><br>
-        <!--  <button onclick="window.location.href='https://diegobonelli.github.io/files/BPY_GIBI.pdf';" class="custom-button small">Slides</button> -->
-        <!-- <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button><br> -->
         <text style="font-size: $type-size-6;">Joint with Katsiaryna Falkovich and Nils Friewald</text>  <br>
-          <!-- <text style="font-size: $type-size-6;">April 2024</text> -->
     </div>
 </div>
 <div id="abstract4" style="display: none; margin-bottom: 20px;">
@@ -143,11 +124,8 @@ Connected firms in the stock market respond to common information with a lag, le
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</subtitlecolor>
        <button onclick="toggleAbstract5()" id="abstractButton5" class="custom-button small">Abstract</button><br>
-        <!--  <button onclick="window.location.href='https://diegobonelli.github.io/files/BPY_GIBI.pdf';" class="custom-button small">Slides</button> -->
-        <!-- <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button><br> -->
         <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text>         
         <br>
-          <!-- <text style="font-size: $type-size-6;">April 2024</text> -->
     </div>
 </div>
 <div id="abstract5" style="display: none; margin-bottom: 20px;">
