@@ -53,11 +53,8 @@ redirect_from:
 </head>
  <!-- <titlecolor id="about">About Me</titlecolor><br><br>-->
 <normal>
-I am a research economist at   <linkcolor onclick="window.location.href='https://www.bde.es/';">
-    Banco de España
-  </linkcolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the
- <linkcolor onclick="window.location.href='https://www.nhh.no/en/departments/finance/';">
-    Norwegian School of Economics</linkcolor>.
+I am a research economist at   <linkcolor onclick="window.location.href='https://www.bde.es/';">Banco de España</linkcolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the
+ <linkcolor onclick="window.location.href='https://www.nhh.no/en/departments/finance/';">Norwegian School of Economics</linkcolor>.
   </normal><br><br>
 
 
@@ -83,9 +80,8 @@ I am a research economist at   <linkcolor onclick="window.location.href='https:/
 
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
-        <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
-        <button onclick="toggleAbstract('abstract0')" id="abstractButton0" class="custom-button small">Abstract</button>
-        <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
+        <linkcolor onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';">Inflation Risk and Yield Spread Changes</linkcolor>
+        <button onclick="toggleAbstract('abstract0')" id="abstractButton0" class="custom-button small">Abstract</button><br>
                 <text style="font-size: $type-size-6;">May 2024</text> 
 
     </div>
