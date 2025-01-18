@@ -89,13 +89,13 @@ I am a research economist at   <subtitlecolor onclick="window.location.href='htt
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
         <subtitlecolor style="display: inline; margin-bottom: 0; ">Inflation Risk and Yield Spread Changes</subtitlecolor>
-        <button onclick="toggleAbstract()" id="abstractButton" class="custom-button small">Abstract</button>
+        <button onclick="toggleAbstract(0)" id="abstractButton0" class="custom-button small">Abstract</button>
         <button onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';" class="custom-button small">SSRN</button><br>
                 <text style="font-size: $type-size-6;">May 2024</text> 
 
     </div>
 </div>
-<div id="abstract" style="display: none; margin-bottom: 20px;">
+<div id="abstract0" style="display: none; margin-bottom: 20px;">
     <text>
 Inflation risk explains a significant share of the systematic variation of yield spread changes beyond standard structural factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectation, volatility, and cyclicality are significant determinants of yield spread changes. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity and leverage growth. To rationalize the findings, I show that the same patterns emerge in a structural model of default with stochastic price index and sticky cash flows. 
     </text>
@@ -135,15 +135,67 @@ We study incentive contracts used by asset management firms in Norway, focusing 
 </div>
 
 
+<script>
+ 
+    
+    function toggleAbstract2() {
+        var abstractDiv = document.getElementById("abstract2");
+        var button = document.getElementById("abstractButton2");
+        if (abstractDiv.style.display === "none") {
+            abstractDiv.style.display = "block";
+            button.innerText = "Hide Abstract";
+        } else {
+            abstractDiv.style.display = "none";
+            button.innerText = "Abstract";
+        }
+    }
+
+
+    function toggleAbstract3() {
+        var abstractDiv = document.getElementById("abstract3");
+        var button = document.getElementById("abstractButton3");
+        if (abstractDiv.style.display === "none") {
+            abstractDiv.style.display = "block";
+            button.innerText = "Hide Abstract";
+        } else {
+            abstractDiv.style.display = "none";
+            button.innerText = "Abstract";
+        }
+    }
+
+
+    function toggleAbstract4() {
+        var abstractDiv = document.getElementById("abstract4");
+        var button = document.getElementById("abstractButton4");
+        if (abstractDiv.style.display === "none") {
+            abstractDiv.style.display = "block";
+            button.innerText = "Hide Abstract";
+        } else {
+            abstractDiv.style.display = "none";
+            button.innerText = "Abstract";
+        }
+    }
+
+
+    function toggleAbstract5() {
+        var abstractDiv = document.getElementById("abstract5");
+        var button = document.getElementById("abstractButton5");
+        if (abstractDiv.style.display === "none") {
+            abstractDiv.style.display = "block";
+            button.innerText = "Hide Abstract";
+        } else {
+            abstractDiv.style.display = "none";
+            button.innerText = "Abstract";
+        }
+    }
+</script>
 
 
 <script>
-
 function toggleAbstract(id) {
     var abstractDiv = document.getElementById(id);
-    var button = document.querySelector(`[onclick="toggleAbstract('${id}')"]`);
-
-    if (abstractDiv.style.display === "none" || abstractDiv.style.display === "") {
+    var button = document.getElementById("abstractButton" + id.slice(-1));
+    if (abstractDiv.style.display === "none") {
         abstractDiv.style.display = "block";
         button.innerText = "Hide Abstract";
     } else {
