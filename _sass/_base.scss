@@ -356,3 +356,9 @@ boldcolor {
   color: $primary-color;
   font-weight: 500; /* Default font weight is typically 400 */
 }
+
+
+normal {
+  font-family: $header-font-family;
+  font-size: $type-size-5;
+}
