@@ -115,7 +115,7 @@ Inflation risk explains a significant share of the systematic variation of yield
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds</subtitlecolor>
-       <button onclick="toggleAbstract4()" id="abstractButton4" class="custom-button small">Abstract</button>
+       <button onclick="toggleAbstract4()" id="abstractButton4" class="custom-button small">Abstract</button><br>
         <!--  <button onclick="window.location.href='https://diegobonelli.github.io/files/BPY_GIBI.pdf';" class="custom-button small">Slides</button> -->
         <!-- <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button><br> -->
         <text style="font-size: $type-size-6;">Joint with Katsiaryna Falkovich and Nils Friewald</text>  <br>
@@ -131,7 +131,7 @@ Connected firms in the stock market respond to common information with a lag, le
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
        <subtitlecolor style="display: inline; margin-bottom: 0; ">Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</subtitlecolor>
-       <button onclick="toggleAbstract5()" id="abstractButton5" class="custom-button small">Abstract</button>
+       <button onclick="toggleAbstract5()" id="abstractButton5" class="custom-button small">Abstract</button><br>
         <!--  <button onclick="window.location.href='https://diegobonelli.github.io/files/BPY_GIBI.pdf';" class="custom-button small">Slides</button> -->
         <!-- <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button><br> -->
         <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text>         
