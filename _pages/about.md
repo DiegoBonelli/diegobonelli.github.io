@@ -55,7 +55,7 @@ redirect_from:
  <!-- <titlecolor id="about">About Me</titlecolor><br><br>-->
 <normal>
 I am a research economist at   <subtitlecolor onclick="window.location.href='https://www.bde.es/';" 
-               style="text-decoration: none; color: blue; cursor: pointer;" 
+               style="text-decoration: none; cursor: pointer;" 
                onmouseover="this.style.textDecoration='underline';" 
                onmouseout="this.style.textDecoration='none';">
     Banco de España
