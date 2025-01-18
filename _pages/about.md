@@ -73,11 +73,11 @@ I am a research economist at   <subtitlecolor onclick="window.location.href='htt
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
-       <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor>
-       <button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button>
-        <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button><br>
+       <subtitlecolor style="display: inline; margin-bottom: 0; ">Good Inflation, Bad Inflation: Implications for Risky Asset Prices</subtitlecolor><br>
         <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text>  <br>
-        <text style="font-size: $type-size-6;">Jan 2025</text>
+       <button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button>
+        <button onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';" class="custom-button small">SSRN</button>
+       <!--  <text style="font-size: $type-size-6;">Jan 2025</text>-->
     </div>
 </div>
 <div id="abstract2" style="display: none; margin-bottom: 20px;">
