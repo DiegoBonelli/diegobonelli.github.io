@@ -100,7 +100,7 @@ Inflation risk explains a significant share of the systematic variation of yield
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
-       <subtitlecolor style="display: inline; margin-bottom: 0; ">Momentum Spillovers in Corporate Bonds</subtitlecolor>
+       <linkcolor>Momentum Spillovers in Corporate Bonds</linkcolor>
        <button onclick="toggleAbstract('abstract4')" id="abstractButton4" class="custom-button small">Abstract</button><br>
         <text style="font-size: $type-size-6;">Joint with Katsiaryna Falkovich and Nils Friewald</text>  <br>
     </div>
@@ -113,7 +113,7 @@ Connected firms in the stock market respond to common information with a lag, le
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
-       <subtitlecolor style="display: inline; margin-bottom: 0; ">Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</subtitlecolor>
+       <linkcolor">Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</linkcolor>
        <button onclick="toggleAbstract('abstract5')" id="abstractButton5" class="custom-button small">Abstract</button><br>
         <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text>         
         <br>
