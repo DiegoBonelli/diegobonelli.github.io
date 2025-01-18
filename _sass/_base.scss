@@ -359,13 +359,15 @@ subtitle {
   font-size: $type-size-5;
   text-decoration: none;
   cursor: pointer;
-  color: var(--masthead-link-color-hover); /* Default color */
-
+  color: $masthead-link-color-hover; /* Default color */
   &:hover {
       text-decoration: underline;
-      color: var(--primary-color);
+      color: $primary-color;
   }
 }
+
+
+
 
 boldcolor {
   font-family: $header-font-family;
