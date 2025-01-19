@@ -256,26 +256,7 @@
       }  */
 
     }
-    button2 {
-      margin-left: 10px;
-      margin-top: 10px;
-      padding: 0; /* Remove padding for a link-like appearance */
-      color: $masthead-link-color-hover; /* Use your hover color */
-      background-color: transparent; /* Transparent background */
-      border: none; /* Remove border */
-      text-decoration: underline; /* Make it look like a link */
-      cursor: pointer;
-      transition: color 0.3s, text-decoration 0.3s; /* Smooth transition for color and underline */
-      
-      &:hover {
-        color: #1d2988; /* Change text color on hover */
-        text-decoration: none; /* Remove underline when hovered */
-      }
-    
-      @include breakpoint($large) {
-        display: none; /* Hide button on large breakpoints */
-      }
-    }
+  
   }
 
 
