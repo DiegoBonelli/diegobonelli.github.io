@@ -70,7 +70,7 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
        onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">
        Good Inflation, Bad Inflation: Implications for Risky Asset Prices</linkcolor><button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button><br>
         <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text><br>
-   [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]
+   [<linkcolor style="margin-left: 0; font-weight: 450; font-size: $type-size-5" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]
        <!-- <text style="font-size: $type-size-6;">Jan 2025</text>-->
     </div>
 </div>
