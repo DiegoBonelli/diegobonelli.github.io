@@ -11,10 +11,16 @@ classes: wide
 <titlecolor id="about">Code</titlecolor>
 
 
+ 
+
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
-       <subtitlecolor style="display: inline; margin-bottom: 0; ">Cleaning Academic and Enhanced Trace</subtitlecolor>
-        <button onclick="window.location.href='https://github.com/DiegoBonelli/Trace_Cleaning';" class="custom-button small">Code</button><br>        
+    <linkcolor 
+       onclick="window.location.href='https://github.com/DiegoBonelli/Trace_Cleaning';">
+       Cleaning Academic and Enhanced Trace</linkcolor>
+      <!-- <subtitlecolor style="display: inline; margin-bottom: 0; ">Cleaning Academic and Enhanced Trace</subtitlecolor>
+        <button onclick="window.location.href='https://github.com/DiegoBonelli/Trace_Cleaning';" class="custom-button small">Code</button> -->
+        <br>        
     </div>
       <text>
     Code to clean Academic and Enanched Trace in R.
