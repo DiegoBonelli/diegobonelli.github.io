@@ -53,7 +53,7 @@ redirect_from:
 </head>
  <!-- <titlecolor id="about">About Me</titlecolor><br><br>-->
 <normal>
-I am a research economist at  <linkcolor style="margin-left: 0.25em;" onclick="window.location.href='https://www.bde.es/';">Banco de España</linkcolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the 
+I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight: 400" onclick="window.location.href='https://www.bde.es/';">Banco de España</linkcolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the 
  <linkcolor style="margin-left: 0.25em;" onclick="window.location.href='https://www.nhh.no/en/departments/finance/';">Norwegian School of Economics</linkcolor>.<br><br>
 
  You can find my CV <linkcolor style="margin-left: 0.25em;" onclick="window.location.href='https://diegobonelli.github.io/files/CV.pdf';">here</linkcolor>.
