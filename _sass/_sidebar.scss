@@ -258,6 +258,29 @@
     }
   }
   
+  .button2 {
+    background-color: transparent; /* No background */
+    border: 2px solid #1d2988; /* Border color (e.g., blue) */
+    padding: 10px 20px; /* Padding inside the button */
+    color: #1d2988; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase letters */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect */
+.button2:hover {
+    background-color: #1d2988; /* Blue background on hover */
+    color: white; /* Text color becomes white */
+    border-color: #1d2988; /* Keep border color same */
+}
+
+
+
+
   .author__urls {
     display: none;
     position: absolute;
