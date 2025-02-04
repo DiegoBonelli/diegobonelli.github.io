@@ -90,7 +90,7 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
 </div>
 <div id="abstract0" style="display: none; margin-bottom: 20px;">
     <text>
-Inflation risk explains a significant share of the systematic variation of yield spread changes beyond standard structural factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectation, volatility, and cyclicality are significant determinants of yield spread changes. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity and leverage growth. To rationalize the findings, I show that the same patterns emerge in a structural model of default with stochastic price index and sticky cash flows. 
+Inflation risk explains a significant share of the systematic variation in yield spread changes beyond structural factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectations, volatility, and cyclicality – derived from inflation swap prices – are important determinants of yield spread movements. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity. To rationalize the findings, I show that the same patterns emerge in a model of debt rollover risk with a stochastic price index and sticky cash flows.
     </text>
 </div>
 <br>
