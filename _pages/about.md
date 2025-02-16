@@ -95,6 +95,20 @@ Inflation risk explains a significant share of the systematic variation in yield
 </div>
 <br>
 
+<div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
+    <div>
+       <linkcolor onclick="window.location.href='files/NorwayIncentives.pdf';"> Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</linkcolor>
+       <button onclick="toggleAbstract('abstract5')" id="abstractButton5" class="custom-button small">Abstract</button><br>
+        <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text>         
+        <br>
+    </div>
+</div>
+<div id="abstract5" style="display: none; margin-bottom: 20px;">
+    <text>
+We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures impact performance. The incentive contracts in our sample are heterogeneous, with firms using both quantitative and qualitative targets. We find that higher potential bonuses tied to quantitative targets, such as the information ratio (IR), lead to better year-end IRs. In contrast, placing more weight on qualitative goals tends to reduce IR. Additionally, fund managers at risk of missing mid-year bonus thresholds actively try to boost returns, but these efforts often backfire, resulting in worse overall performance and a lower IR.
+</text>
+</div>
+
 
 <titlecolor id="research  margin-top: 20px;">Work in Progress</titlecolor>
 
@@ -113,19 +127,7 @@ Connected firms in the stock market respond to common information with a lag, le
         </text>
 </div>
 
-<div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
-    <div>
-       <linkcolor>Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</linkcolor>
-       <button onclick="toggleAbstract('abstract5')" id="abstractButton5" class="custom-button small">Abstract</button><br>
-        <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text>         
-        <br>
-    </div>
-</div>
-<div id="abstract5" style="display: none; margin-bottom: 20px;">
-    <text>
-We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures impact performance. The incentive contracts in our sample are heterogeneous, with firms using both quantitative and qualitative targets. We find that higher potential bonuses tied to quantitative targets, such as the information ratio (IR), lead to better year-end IRs. In contrast, placing more weight on qualitative goals tends to reduce IR. Additionally, fund managers at risk of missing mid-year bonus thresholds actively try to boost returns, but these efforts often backfire, resulting in worse overall performance and a lower IR.
-</text>
-</div>
+
 
 
 <script>
