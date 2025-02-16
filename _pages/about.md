@@ -64,6 +64,20 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
 <titlecolor id="research" style="margin-top: 20px;">Working Papers</titlecolor><br>
 
 
+<div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
+    <div>
+        <linkcolor onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';">Inflation Risk and Yield Spread Changes</linkcolor>
+        <button onclick="toggleAbstract('abstract0')" id="abstractButton0" class="custom-button small">Abstract</button><br>
+         <!--<text style="font-size: $type-size-6;">Jan 2025</text>-->
+    </div>
+</div>
+<div id="abstract0" style="display: none; margin-bottom: 20px;">
+    <text>
+Inflation risk explains a significant share of the systematic variation in yield spread changes beyond structural factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectations, volatility, and cyclicality – derived from inflation swap prices – are important determinants of yield spread movements. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity. To rationalize the findings, I show that the same patterns emerge in a model of debt rollover risk with a stochastic price index and sticky cash flows.
+    </text>
+</div>
+<br>
+
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
        <linkcolor 
@@ -79,21 +93,6 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
  Using inflation swap prices, we study how changes in expected inflation affect firm-level credit spreads and equity returns, and uncover evidence of a time-varying inflation sensitivity.  In times of ``good inflation,"  when inflation news is perceived by investors to be more positively correlated with real economic growth, movements in expected inflation substantially reduce corporate credit spreads and raise equity valuations. Meanwhile in times of ``bad inflation," these effects are attenuated and the opposite can take place. These dynamics naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth relationship and persistent macroeconomic expectations.
         </text>
 </div>
-
-<div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
-    <div>
-        <linkcolor onclick="window.location.href='https://papers.ssrn.com/abstract=4299512';">Inflation Risk and Yield Spread Changes</linkcolor>
-        <button onclick="toggleAbstract('abstract0')" id="abstractButton0" class="custom-button small">Abstract</button><br>
-         <!--<text style="font-size: $type-size-6;">Jan 2025</text>-->
-
-    </div>
-</div>
-<div id="abstract0" style="display: none; margin-bottom: 20px;">
-    <text>
-Inflation risk explains a significant share of the systematic variation in yield spread changes beyond structural factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectations, volatility, and cyclicality – derived from inflation swap prices – are important determinants of yield spread movements. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity. To rationalize the findings, I show that the same patterns emerge in a model of debt rollover risk with a stochastic price index and sticky cash flows.
-    </text>
-</div>
-<br>
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
@@ -111,7 +110,6 @@ We study incentive contracts used by asset management firms in Norway, focusing 
 
 
 <titlecolor id="research  margin-top: 20px;">Work in Progress</titlecolor>
-
 
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
