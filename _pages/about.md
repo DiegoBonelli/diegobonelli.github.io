@@ -76,7 +76,6 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
 Inflation risk explains a significant share of the systematic variation in yield spread changes beyond structural factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectations, volatility, and cyclicality – derived from inflation swap prices – are important determinants of yield spread movements. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity. To rationalize the findings, I show that the same patterns emerge in a model of debt rollover risk with a stochastic price index and sticky cash flows.
     </text>
 </div>
-<br>
 
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
@@ -107,6 +106,7 @@ Inflation risk explains a significant share of the systematic variation in yield
 We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures impact performance. The incentive contracts in our sample are heterogeneous, with firms using both quantitative and qualitative targets. We find that higher potential bonuses tied to quantitative targets, such as the information ratio (IR), lead to better year-end IRs. In contrast, placing more weight on qualitative goals tends to reduce IR. Additionally, fund managers at risk of missing mid-year bonus thresholds actively try to boost returns, but these efforts often backfire, resulting in worse overall performance and a lower IR.
 </text>
 </div>
+<br>
 
 
 <titlecolor id="research  margin-top: 20px;">Work in Progress</titlecolor>
