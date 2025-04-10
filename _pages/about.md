@@ -108,10 +108,8 @@ We study incentive contracts used by asset management firms in Norway, focusing 
 </div>
 <br>
 
-
+ <!-- 
 <titlecolor id="research  margin-top: 20px;">Work in Progress</titlecolor>
-
-
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
     <div>
        <linkcolor>Momentum Spillovers in Corporate Bonds</linkcolor>
@@ -124,8 +122,7 @@ We study incentive contracts used by asset management firms in Norway, focusing 
 Connected firms in the stock market respond to common information with a lag, leading to momentum spillovers. While this effect had been significantly reduced in the stock market, we still find strong cross-asset momentum spillovers among corporate bonds. A strategy that buys bonds whose peers had high stock returns last month and sells bonds with underperforming peers generates an excess return of 38 basis points. Consistent with delayed response due to trading frictions, we find that momentum spillovers are larger for bonds characterized by higher search frictions, particularly those intermediated by dealers at the periphery of the dealer network.
         </text>
 </div>
-
-
+-->
 
 
 <script>
