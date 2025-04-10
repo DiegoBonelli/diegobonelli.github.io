@@ -97,7 +97,8 @@ Inflation risk explains a significant share of the systematic variation in yield
     <div>
        <linkcolor onclick="window.location.href='files/NorwayIncentives.pdf';"> Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</linkcolor>
        <button onclick="toggleAbstract('abstract5')" id="abstractButton5" class="custom-button small">Abstract</button><br>
-        <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text>         
+        <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos</text>   
+                       <text style="font-size: $type-size-6;">Revise and Resubmit</text>               
         <br>
     </div>
 </div>
