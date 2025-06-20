@@ -37,10 +37,10 @@ redirect_from:
   "@context": "http://schema.org",
   "@type": "Person",
   "name": "Diego Bonelli",
-  "jobTitle": "Ph.D. candidate in Finance",
+  "jobTitle": "Research Economist",
   "affiliation": {
     "@type": "Organization",
-    "name": "Norwegian School of Economics"
+    "name": "Banco de España"
   },
   "url": "https://diegobonelli.github.io/",
   "sameAs": [
@@ -53,7 +53,7 @@ redirect_from:
 </head>
  <!-- <titlecolor id="about">About Me</titlecolor><br><br>-->
 <normal>
-I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight: 450" onclick="window.location.href='https://www.bde.es/';">Banco de España</linkcolor>  in the Monetary Policy and Capital Markets Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the 
+I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight: 450" onclick="window.location.href='https://www.bde.es/';">Banco de España</linkcolor>  in the Financial Analysis Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the 
  <linkcolor style="margin-left: 0.25em;font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/departments/finance/';">Norwegian School of Economics</linkcolor>.<br><br>
 
  You can find my CV <linkcolor style="margin-left: 0.25em;font-weight: 450" onclick="window.location.href='https://diegobonelli.github.io/files/CV.pdf';">here</linkcolor>.
