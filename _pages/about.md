@@ -81,8 +81,9 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
 </div>
 <div id="abstract2" style="display: none; margin-bottom: 20px;">
     <text>
- Using inflation swap prices, we study how changes in expected inflation affect firm-level credit spreads and equity returns, and uncover evidence of a time-varying inflation sensitivity.  In times of ``good inflation,"  when inflation news is perceived by investors to be more positively correlated with real economic growth, movements in expected inflation substantially reduce corporate credit spreads and raise equity valuations. Meanwhile in times of ``bad inflation," these effects are attenuated and the opposite can take place. These dynamics naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth relationship and persistent macroeconomic expectations.
-        </text>
+We study how changes in expected inflation affect firm-level credit spreads, and uncover evidence of a time-varying inflation sensitivity. In times of “good inflation,” when
+inflation news is perceived by investors to be positively correlated with real economic growth, movements in expected inflation substantially reduce corporate credit spreads.
+Meanwhile in times of “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics are driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a time-varying inflationgrowth covariance and persistent macroeconomic expectations.       </text>
 </div>
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
