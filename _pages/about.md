@@ -68,12 +68,12 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
        onclick="window.location.href='files/GIBI.pdf';">
        Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</linkcolor><button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button><br>
 <text style="font-size: $type-size-7;">Joint with&nbsp;<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://sites.google.com/view/berardinopalazzo/home';">Berardino Palazzo</linkcolor>&nbsp;and&nbsp;<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://ramsyamarthy.wixsite.com/home';">Ram Yamarthy</linkcolor></text><br>
+  <text style="font-size: $type-size-7; margin-left: 0; font-weight: 450"> 
+ Media:&nbsp;<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</linkcolor></text><br>
 <text style="font-size: $type-size-7; margin-left: 0; font-weight: 450"> 
    [<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]&nbsp;
    [<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html';">BDE WP</linkcolor>]&nbsp;
-   [<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]</text><br>
-  <text style="font-size: $type-size-7; margin-left: 0; font-weight: 450"> 
- Media:&nbsp;<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</linkcolor></text>
+   [<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]</text>
     
 </div>
      <!-- 
@@ -81,7 +81,7 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
        -->
 <div id="abstract2" style="display: none; margin-bottom: 20px;">
     <text>
- We study how changes in expected inflation affect firm-level credit spreads, and uncover evidence of a time-varying inflation sensitivity. In times of “good inflation,” when inflation news is perceived by investors to be positively correlated with real economic growth, movements in expected inflation substantially reduce corporate credit spreads. Meanwhile in times of “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics are driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a time-varying inflationgrowth covariance and persistent macroeconomic expectations.   </text>
+ We study how changes in expected inflation affect firm-level credit spreads, and uncover evidence of a time-varying inflation sensitivity. In times of “good inflation,” when inflation news is perceived by investors to be positively correlated with real economic growth, movements in expected inflation substantially reduce corporate credit spreads. Meanwhile in times of “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics are driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth covariance and persistent macroeconomic expectations.   </text>
 </div>
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
