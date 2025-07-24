@@ -68,7 +68,10 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
        <linkcolor 
        onclick="window.location.href='files/GIBI.pdf';">
        Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</linkcolor><button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button><br>
-        <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text><br>
+        <text style="font-size: $type-size-6;">Joint with 
+        <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://sites.google.com/view/berardinopalazzo/home';">Berardino Palazzo</linkcolor> and 
+        <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://ramsyamarthy.wixsite.com/home';">Ram Yamarthy</linkcolor>
+
 
    <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]</text>
 
@@ -77,8 +80,7 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
 
    <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]</text><br>
 
-<text style="font-size: $type-size-6;">Media: </text>
-   <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</linkcolor>]</text>
+   <text style="font-size: $type-size-5;"> Media: <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</linkcolor></text>
 
        <!-- <text style="font-size: $type-size-6;">Jan 2025</text>-->
     </div>
