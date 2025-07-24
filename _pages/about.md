@@ -80,10 +80,11 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
 
    <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]</text><br>
 
-   <text style="font-size: $type-size-5;"> Media: <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</linkcolor></text>
+   <text style="font-size: $type-size-5;"> Media: <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';"> SUERF Policy Note</linkcolor></text>
 
        <!-- <text style="font-size: $type-size-6;">Jan 2025</text>-->
-    </div>
+    
+</div>
 </div>
 <div id="abstract2" style="display: none; margin-bottom: 20px;">
     <text>
