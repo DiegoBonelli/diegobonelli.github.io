@@ -72,14 +72,11 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
   <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://sites.google.com/view/berardinopalazzo/home';">Berardino Palazzo</linkcolor>&nbsp;and&nbsp;
   <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://ramsyamarthy.wixsite.com/home';">Ram Yamarthy</linkcolor><br>
 
-   <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]</text>
-
-   <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html';">BDE WP</linkcolor>]</text>
-
-
-   <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]</text><br>
-
-   <text> Media: <linkcolor style="font-size: $type-size-5; margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</linkcolor></text>
+   <text style="font-size: $type-size-5;"> 
+   [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]&nbsp;
+   [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html';">BDE WP</linkcolor>]&nbsp;
+   [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]</text><br>
+   <text> Media:&nbsp;<linkcolor style="font-size: $type-size-5; margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</linkcolor></text>
 
         <!-- <text style="font-size: $type-size-6;">Jan 2025</text>-->
 </div>
@@ -110,10 +107,10 @@ Inflation risk explains a significant share of the systematic variation in yield
     <div>
        <linkcolor onclick="window.location.href='files/NorwayIncentives.pdf';"> Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</linkcolor>
        <button onclick="toggleAbstract('abstract5')" id="abstractButton5" class="custom-button small">Abstract</button><br>
-        <text style="font-size: $type-size-6;">Joint with 
-    <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/';"> Carsten Bienz</linkcolor>,
-    <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/aksel-mjos/';"> Aksel Mjøs</linkcolor>, and
-    <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/francisco-santos/';"> Francisco Santos</linkcolor>
+        <text style="font-size: $type-size-6;">Joint with&nbsp;
+    <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/';">Carsten Bienz</linkcolor>,
+    <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/aksel-mjos/';">&nbsp;Aksel Mjøs</linkcolor>,&nbsp;and&nbsp;
+    <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/francisco-santos/';">Francisco Santos</linkcolor>
 
 </text><text style="color: $primary-color;">(Revise and Resubmit)</text>               
 
