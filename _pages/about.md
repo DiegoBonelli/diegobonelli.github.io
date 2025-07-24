@@ -79,8 +79,7 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
    <text> Media:&nbsp;<linkcolor style="font-size: $type-size-5; margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</linkcolor></text>
 
         <!-- <text style="font-size: $type-size-6;">Jan 2025</text>-->
-</div>
-</div>
+
 <div id="abstract2" style="display: none; margin-bottom: 20px;">
     <text>
 We study how changes in expected inflation affect firm-level credit spreads, and uncover evidence of a time-varying inflation sensitivity. In times of “good inflation,” when
