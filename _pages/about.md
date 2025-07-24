@@ -68,21 +68,21 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
        <linkcolor 
        onclick="window.location.href='files/GIBI.pdf';">
        Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</linkcolor><button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button><br>
+        <text style="font-size: $type-size-6;">Joint with Berardino Palazzo and Ram Yamarthy</text><br>
+   <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]</text>
 
-  <text>Joint with&nbsp;
-  <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://sites.google.com/view/berardinopalazzo/home';">Berardino Palazzo</linkcolor>&nbsp;and&nbsp;
-  <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://ramsyamarthy.wixsite.com/home';">Ram Yamarthy</linkcolor><br>
-   <text style="margin-left: 0; font-weight: 450"> 
-   [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]&nbsp;
-   [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html';">BDE WP</linkcolor>]&nbsp;
-   [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]</text><br>
-  <text style="margin-left: 0; font-weight: 450"> 
- Media:&nbsp;<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</linkcolor></text>
+   <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html';">BDE WP</linkcolor>]</text>
 
-        <!-- <text style="font-size: $type-size-6;">Jan 2025</text>-->
 
+   <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]</text>
+
+       <!-- <text style="font-size: $type-size-6;">Jan 2025</text>-->
+    </div>
+</div>
 <div id="abstract2" style="display: none; margin-bottom: 20px;">
     <text>
+ Using inflation swap prices, we study how changes in expected inflation affect firm-level credit spreads and equity returns, and uncover evidence of a time-varying inflation sensitivity.  In times of ``good inflation,"  when inflation news is perceived by investors to be more positively correlated with real economic growth, movements in expected inflation substantially reduce corporate credit spreads and raise equity valuations. Meanwhile in times of ``bad inflation," these effects are attenuated and the opposite can take place. These dynamics naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth relationship and persistent macroeconomic expectations.
+        </text>
 We study how changes in expected inflation affect firm-level credit spreads, and uncover evidence of a time-varying inflation sensitivity. In times of “good inflation,” when
 inflation news is perceived by investors to be positively correlated with real economic growth, movements in expected inflation substantially reduce corporate credit spreads.
 Meanwhile in times of “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics are driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a time-varying inflationgrowth covariance and persistent macroeconomic expectations.       </text>
@@ -107,12 +107,7 @@ Inflation risk explains a significant share of the systematic variation in yield
     <div>
        <linkcolor onclick="window.location.href='files/NorwayIncentives.pdf';"> Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</linkcolor>
        <button onclick="toggleAbstract('abstract5')" id="abstractButton5" class="custom-button small">Abstract</button><br>
-        <text style="font-size: $type-size-6;">Joint with&nbsp;
-    <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/';">Carsten Bienz</linkcolor>,&nbsp;
-    <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/aksel-mjos/';">Aksel Mjøs</linkcolor>,&nbsp;and&nbsp;
-    <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/francisco-santos/';">Francisco Santos</linkcolor>
-
-</text><text style="color: $primary-color;">(Revise and Resubmit)</text>               
+        <text style="font-size: $type-size-6;">Joint with Carsten Bienz, Aksel Mjøs and Francisco Santos </text><text style="color: $primary-color;">(Revise and Resubmit)</text>               
 
         <br>
     </div>
