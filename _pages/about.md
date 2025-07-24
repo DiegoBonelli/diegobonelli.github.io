@@ -72,8 +72,6 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
   <text>Joint with&nbsp;
   <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://sites.google.com/view/berardinopalazzo/home';">Berardino Palazzo</linkcolor>&nbsp;and&nbsp;
   <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://ramsyamarthy.wixsite.com/home';">Ram Yamarthy</linkcolor><br>
-
-
    <text style="margin-left: 0; font-weight: 450"> 
    [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]&nbsp;
    [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html';">BDE WP</linkcolor>]&nbsp;
