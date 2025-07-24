@@ -68,9 +68,22 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
        <linkcolor 
        onclick="window.location.href='files/GIBI.pdf';">
        Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</linkcolor><button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button><br>
-      <text style="font-size: $type-size-6;">Joint with&nbsp;
+
+<span style="font-size: 0.9rem;">
+        Joint with&nbsp;
+        <span class="linkcolor" style="font-weight: 500;" onclick="window.location.href='https://sites.google.com/view/berardinopalazzo/home';">Berardino Palazzo</span>&nbsp;and&nbsp;
+        <span class="linkcolor" style="font-weight: 500;" onclick="window.location.href='https://ramsyamarthy.wixsite.com/home';">Ram Yamarthy</span><br>
+        [<span class="linkcolor" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</span>] 
+        [<span class="linkcolor" onclick="window.location.href='https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html';">BDE WP</span>] 
+        [<span class="linkcolor" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</span>]<br>
+        Media:
+        <span class="linkcolor" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note</span>
+      </span>
+
+   <!--   <text style="font-size: $type-size-6;">Joint with&nbsp;
   <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://sites.google.com/view/berardinopalazzo/home';">Berardino Palazzo</linkcolor>&nbsp;and&nbsp;
   <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://ramsyamarthy.wixsite.com/home';">Ram Yamarthy</linkcolor><br>
+
 
    <text style="font-size: $type-size-6; margin-left: 0; font-weight: 450"> 
    [<linkcolor style="font-size: $type-size-6; margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]&nbsp;
