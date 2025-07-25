@@ -80,16 +80,15 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
   </span><br>
 
   <span style="font-size: $type-size-6; font-weight: 450;"> 
-    Media: 
-    <linkcolor style="font-size: $type-size-6; font-weight: 450;" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">
-      SUERF Policy Note
+    Media:&nbsp;
+    <linkcolor style="font-size: $type-size-6; font-weight: 450;" onclick="window.location.href='https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/';">SUERF Policy Note
     </linkcolor>
   </span><br>
 
   <span style="font-size: $type-size-6; font-weight: 450;"> 
-    [<linkcolor onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]&nbsp;
-    [<linkcolor onclick="window.location.href='https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html';">BDE WP</linkcolor>]&nbsp;
-    [<linkcolor onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]
+    [<linkcolor style="font-size: $type-size-6; font-weight: 450;" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269';">SSRN</linkcolor>]&nbsp;
+    [<linkcolor style="font-size: $type-size-6; font-weight: 450;" onclick="window.location.href='https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html';">BDE WP</linkcolor>]&nbsp;
+    [<linkcolor style="font-size: $type-size-6; font-weight: 450;" onclick="window.location.href='https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm';">FED WP</linkcolor>]
   </span>
 </div>
 
