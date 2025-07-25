@@ -66,7 +66,7 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
 <div style="text-align: justify; margin-bottom: 20px;margin-top: 20px;">
        <linkcolor 
        onclick="window.location.href='files/GIBI.pdf';">
-       Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</linkcolor><button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button><br>
+       Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</linkcolor><button onclick="toggleAbstract('abstract2')" id="abstractButton2" class="custom-button small">Abstract</button>
        </div>
 <text style="font-size: $type-size-7;">Joint with&nbsp;<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://sites.google.com/view/berardinopalazzo/home';">Berardino Palazzo</linkcolor>&nbsp;and&nbsp;<linkcolor style="font-size: $type-size-7; margin-left: 0; font-weight: 450" onclick="window.location.href='https://ramsyamarthy.wixsite.com/home';">Ram Yamarthy</linkcolor></text><br>
   <text style="font-size: $type-size-7; margin-left: 0; font-weight: 450"> 
