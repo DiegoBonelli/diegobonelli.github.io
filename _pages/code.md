@@ -22,9 +22,9 @@ classes: wide
         <button onclick="window.location.href='https://github.com/DiegoBonelli/Trace_Cleaning';" class="custom-button small">Code</button> -->
         <br>        
     </div>
-      <text>
+      <span class="small"> 
     Code to clean Academic and Enanched Trace in R.
-    </text>
+    </span>
 </div>
   
 
@@ -37,9 +37,9 @@ classes: wide
         <button onclick="window.location.href='https://github.com/DiegoBonelli/Trace_Linking_Table';" class="custom-button small">Code</button>-->
         <br>        
     </div>
-      <text>
+      <span class="small"> 
       Code to link Trace bonds to firms in CRSP.
-    </text>
+    </span>
 </div>
   
 
@@ -53,9 +53,9 @@ classes: wide
         <button onclick="window.location.href='https://github.com/DiegoBonelli/Sec_logs';" class="custom-button small">Code</button>-->
         <br>        
     </div>
-      <text>
+      <span class="small"> 
     Code to download daily SEC log files.
-    </text>
+    </span>
 </div>
   
 
