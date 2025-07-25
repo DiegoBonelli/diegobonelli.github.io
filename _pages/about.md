@@ -124,7 +124,7 @@ Inflation risk explains a significant share of the systematic variation in yield
     <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/';">Carsten Bienz</linkcolor>,&nbsp;
     <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/aksel-mjos/';">Aksel Mjøs</linkcolor>,&nbsp;and&nbsp;
     <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/francisco-santos/';">Francisco Santos</linkcolor>
-</text><text style="color: $primary-color;">&nbsp;(Revise and Resubmit)</span><br>
+</span><span style="color: $primary-color;">&nbsp;(Revise and Resubmit)</span><br>
     </div>
 </div>
 <div id="abstract5" style="display: none; margin-bottom: 20px;">
