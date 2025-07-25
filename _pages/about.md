@@ -101,10 +101,11 @@ I am a research economist at  <linkcolor style="margin-left: 0.25em;font-weight:
 </div>
 <div style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
     <div>
-        <linkcolor        onclick="window.location.href='files/IRYSC.pdf';">Inflation Risk and Yield Spread Changes</linkcolor>
+        <linkcolor onclick="window.location.href='files/IRYSC.pdf';">Inflation Risk and Yield Spread Changes</linkcolor>
         <button onclick="toggleAbstract('abstract0')" id="abstractButton0" class="custom-button small">Abstract</button><br>
 
-   <text style="font-size: $type-size-5;"> [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512';">SSRN</linkcolor>]</text>
+  <span class="small"> 
+  [<linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512';">SSRN</linkcolor>]</span>
          <!--<text style="font-size: $type-size-6;">Jan 2025</text>-->
     </div>
 </div>
@@ -119,11 +120,11 @@ Inflation risk explains a significant share of the systematic variation in yield
     <div>
        <linkcolor onclick="window.location.href='files/NorwayIncentives.pdf';"> Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</linkcolor>
        <button onclick="toggleAbstract('abstract5')" id="abstractButton5" class="custom-button small">Abstract</button><br>
-     <text style="font-size: $type-size-6;">Joint with&nbsp;
+       <span class="small"> Joint with&nbsp;
     <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/';">Carsten Bienz</linkcolor>,&nbsp;
     <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/aksel-mjos/';">Aksel Mjøs</linkcolor>,&nbsp;and&nbsp;
     <linkcolor style="margin-left: 0; font-weight: 450" onclick="window.location.href='https://www.nhh.no/en/employees/faculty/francisco-santos/';">Francisco Santos</linkcolor>
-</text><text style="color: $primary-color;">&nbsp;(Revise and Resubmit)</text><br>
+</text><text style="color: $primary-color;">&nbsp;(Revise and Resubmit)</span><br>
     </div>
 </div>
 <div id="abstract5" style="display: none; margin-bottom: 20px;">
