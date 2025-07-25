@@ -11,7 +11,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Diego Bonelli"
-disclaimer               : "Disclaimer: The views expressed on this website do not necessarily reflect those of the Banco de España or the Euro-system."
+disclaimer               : "Disclaimer: The views expressed on this website do not necessarily reflect those of the Banco de España or the Eurosystem."
 title_separator          : "-"
 name                     : &name "Diego Bonelli"
 description              : &description "Research Economist @ Banco de España"
