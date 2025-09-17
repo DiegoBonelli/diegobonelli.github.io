@@ -12,42 +12,23 @@
       color: #183152;
       margin: 0; padding: 0 0.5em;
     }
-    .headline {
-      width: 100%;
-      max-width: 1050px;
-      margin: 36px auto 0 auto;
-      font-size: 1.17em;
-      font-weight: 600;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding-bottom: 0.2em;
-      gap: 0.7em;
-      /* Key: align with text column */
-      padding-left: 230px;   /* Match sidebar (210px min-width + 10px padding-left + ~10px gap) */
-      box-sizing: border-box;
-    }
-    .headline a {
-      color: #183152;
-      text-decoration: underline;
-      margin-right: 1.3em;
-      font-size: 1.17em;
-    }
-    .main-wrap {
-      max-width: 1050px;
-      margin: 10px auto 36px auto;
-      display: flex;
-      flex-direction: row;
-      gap: 2.5em;
-      box-sizing: border-box;
+    .page-grid {
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      max-width: 1080px;
+      margin: 36px auto 36px auto;
+      align-items: start;
+      column-gap: 2.5em;
     }
     .sidebar {
-      min-width: 210px;
-      max-width: 290px;
-      padding-left: 10px;
+      grid-column: 1/2;
+      max-width: 230px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: sticky;
+      top: 26px;
+      align-self: flex-start;
     }
     .profile-pic {
       width: 168px;
@@ -59,6 +40,7 @@
       background: #eee;
       border: 2px solid #e0e4f7;
       display: block;
+      transition: width 0.2s, height 0.2s;
     }
     .side-info {
       margin-top: 1.3em;
@@ -78,16 +60,54 @@
     }
     .side-info .contact-list li {margin-bottom: 2px;}
     .side-info a {color: #183152; text-decoration: underline;}
+    .expand-btn {
+      display: none;
+      background: none;
+      border: 1px solid #d6d6ee;
+      border-radius: 4px;
+      color: #183152;
+      font-size: 1em;
+      padding: 6px 12px;
+      margin-top: 0.9em;
+      cursor: pointer;
+      font-family: inherit;
+      width: 100%;
+      text-align: left;
+    }
+    .contact-expand {
+      display: block;
+      transition: max-height 0.2s;
+      overflow: hidden;
+    }
     .content {
+      grid-column: 2/3;
       max-width: 830px;
-      flex: 1 1 0;
       min-width: 310px;
+    }
+    .headline-inline {
+      margin: 0 0 0.5em 0;
+      display: flex;
+      gap: 0.7em;
+      font-size: 1.19em;
+      font-weight: 600;
+      align-items: center;
+      padding: 0;
+      line-height: 1.15;
+    }
+    .headline-inline a {
+      color: #183152;
+      text-decoration: underline;
+      margin-right: 1.3em;
+      font-size: 1.15em;
     }
     .section-title {
       font-size: 1.29em;
-      margin-top: 2.25em;
-      margin-bottom: 0.6em;
+      margin-top: 2.7em;
+      margin-bottom: 0.8em;
       font-weight: 600;
+    }
+    .paper-entry {
+      margin-bottom: 2.2em;
     }
     .paper-links {font-size: .99em;}
     .paper-links a {margin-right:0.4em;}
@@ -113,48 +133,62 @@
       border-radius: 0;
       font-size: .98em;
     }
-    @media (max-width:1150px) {
-      .main-wrap {max-width:99vw; gap:1em;}
-      .sidebar {min-width:140px;max-width:180px;}
-      .profile-pic {width:120px;height:120px;}
-      .headline {max-width:95vw;}
+    @media (max-width:1100px) {
+      .page-grid {max-width:99vw;}
+      .content {max-width:99vw;}
+      .sidebar {max-width:200px;}
+      .profile-pic {width: 180px; height: 180px;}
     }
     @media (max-width:900px) {
-      .main-wrap {flex-direction:column;}
-      .sidebar {max-width:240px;}
-      .content {min-width:0;max-width:100vw;}
-      .profile-pic {margin-left:auto; margin-right:auto; display:block;}
-      .content, .sidebar {padding-left:0;}
-      .headline {padding-left: 0; max-width:99vw;}
+      .page-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 0;
+      }
+      .sidebar, .content {grid-column: 1/2; max-width: 99vw;}
+      .sidebar {order: 1; position: static; max-width: 350px; margin: 0 auto;}
+      .profile-pic {width: 210px; height: 210px; margin-bottom: 8px;}
+      .side-info {max-width: 99vw;}
+      .content {order: 3;}
+      .expand-btn {display: block;}
+      .side-info h3, .side-info .contact-list {display:none;}
+      .contact-expand.collapsed {display:none;}
+      .contact-expand.expanded {display:block;}
+      .headline-inline {margin-top: 1.8em;}
+    }
+    @media (max-width:600px) {
+      .sidebar {max-width: 99vw;}
+      .profile-pic {width: 170px; height: 170px;}
     }
   </style>
 </head>
 <body>
-  <div class="headline">
-      <a href="https://diegobonelli.github.io/">Diego Bonelli</a>
-      <a href="https://diegobonelli.github.io/files/CV.pdf">CV</a>
-  </div>
-  <div class="main-wrap">
-
+  <div class="page-grid">
     <div class="sidebar">
       <img src="https://diegobonelli.github.io/images/profiledb.png" alt="Diego Bonelli" class="profile-pic">
       <div class="side-info">
-        <h3>Diego Bonelli</h3>
-        Research Economist<br>
-        Banco de España
-        <h3 style="margin-top:1.1em;">Contact Information</h3>
-        <ul class="contact-list">
-          <li>Alcalá 48 Madrid, Spain</li>
-          <li>Banco de España</li>
-          <li><a href="mailto:diego.bonelli@bde.es">Email</a></li>
-          <li><a href="https://github.com/DiegoBonelli" target="_blank">Github</a></li>
-          <li><a href="https://www.linkedin.com/in/diego-bonelli" target="_blank">LinkedIn</a></li>
-          <li><a href="https://diegobonelli.github.io/files/CV.pdf">CV</a></li>
-        </ul>
+        <button class="expand-btn" id="expbtn" onclick="toggleContact()">Show Contact Information</button>
+        <div class="contact-expand expanded" id="contactinfo">
+          <h3>Diego Bonelli</h3>
+          Research Economist<br>
+          Banco de España
+          <h3 style="margin-top:1.1em;">Contact Information</h3>
+          <ul class="contact-list">
+            <li>Alcalá 48 Madrid, Spain</li>
+            <li>Banco de España</li>
+            <li><a href="mailto:diego.bonelli@bde.es">Email</a></li>
+            <li><a href="https://github.com/DiegoBonelli" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/diego-bonelli" target="_blank">LinkedIn</a></li>
+            <li><a href="https://diegobonelli.github.io/files/CV.pdf">CV</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-
     <div class="content">
+      <div class="headline-inline">
+        <a href="https://diegobonelli.github.io/">Diego Bonelli</a>
+        <a href="https://diegobonelli.github.io/files/CV.pdf">CV</a>
+      </div>
       <div style="margin-bottom:1.2em; font-size:1.06em;line-height:1.6;">
         I am a research economist at <a class="plainlink" href="https://www.bde.es/">Banco de España</a> in the Financial Analysis Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the <a class="plainlink" href="https://www.nhh.no/en/departments/finance/">Norwegian School of Economics</a>.<br><br>
         You can find my CV <a class="plainlink" href="https://diegobonelli.github.io/files/CV.pdf">here</a>.
@@ -162,7 +196,7 @@
 
       <div class="section-title">Working Papers</div>
 
-      <div style="margin-bottom:1.3em;">
+      <div class="paper-entry">
         <strong>Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</strong>
         <button class="abstract-btn" id="btn-abs1" onclick="toggleAbs1()">Abstract</button><br>
         <span class="joint">Joint with <a class="plainlink" href="https://sites.google.com/view/berardinopalazzo/home" target="_blank">Berardino Palazzo</a> and <a class="plainlink" href="https://ramsyamarthy.wixsite.com/home" target="_blank">Ram Yamarthy</a></span><br>
@@ -177,7 +211,7 @@
         </div>
       </div>
 
-      <div style="margin-bottom:1.3em;">
+      <div class="paper-entry">
         <strong>Inflation Risk and Yield Spread Changes</strong>
         <button class="abstract-btn" id="btn-abs2" onclick="toggleAbs2()">Abstract</button><br>
         <span class="paper-links">
@@ -188,7 +222,7 @@
         </div>
       </div>
 
-      <div style="margin-bottom:1.3em;">
+      <div class="paper-entry">
         <strong>Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</strong>
         <button class="abstract-btn" id="btn-abs3" onclick="toggleAbs3()">Abstract</button><br>
         <span class="joint">Joint with <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/" target="_blank">Carsten Bienz</a>, <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/aksel-mjos/" target="_blank">Aksel Mjøs</a>, and <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/francisco-santos/" target="_blank">Francisco Santos</a> <span class="small">(Revise and Resubmit)</span></span>
@@ -225,6 +259,47 @@ function toggleAbs3() {
   if (e.style.display === "block") { e.style.display = "none"; b.innerText = "Abstract"; }
   else { e.style.display = "block"; b.innerText = "Hide Abstract"; }
 }
+
+// Expand/collapse contact info on mobile/iPad
+function toggleContact() {
+  var e = document.getElementById('contactinfo');
+  var b = document.getElementById('expbtn');
+  if (e.classList.contains('expanded')) {
+    e.classList.remove('expanded');
+    e.classList.add('collapsed');
+    b.innerText = "Show Contact Information";
+  } else {
+    e.classList.add('expanded');
+    e.classList.remove('collapsed');
+    b.innerText = "Hide Contact Information";
+  }
+}
+
+// At start: only show contact info by default on desktop, not on mobile
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.matchMedia("(max-width:900px)").matches) {
+    document.getElementById('contactinfo').className = 'contact-expand collapsed';
+    document.getElementById('expbtn').innerText = "Show Contact Information";
+  } else {
+    document.getElementById('contactinfo').className = 'contact-expand expanded';
+    document.getElementById('expbtn').style.display = "none";
+  }
+  // On resize, adapt
+  window.addEventListener('resize', function() {
+    var ci = document.getElementById('contactinfo');
+    var eb = document.getElementById('expbtn');
+    if (window.matchMedia("(max-width:900px)").matches) {
+      eb.style.display = "block";
+      if (!ci.classList.contains('expanded') && !ci.classList.contains('collapsed')) {
+        ci.className = 'contact-expand collapsed';
+        eb.innerText = "Show Contact Information";
+      }
+    } else {
+      eb.style.display = "none";
+      ci.className = 'contact-expand expanded';
+    }
+  });
+});
 </script>
 </body>
 </html>
