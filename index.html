@@ -5,19 +5,36 @@
   <title>Diego Bonelli</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Diego Bonelli | Research Economist, Banco de España">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-sans-serif.css">
+
   <style>
+    :root {
+      --main-color: #183152;
+      --main-link: #153670;
+      --background: #fff;
+      --border-color: #e0e4f7;
+      --font-size: 14px;
+      --side-font-size: 1.2em;
+      --contact-list-size: 0.9em;
+      --headline-size: 1.2em;
+      --section-title-size: 1.19em;
+      --font-variant: sans-serif;
+
+    }
+
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #fff;
-      color: #183152;
+  font-family: 'CMU Sans Serif', 'Arial', sans-serif;
+      background: var(--background);
+      color: var(--main-color);
+      font-size: var(--font-size);
       margin: 0; padding: 0 0.5em;
-      line-height:1.5;
+      line-height: 1.6;
     }
     .headline {
       width: 100%;
       max-width: 1080px;
       margin: 36px auto 0 auto;
-      font-size: 1.19em;
+      font-size: var(--headline-size);
       font-weight: 600;
       display: flex;
       gap: 0.7em;
@@ -26,14 +43,17 @@
       padding-bottom: 0.2em;
       box-sizing: border-box;
       padding-left: 0px;
+      font-variant: var(--font-variant);
+
     }
     .headline a {
-      color: #183152;
+      color: var(--main-color);
       text-decoration: none;
       margin-right: 1.3em;
       font-size: 1.15em;
       font-weight: bold;
     }
+    .headline a:hover { color: var(--main-link);}
     .page-grid {
       display: grid;
       grid-template-columns: 230px 1fr;
@@ -53,6 +73,7 @@
       top: 26px;
       align-self: flex-start;
       padding-top: 20px;
+
     }
     .profile-pic {
       width: 190px;
@@ -62,34 +83,36 @@
       margin-top: 12px;
       box-shadow: 0 2px 8px rgba(80,80,120,0.05);
       background: #eee;
-      border: 2px solid #e0e4f7;
+      border: 2px solid var(--border-color);
       display: block;
       transition: width 0.2s, height 0.2s;
     }
     .side-info {
       margin-top: 1.3em;
       text-align: left;
-      font-size: 1.09em;
+      font-size: var(--side-font-size);
       width: 100%;
       max-width: 230px;
     }
     .side-info h3 {
       margin: 0 0 0.3em 0; font-size: 1.3em; font-weight: bold;
       letter-spacing: 0.5px;
+      font-variant: var(--font-variant);
+
     }
     .side-info .contact-list {
       padding: 0; margin: 0.9em 0 0.2em 0;
       list-style: none;
-      font-size: 0.8em;
+      font-size: var(--contact-list-size);
     }
     .side-info .contact-list li {margin-bottom: 2px;}
-    .side-info a {color: #183152; text-decoration: underline;}
+    .side-info a {color: var(--main-link); text-decoration: underline;}
     .expand-btn {
       display: none;
       background: none;
       border: 1px solid #d6d6ee;
       border-radius: 4px;
-      color: #183152;
+      color: var(--main-color);
       font-size: 1em;
       padding: 6px 12px;
       margin-top: 0.9em;
@@ -108,30 +131,38 @@
       max-width: 830px;
       min-width: 310px;
       padding-top: 30px;
+      font-size: var(--font-size);
     }
-    .section-title {
-      font-size: 1.3em;
-      margin-top: 2.7em;
+
+  .section-title {
+      font-size: var(--section-title-size);
+      font-weight: bold;
+      margin: 2.2em 0 1.16em 0;
+      color: var(--main-color);
+      letter-spacing: 0.07em;
+       margin-top: 2.7em;
       margin-bottom: 0.8em;
       font-weight: 600;
+      font-variant: small-caps;
     }
+
     .paper-entry {
       margin-bottom: 2.2em;
     }
-    .paper-links {font-size: .99em;}
-    .paper-links a {margin-right:0.4em;}
-    .joint, .media, .small {font-size: .97em;}
+    .paper-links { font-size: .99em;}
+    .paper-links a { margin-right: 0.4em;}
+    .joint, .media, .small { font-size: .97em;}
     .footer {
       font-size: .95em;
-      color: #aaa;
+      color: #888;
       margin-top: 2.7em;
       margin-bottom: 0.7em;
     }
     .disclaimer {
-      color: #aaa; font-size:.95em; margin-bottom:1em;
+      color: #aaa; font-size: .95em; margin-bottom: 1em;
     }
     .abstract-btn {
-      border: none; background: none; color: #183152; text-decoration: underline; cursor: pointer; font-size: 1em;
+      border: none; background: none; color: var(--main-color); text-decoration: underline; cursor: pointer; font-size: 1em;
       padding-left: 7px; font-family: inherit;
     }
     .abstract-content {
@@ -146,7 +177,7 @@
       width: 1em;
       height: 1em;
       vertical-align: middle;
-      fill: #183152;
+      fill: var(--main-color);
       margin-right: 7px;
     }
     @media (max-width:1100px) {
@@ -169,7 +200,6 @@
       .side-info {max-width: 99vw;}
       .content {order: 3;}
       .expand-btn {display: block;}
-      /* Only hide the fake content, not the real contact list! */
       .contact-expand.toggle-target.collapsed {display:none;}
       .contact-expand.toggle-target.expanded {display:block;}
     }
@@ -243,9 +273,7 @@
             </li>
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><title>CV</title>
-              <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2
-              0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 7H13V3.5zM6 4h6v5h5v11H6V4zm2
-              7h8v2H8v-2zm0 4h8v2H8v-2z"/>
+              <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 7H13V3.5zM6 4h6v5h5v11H6V4zm2 7h8v2H8v-2zm0 4h8v2H8v-2z"/>
               </svg>
               <a href="https://diegobonelli.github.io/files/CV.pdf">CV</a>
             </li>
@@ -254,13 +282,11 @@
       </div>
     </div>
     <div class="content">
-      <div style="margin-bottom:1.2em; font-size:1.06em;">
+      <div style="margin-bottom:1.2em;">
         I am a research economist at <a class="plainlink" href="https://www.bde.es/">Banco de España</a> in the Financial Analysis Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the <a class="plainlink" href="https://www.nhh.no/en/departments/finance/">Norwegian School of Economics</a>.<br><br>
         You can find my CV <a class="plainlink" href="https://diegobonelli.github.io/files/CV.pdf">here</a>.
       </div>
-
       <div class="section-title">Working Papers</div>
-
       <div class="paper-entry">
         <strong>Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</strong>
         <button class="abstract-btn" id="btn-abs1" onclick="toggleAbs1()">Abstract</button><br>
@@ -275,7 +301,6 @@
           We study how changes in expected inflation affect firm-level credit spreads, and uncover evidence of a time-varying inflation sensitivity. In times of “good inflation,” when inflation news is perceived by investors to be positively correlated with real economic growth, movements in expected inflation substantially reduce corporate credit spreads. Meanwhile in times of “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics are driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth covariance and persistent macroeconomic expectations.
         </div>
       </div>
-
       <div class="paper-entry">
         <strong>Inflation Risk and Yield Spread Changes</strong>
         <button class="abstract-btn" id="btn-abs2" onclick="toggleAbs2()">Abstract</button><br>
@@ -286,7 +311,6 @@
           Inflation risk explains a significant share of the systematic variation in yield spread changes beyond credit factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectations, volatility, and cyclicality—derived from inflation swap prices—are important determinants of yield spread movements. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity. To rationalize the findings, I show that the same patterns emerge in a model of debt rollover risk with stochastic inflation and sticky cash flows.
         </div>
       </div>
-
       <div class="paper-entry">
         <strong>Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</strong>
         <button class="abstract-btn" id="btn-abs3" onclick="toggleAbs3()">Abstract</button><br>
@@ -295,7 +319,6 @@
           We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures impact performance. The incentive contracts in our sample are heterogeneous, with firms using both quantitative and qualitative targets. We find that higher potential bonuses tied to quantitative targets, such as the information ratio (IR), lead to better year-end IRs. In contrast, placing more weight on qualitative goals tends to reduce IR. Additionally, fund managers at risk of missing mid-year bonus thresholds actively try to boost returns, but these efforts often backfire, resulting in worse overall performance and a lower IR.
         </div>
       </div>
-
       <div class="footer">
         &copy; 2025 Diego Bonelli
         <div class="disclaimer">
@@ -323,7 +346,6 @@ function toggleAbs3() {
   if (e.style.display === "block") { e.style.display = "none"; b.innerText = "Abstract"; }
   else { e.style.display = "block"; b.innerText = "Hide Abstract"; }
 }
-
 // Expand/collapse contact info on mobile/iPad
 function toggleContact() {
   var e = document.getElementById('contactinfo');
