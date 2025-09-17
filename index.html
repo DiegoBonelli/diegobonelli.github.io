@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Diego Bonelli</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diego Bonelli | Research Economist, Banco de España">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #fff;
+      color: #183152;
+      margin: 0; padding: 0 0.5em;
+    }
+    .main-wrap {
+      max-width: 700px;
+      margin: 24px auto 32px auto;
+    }
+    .nav {
+      margin-bottom: 1.5em;
+    }
+    .nav a {
+      color: #183152;
+      font-weight: 500;
+      text-decoration: none;
+      margin-right: 1.2em;
+      font-size: 1.04em;
+    }
+    .nav a:hover { text-decoration: underline; }
+    h3, h4 { margin-bottom: 0.4em; }
+    h3 { margin-top: 1em; }
+    .contact-list {
+      margin: 0 0 12px 0; padding: 0;
+      list-style: none;
+      font-size: 1em;
+    }
+    .contact-list li { margin-bottom: 2px; }
+    .plainlink { color: #183152; text-decoration: underline; }
+    .section-title {
+      font-size: 1.34em;
+      margin-top: 2.2em;
+      margin-bottom: 0.6em;
+      font-weight: 600;
+    }
+    .paper-links {font-size: .99em;}
+    .paper-links a {margin-right:0.4em;}
+    .joint, .media, .small {font-size: .97em;}
+    .footer {
+      font-size: .96em;
+      color: #888;
+      margin-top: 2.7em;
+      margin-bottom: 0.7em;
+    }
+    .disclaimer {
+      color: #aaa; font-size:.95em; margin-bottom:1em;
+    }
+    .abstract-btn {
+      border: none; background: none; color: #183152; text-decoration: underline; cursor: pointer; font-size: 1em;
+      padding-left: 7px; font-family: inherit;
+    }
+    .abstract-content {
+      display: none;
+      background: #f3f6fb;
+      margin: 0.6em 0 0.7em 0;
+      padding: 10px 13px;
+      border-radius: 4px;
+      font-size: .98em;
+    }
+    @media (max-width:520px) {
+      .main-wrap {max-width:98vw;}
+    }
+  </style>
+</head>
+<body>
+<div class="main-wrap">
+
+  <div class="nav">
+    <a href="https://diegobonelli.github.io/">Diego Bonelli</a>
+    <a href="https://diegobonelli.github.io/files/CV.pdf">CV</a>
+    <a href="https://diegobonelli.github.io/code/">Code</a>
+  </div>
+
+  <h3>Diego Bonelli</h3>
+  <div>Research Economist<br>Banco de España</div>
+
+  <h4 style="margin-top:1.5em;margin-bottom:0.4em;">Contact Information</h4>
+  <ul class="contact-list">
+    <li>Alcalá 48 Madrid, Spain</li>
+    <li>Banco de España</li>
+    <li><a class="plainlink" href="mailto:diego.bonelli@bde.es">Email</a></li>
+    <li><a class="plainlink" href="https://github.com/DiegoBonelli" target="_blank">Github</a></li>
+    <li><a class="plainlink" href="https://www.linkedin.com/in/diego-bonelli" target="_blank">LinkedIn</a></li>
+    <li><a class="plainlink" href="https://diegobonelli.github.io/files/CV.pdf">CV</a></li>
+  </ul>
+
+  <div style="margin-bottom:1.2em; font-size:1.06em;line-height:1.6;">
+    I am a research economist at <a class="plainlink" href="https://www.bde.es/">Banco de España</a> in the Financial Analysis Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the <a class="plainlink" href="https://www.nhh.no/en/departments/finance/">Norwegian School of Economics</a>.<br><br>
+    You can find my CV <a class="plainlink" href="https://diegobonelli.github.io/files/CV.pdf">here</a>.
+  </div>
+
+  <div class="section-title">Working Papers</div>
+
+  <div style="margin-bottom:1.3em;">
+    <strong>Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</strong>
+    <button class="abstract-btn" id="btn-abs1" onclick="toggleAbs1()">Abstract</button><br>
+    <span class="joint">Joint with <a class="plainlink" href="https://sites.google.com/view/berardinopalazzo/home" target="_blank">Berardino Palazzo</a> and <a class="plainlink" href="https://ramsyamarthy.wixsite.com/home" target="_blank">Ram Yamarthy</a></span><br>
+    <span class="media">Media: <a class="plainlink" href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/" target="_blank">SUERF Policy Note</a></span><br>
+    <span class="paper-links">
+      [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269" target="_blank">SSRN</a>]
+      [<a class="plainlink" href="https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html" target="_blank">BDE WP</a>]
+      [<a class="plainlink" href="https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm" target="_blank">FED WP</a>]
+    </span>
+    <div class="abstract-content" id="abs1">
+      We study how changes in expected inflation affect firm-level credit spreads, and uncover evidence of a time-varying inflation sensitivity. In times of “good inflation,” when inflation news is perceived by investors to be positively correlated with real economic growth, movements in expected inflation substantially reduce corporate credit spreads. Meanwhile in times of “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics are driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth covariance and persistent macroeconomic expectations.
+    </div>
+  </div>
+
+  <div style="margin-bottom:1.3em;">
+    <strong>Inflation Risk and Yield Spread Changes</strong>
+    <button class="abstract-btn" id="btn-abs2" onclick="toggleAbs2()">Abstract</button><br>
+    <span class="paper-links">
+      [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512" target="_blank">SSRN</a>]
+    </span>
+    <div class="abstract-content" id="abs2">
+      Inflation risk explains a significant share of the systematic variation in yield spread changes beyond credit factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectations, volatility, and cyclicality—derived from inflation swap prices—are important determinants of yield spread movements. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity. To rationalize the findings, I show that the same patterns emerge in a model of debt rollover risk with stochastic inflation and sticky cash flows.
+    </div>
+  </div>
+
+  <div style="margin-bottom:1.3em;">
+    <strong>Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</strong>
+    <button class="abstract-btn" id="btn-abs3" onclick="toggleAbs3()">Abstract</button><br>
+    <span class="joint">Joint with <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/" target="_blank">Carsten Bienz</a>, <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/aksel-mjos/" target="_blank">Aksel Mjøs</a>, and <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/francisco-santos/" target="_blank">Francisco Santos</a> <span class="small">(Revise and Resubmit)</span></span>
+    <div class="abstract-content" id="abs3">
+      We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures impact performance. The incentive contracts in our sample are heterogeneous, with firms using both quantitative and qualitative targets. We find that higher potential bonuses tied to quantitative targets, such as the information ratio (IR), lead to better year-end IRs. In contrast, placing more weight on qualitative goals tends to reduce IR. Additionally, fund managers at risk of missing mid-year bonus thresholds actively try to boost returns, but these efforts often backfire, resulting in worse overall performance and a lower IR.
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Diego Bonelli
+    <div class="disclaimer">
+      Disclaimer: The views expressed on this website do not necessarily reflect those of the Banco de España or the Eurosystem.
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleAbs1() {
+  var e = document.getElementById('abs1');
+  var b = document.getElementById('btn-abs1');
+  if (e.style.display === "block") { e.style.display = "none"; b.innerText = "Abstract"; }
+  else { e.style.display = "block"; b.innerText = "Hide Abstract"; }
+}
+function toggleAbs2() {
+  var e = document.getElementById('abs2');
+  var b = document.getElementById('btn-abs2');
+  if (e.style.display === "block") { e.style.display = "none"; b.innerText = "Abstract"; }
+  else { e.style.display = "block"; b.innerText = "Hide Abstract"; }
+}
+function toggleAbs3() {
+  var e = document.getElementById('abs3');
+  var b = document.getElementById('btn-abs3');
+  if (e.style.display === "block") { e.style.display = "none"; b.innerText = "Abstract"; }
+  else { e.style.display = "block"; b.innerText = "Hide Abstract"; }
+}
+</script>
+</body>
+</html>
