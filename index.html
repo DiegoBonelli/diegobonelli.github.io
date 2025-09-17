@@ -143,6 +143,13 @@
       border-radius: 0;
       font-size: .98em;
     }
+    .contact-list svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: #183152;
+  margin-right: 4px;
+}
     @media (max-width:1100px) {
       .page-grid {max-width:99vw;}
       .content {max-width:99vw;}
@@ -181,25 +188,96 @@
   <div class="page-grid">
     <div class="sidebar">
       <img src="https://diegobonelli.github.io/images/profiledb.png" alt="Diego Bonelli" class="profile-pic">
-      <div class="side-info">
-        <button class="expand-btn" id="expbtn" onclick="toggleContact()">Show Contact Information</button>
-        <div class="contact-expand expanded" id="contactinfo" style="text-align: center;">
-          <h3>Diego Bonelli</h3>
-          Research Economist<br>
-          Banco de España
-               </div>
-                  <div class="contact-expand expanded" id="contactinfo">
-          <h3 style="margin-top:1.1em;">Contact Information</h3>
-          <ul class="contact-list">
-            <li>Alcalá 48 Madrid, Spain</li>
-            <li>Banco de España</li>
-            <li><a href="mailto:diego.bonelli@bde.es">Email</a></li>
-            <li><a href="https://github.com/DiegoBonelli" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/diego-bonelli" target="_blank">LinkedIn</a></li>
-            <li><a href="https://diegobonelli.github.io/files/CV.pdf">CV</a></li>
-          </ul>
-        </div>
-      </div>
+      
+<div class="side-info">
+  <button class="expand-btn" id="expbtn" onclick="toggleContact()">Show Contact Information</button>
+  <div class="contact-expand expanded" id="contactinfo" style="text-align: center;">
+    <h3>Diego Bonelli</h3>
+    Research Economist<br>
+    Banco de España
+  </div>
+  <div class="contact-expand expanded" id="contactinfo">
+    <h3 style="margin-top:1.1em;">Contact Information</h3>
+<ul class="contact-list">
+  <li>
+    <!-- Location Icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <title>Location</title>
+      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 6.08 11.54 6.33 11.78.37.36.97.36 1.34 0C12.92 20.54 19 14.25 19 9c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+    </svg>
+    Alcalá 48 Madrid, Spain
+  </li>
+  <li>
+    <!-- Institution Icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <title>Institution</title>
+      <path d="M12 2L1 7v2h2v9a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V11h4v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V9h2V7L12 2zm7 5.18V7H5v.18L12 4l7 3.18z"/>
+    </svg>
+    Banco de España
+  </li>
+  <li>
+    <!-- Email Icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <title>Email</title>
+      <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l8 6.99 8-6.99V20H4z"/>
+    </svg>
+    <a href="mailto:diego.bonelli@bde.es">diego.bonelli@bde.es</a>
+  </li>
+  <li>
+    <!-- GitHub Icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <title>GitHub</title>
+      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8
+      8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04
+      -3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633
+      17.7 3.633 17.7c-1.087-.744.084-.729.084
+      -.729 1.205.084 1.838 1.236 1.838 1.236
+      1.07 1.835 2.809 1.305 3.495.998.108
+      -.776.417-1.305.76-1.605-2.665-.3
+      -5.466-1.332-5.466-5.93 0-1.31.465-2.38
+      1.235-3.22-.135-.303-.54-1.523.105
+      -3.176 0 0 1.005-.322 3.3 1.23.96
+      -.267 1.98-.399 3-.405 1.02.006 2.04
+      .138 3 .405 2.28-1.552 3.285-1.23 3.285
+      -1.23.645 1.653.24 2.873.12 3.176.765
+      .84 1.23 1.91 1.23 3.22 0 4.61-2.805
+      5.625-5.475 5.92.42.36.81 1.096.81
+      2.22 0 1.606-.015 2.896-.015
+      3.286 0 .315.21.69.825.57C20.565 22.092
+      24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </svg>
+    <a href="https://github.com/DiegoBonelli" target="_blank">Github</a>
+  </li>
+  <li>
+    <!-- LinkedIn Icon -->
+    <svg viewBox="0 0 448 512" aria-hidden="true">
+      <title>LinkedIn</title>
+      <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341A53.24
+      53.24 0 11106.52 0a53.25 53.25 0 010 106.52A53.25
+      53.25 0 0153.84 106.52zm394.24 341h-92.68V302.4c0
+      -34.7-12.44-58.4-43.55-58.4-23.77 0-37.9 16-44.18
+      31.4-2.27 5.6-2.84 13.4-2.84 21.3V448h-92.78s1.24
+      -241.9 0-266.1h92.68v37.7c12.31-19
+      34.37-46.2 83.59-46.2 61 0
+      106.72 39.9 106.72 125.4V448z"/>
+    </svg>
+    <a href="https://www.linkedin.com/in/diego-bonelli" target="_blank">LinkedIn</a>
+  </li>
+  <li>
+    <!-- CV/Document Icon -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <title>CV</title>
+      <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2
+      0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 7H13V3.5zM6 4h6v5h5v11H6V4zm2
+      7h8v2H8v-2zm0 4h8v2H8v-2z"/>
+    </svg>
+    <a href="https://diegobonelli.github.io/files/CV.pdf">CV</a>
+  </li>
+</ul>
+
+
+  </div>
+</div>
     </div>
     <div class="content">
       <div style="margin-bottom:1.2em; font-size:1.06em;">
