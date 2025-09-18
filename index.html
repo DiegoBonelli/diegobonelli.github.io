@@ -16,7 +16,8 @@
       --emph:#385485; --footer:#888888; --f:15px; --fs:1.04em; --cs:.88em; --ss:1.27em;
     }
     body{
-      font-family:'CMU Sans Serif',Arial,sans-serif;background:var(--bg);color:var(--main);
+      font-family:'CMU Sans Serif',Arial,sans-serif;
+      background:var(--bg);color:var(--main);
       font-size:var(--f);line-height:1.7;margin:0;padding:0 .5em;text-align:justify;
     }
     header,main{max-width:1080px;margin:auto;}
@@ -31,9 +32,7 @@
     .contact-list{padding:0;margin:.67em 0 .2em;list-style:none;font-size:var(--cs);}
     .contact-list li{margin-bottom:2px;}
     .contact-list svg{width:1em;height:1em;vertical-align:middle;fill:var(--main);margin-right:7px;}
-    .expand-btn{display:none;background:none;border:1px solid var(--bd);border-radius:4px;color:var(--ac);padding:6px 12px;margin-top:.84em;cursor:pointer;width:100%;text-align:left;letter-spacing:.03em;font-size:.96em;}
-    .contact-expand{display:block;transition:max-height 0.3s cubic-bezier(.4,0,.2,1), padding 0.2s, opacity 0.2s;overflow:hidden;max-height:1000px;opacity:1;}
-    .contact-expand.collapsed{max-height:0;opacity:0;padding:0;}
+    .contact-expand{display:block;}
     .content{max-width:830px;min-width:310px;padding-top:30px;font-size:var(--f);}
     .section-title{color:var(--ac);font-family:'CMU Serif',serif;font-size:var(--ss);font-weight:700;margin:2.5em 0 .7em;background:linear-gradient(to right, #f6fafd 60%, var(--bg) 100%);letter-spacing:.08em;font-variant:small-caps;line-height:1.3;}
     strong,b{font-weight:700;}
@@ -51,7 +50,7 @@
       display: inline-block;width: 1.1em;height: 1.1em;
       border: 1.5px solid var(--ac);border-radius: 4px;
       margin-right: .3em;text-align: center;line-height: 1em;
-      font-size: 1em;font-weight: 700;
+      font-size: 1em;font-weight: 700;vertical-align: -0.08em;
       transition: border-color 0.18s, color 0.18s, background 0.18s;
       background: var(--white);color: var(--ac);box-sizing: border-box;
     }
@@ -61,7 +60,6 @@
     .code-desc{color:var(--code-desc);font-size:.99em;margin-top:3px;line-height:1.6;}
     footer{font-size:.93em;color:var(--footer);margin-top:2.5em;margin-bottom:2.1em;}
     .disclaimer{color:var(--disclaimer);font-size:.95em;margin-bottom:3em;font-style:italic;}
-
   </style>
 </head>
 <body>
@@ -83,8 +81,7 @@
         <span>Research Economist</span><br>
         Banco de España
       </div>
-      <button class="expand-btn" aria-expanded="false" aria-controls="contactinfo">Show Contact Information</button>
-      <div class="contact-expand collapsed" id="contactinfo">
+      <div class="contact-expand" id="contactinfo">
         <h3 style="margin-top:1.1em;">Contact Information</h3>
         <ul class="contact-list">
 <li><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 6.08 11.54 6.33 11.78.37.36.97.36 1.34 0C12.92 20.54 19 14.25 19 9c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Alcalá 48 Madrid, Spain</li>
@@ -93,8 +90,7 @@
 <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.11 2.91.85.09-.65.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.27-.45-1.33.1-2.78 0 0 .84-.28 2.75 1.06A9.43 9.43 0 0 1 12 6.78c.85.004 1.7.11 2.5.32 1.9-1.34 2.74-1.06 2.74-1.06.55 1.45.21 2.51.1 2.78.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.93.68 1.88 0 1.36-.01 2.45-.01 2.78 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg><a class="plainlink" href="https://github.com/DiegoBonelli" style="color:var(--main)" target="_blank" rel="noopener noreferrer">Github</a></li>
 <li><svg viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-341A53.24 53.24 0 11106.52 0a53.25 53.25 0 010 106.52A53.25 53.25 0 0153.84 106.52zm394.24 341h-92.68V302.4c0-34.7-12.44-58.4-43.55-58.4-23.77 0-37.9 16-44.18 31.4-2.27 5.6-2.84 13.4-2.84 21.3V448h-92.78s1.24-241.9 0-266.1h92.68v37.7c12.31-19 34.37-46.2 83.59-46.2 61 0 106.72 39.9 106.72 125.4V448z"/></svg><a class="plainlink" href="https://www.linkedin.com/in/diego-bonelli" style="color:var(--main)" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
 <li><svg viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 7H13V3.5zM6 4h6v5h5v11H6V4zm2 7h8v2H8v-2zm0 4h8v2H8v-2z"/></svg><a class="plainlink" href="https://diegobonelli.github.io/files/CV.pdf" style="color:var(--main)" target="_blank" rel="noopener noreferrer">CV</a></li>
-
- </ul>
+        </ul>
       </div>
     </section>
   </aside>
@@ -179,53 +175,11 @@ function toggleSection(id, btn, show, hide){
   if(icon) icon.textContent = isOpen ? "+" : "−";
   btn.childNodes[2].nodeValue = "Abstract";
 }
-
-// Sidebar contact toggle for mobile
+// NO JS for contact panel; all that logic and references are gone.
 document.addEventListener('DOMContentLoaded',function(){
-  var contactInfo=document.getElementById('contactinfo'),
-      expandBtn=document.querySelector('.expand-btn');
-  var isMobile=()=>window.matchMedia("(max-width:900px)").matches;
-  let resizeTimeout;
-  function updateContactDisplay(){
-    clearTimeout(resizeTimeout);
-    resizeTimeout=setTimeout(()=>{
-      if(isMobile()){
-        expandBtn.style.display="block";
-        if(!contactInfo.classList.contains('expanded')&&!contactInfo.classList.contains('collapsed')){
-          contactInfo.classList.add('collapsed');
-          expandBtn.textContent="Show Contact Information";
-          expandBtn.setAttribute("aria-expanded","false");
-        }
-        if(contactInfo.classList.contains("expanded")){
-          expandBtn.textContent="Hide Contact Information";
-          expandBtn.setAttribute("aria-expanded","true");
-        }
-      }else{
-        expandBtn.style.display="none";
-        contactInfo.classList.remove('collapsed');
-        contactInfo.classList.add('expanded');
-        expandBtn.setAttribute("aria-expanded","true");
-      }
-    },100);}
-  updateContactDisplay();
-  window.addEventListener('resize',updateContactDisplay);
-  expandBtn.addEventListener('click',function(){
-    if(contactInfo.classList.contains('collapsed')){
-      contactInfo.classList.remove('collapsed');
-      contactInfo.classList.add('expanded');
-      expandBtn.textContent="Hide Contact Information";
-      expandBtn.setAttribute("aria-expanded","true");
-    }else{
-      contactInfo.classList.remove('expanded');
-      contactInfo.classList.add('collapsed');
-      expandBtn.textContent="Show Contact Information";
-      expandBtn.setAttribute("aria-expanded","false");
-    }
-  });
-
   // ...nav scroll highlighting unchanged...
   var links=document.querySelectorAll('nav a[href*="#"]');
-  var sids=['about','papers','code'];
+  var sids=['about','research','code'];
   var secs=sids.map(id=>document.getElementById(id)||document.getElementById(id+'-text')).filter(Boolean);
   function updateActiveSection(){
     var y=window.scrollY+110;
