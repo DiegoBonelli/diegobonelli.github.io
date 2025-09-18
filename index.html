@@ -1,3 +1,4 @@
+
 <!DOCTYPE html> <!-- Document type declaration -->
 <html lang="en"> <!-- HTML document, language: English -->
 <head>
@@ -45,11 +46,14 @@
     a.plainlink{text-decoration:none;}
     .paper-entry{margin-bottom:2em;}
     .paper-links{font-size:.97em;}
-    .paper-links a{margin-right:.38em;}
-    .abstract-btn{border:none;background:none;color:var(--ac);text-decoration:underline;cursor:pointer;font:inherit;padding-left:7px;font-weight:500;transition:color .16s;}
+    .paper-links a{margin-right:.2em;margin-left:.2em;}
+
+
+ .abstract-btn{border:none;
+background:none;color:var(--ac);text-decoration:underline;cursor:pointer;font:inherit;padding-left:7px;font-weight:500;transition:color .16s;}
     .abstract-btn:hover{color:var(--l1);}
     .abstract-content{display:none;margin:.54em 0 .7em .2em;padding:0 3px;font-size:.99em;color:#223257;font-family:'CMU Sans Serif',Arial,sans-serif;background:#fafcff;  text-align: justify;      /* <--- Justify all main content */
-}
+ }
     .code-title{font-weight:bold;color:var(--main);}
     .code-desc{color:#607196;font-size:.99em;margin-top:3px;line-height:1.6;}
     footer{font-size:.93em;color:#888;margin-top:2.5em;margin-bottom:.7em;}
@@ -161,14 +165,26 @@
 </main>
 <!-- Core JavaScript: expansion, toggles, and nav highlight -->
 <script>
+function toggleSection(id, btn, show, hide){
+  var el = document.getElementById(id);
+  if (!el) return;
+  var isOpen = el.style.display === "block";
+  el.style.display = isOpen ? "none" : "block";
+  // Update contents
+  btn.setAttribute("aria-expanded", (!isOpen).toString());
+  var icon = btn.querySelector('.icon-square');
+  if(icon) icon.textContent = isOpen ? "+" : "−";
+  btn.childNodes[2].nodeValue = isOpen ? "Abstract" : "Hide Abstract";
+}
+
 /* Show/hide a section such as abstract or contact, updates button text */
-function toggleSection(id,btn,show,hide){
+/*function toggleSection(id,btn,show,hide){
   var el=document.getElementById(id);
   if(!el)return;
   var on=el.style.display!=="block";
   el.style.display=on?"block":"none";
   if(btn)btn.textContent=on?hide:show,btn.setAttribute("aria-expanded",String(on));
-}
+}*/
 /* DOM ready: setup all interactions and sidebar for mobile */
 document.addEventListener('DOMContentLoaded',function(){
   var contactInfo=document.getElementById('contactinfo'),
