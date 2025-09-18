@@ -1,51 +1,62 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><title>Diego Bonelli</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Diego Bonelli | Research Economist, Banco de España">
-<link rel="icon" href="https://diegobonelli.github.io/files/images/favicon.ico">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-sans-serif.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-serif.css">
-<style>
-:root{--main:#172444;--ac:#39578c;--bg:#f8fbff;--l1:#2962A8;--l2:#4e8be8;--bd:#e0e4f7;--f:15px;--fs:1.04em;--cs:.88em;--ss:1.27em;}
-body{font-family:'CMU Sans Serif',Arial,sans-serif;background:var(--bg);color:var(--main);font-size:var(--f);line-height:1.7;margin:0;padding:0 .5em;}
-header,main{max-width:1080px;margin:auto;}
-nav{display:flex;gap:.7em;align-items:center;color:var(--ac);font-family:'CMU Serif',serif;font-size:var(--ss);font-variant:small-caps;font-weight:700;margin:36px 0 0;}
-nav a{color:var(--main);text-decoration:none;margin-right:1.3em;font-size:1.15em;font-weight:bold;padding:3px 8px 3px 3px;border-radius:5px;transition:.13s;}
-nav a:hover,.active{color:var(--ac);}
-main{display:grid;grid-template-columns:230px 1fr;align-items:start;column-gap:2.3em;}
-.sidebar{display:flex;flex-direction:column;align-items:center;position:sticky;top:26px;padding-top:18px;}
-.profile-pic{width:186px;height:186px;object-fit:cover;border-radius:50%;margin-top:10px;box-shadow:0 2px 8px rgba(80,80,120,0.06);background:#eee;border:2px solid var(--bd);transition:.2s;}
-.side-info{margin-top:1.2em;text-align:left;font-size:var(--fs);max-width:230px;}
-.side-info h3{margin:0 0 .18em;font-size:1.06em;font-weight:700;color:var(--ac);font-variant:small-caps;}
-.contact-list{padding:0;margin:.67em 0 .2em;list-style:none;font-size:var(--cs);}
-.contact-list li{margin-bottom:2px;}
-.contact-list svg{width:1em;height:1em;vertical-align:middle;fill:var(--main);margin-right:7px;}
-.expand-btn{display:none;background:none;border:1px solid #d6d6ee;border-radius:4px;color:var(--ac);padding:6px 12px;margin-top:.84em;cursor:pointer;width:100%;text-align:left;letter-spacing:.03em;font-size:.96em;}
-.contact-expand{display:block;transition:.2s;overflow:hidden;}
-.content{max-width:830px;min-width:310px;padding-top:30px;font-size:var(--f);}
-.section-title{color:var(--ac);font-family:'CMU Serif',serif;font-size:var(--ss);font-weight:700;margin:2.5em 0 .7em;background:linear-gradient(to right,#f6fafd 60%,#f8fbff 100%);letter-spacing:.08em;font-variant:small-caps;line-height:1.3;}
-strong,b{font-weight:700;}
-em,.emph{font-style:italic;color:#385485;}
-.paper-entry strong{font-size:1.07em;letter-spacing:.02em;}
-.media,.small{font-style:italic;color:#6077a8;}
-.side-info a,.content a{color:var(--l2);font-weight:500;transition:color .13s;}
-.side-info a:hover,.content a:hover{color:var(--l1);text-decoration:underline;}
-a.plainlink{text-decoration:none;}
-.paper-entry{margin-bottom:2em;}
-.paper-links{font-size:.97em;}
-.paper-links a{margin-right:.38em;}
-.abstract-btn{border:none;background:none;color:var(--ac);text-decoration:underline;cursor:pointer;font:inherit;padding-left:7px;font-weight:500;transition:color .16s;}
-.abstract-btn:hover{color:var(--l1);}
-.abstract-content{display:none;margin:.54em 0 .7em .2em;padding:0 3px;font-size:.99em;color:#223257;font-family:'CMU Sans Serif',Arial,sans-serif;border-left:2px solid #dde6f8;background:#fafcff;}
-.code-title{font-weight:bold;color:var(--main);}
-.code-desc{color:#607196;font-size:.99em;margin-top:3px;line-height:1.6;}
-footer{font-size:.93em;color:#888;margin-top:2.5em;margin-bottom:.7em;}
-.disclaimer{color:#aaa;font-size:.95em;margin-bottom:1em;font-style:italic;}
-@media(max-width:1100px){main,.content,nav,header{max-width:99vw;}.sidebar{max-width:190px;}.profile-pic{width:160px;height:160px;}nav{padding-left:180px;}}
-@media(max-width:900px){nav{padding-left:0;}main{grid-template-columns:1fr;column-gap:0;}.sidebar,.content{max-width:99vw;}.sidebar{position:static;max-width:300px;margin:0 auto;}.profile-pic{width:128px;height:128px;margin-bottom:8px;}.expand-btn{display:block;}.contact-expand.collapsed{display:none;}}
-@media(max-width:600px){.sidebar{max-width:99vw;}.profile-pic{width:90px;height:90px;}}
-</style>
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- HTML document, language: English -->
+<head>
+  <meta charset="UTF-8"> <!-- Character set -->
+  <title>Diego Bonelli</title> <!-- Tab/browser title -->
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- Mobile responsiveness -->
+  <meta name="description" content="Diego Bonelli | Research Economist, Banco de España"> <!-- Site description for SEO -->
+  <link rel="icon" href="https://diegobonelli.github.io/files/images/favicon.ico"> <!-- Favicon -->
+  <!-- Fonts: Computer Modern -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-sans-serif.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-serif.css">
+  <style>
+    /* Custom CSS variables and global styles */
+    :root{--main:#172444;--ac:#39578c;--bg:#f8fbff;--l1:#2962A8;--l2:#4e8be8;--bd:#e0e4f7;--f:15px;--fs:1.04em;--cs:.88em;--ss:1.27em;}
+    body{font-family:'CMU Sans Serif',Arial,sans-serif;background:var(--bg);color:var(--main);font-size:var(--f);line-height:1.7;margin:0;padding:0 .5em;}
+    header,main{max-width:1080px;margin:auto;}
+    /* Navigation styles */
+    nav{display:flex;gap:.7em;align-items:center;color:var(--ac);font-family:'CMU Serif',serif;font-size:var(--ss);font-variant:small-caps;font-weight:700;margin:36px 0 0;}
+    nav a{color:var(--main);text-decoration:none;margin-right:1.3em;font-size:1.15em;font-weight:bold;padding:3px 8px 3px 3px;border-radius:5px;transition:.13s;}
+    nav a:hover,.active{color:var(--ac);}
+    /* Main grid */
+    main{display:grid;grid-template-columns:230px 1fr;align-items:start;column-gap:2.3em;}
+    /* Sidebar (left column) */
+    .sidebar{display:flex;flex-direction:column;align-items:center;position:sticky;top:26px;padding-top:18px;}
+    .profile-pic{width:186px;height:186px;object-fit:cover;border-radius:50%;margin-top:10px;box-shadow:0 2px 8px rgba(80,80,120,0.06);background:#eee;border:2px solid var(--bd);transition:.2s;}
+    .side-info{margin-top:1.2em;text-align:left;font-size:var(--fs);max-width:230px;}
+    .side-info h3{margin:0 0 .18em;font-size:1.06em;font-weight:700;color:var(--ac);font-variant:small-caps;}
+    /* Contact list */
+    .contact-list{padding:0;margin:.67em 0 .2em;list-style:none;font-size:var(--cs);}
+    .contact-list li{margin-bottom:2px;}
+    .contact-list svg{width:1em;height:1em;vertical-align:middle;fill:var(--main);margin-right:7px;}
+    .expand-btn{display:none;background:none;border:1px solid #d6d6ee;border-radius:4px;color:var(--ac);padding:6px 12px;margin-top:.84em;cursor:pointer;width:100%;text-align:left;letter-spacing:.03em;font-size:.96em;}
+    .contact-expand{display:block;transition:.2s;overflow:hidden;}
+    /* Main content column */
+    .content{max-width:830px;min-width:310px;padding-top:30px;font-size:var(--f);}
+    .section-title{color:var(--ac);font-family:'CMU Serif',serif;font-size:var(--ss);font-weight:700;margin:2.5em 0 .7em;background:linear-gradient(to right,#f6fafd 60%,#f8fbff 100%);letter-spacing:.08em;font-variant:small-caps;line-height:1.3;}
+    /* Emphasis, paper entries, links */
+    strong,b{font-weight:700;}
+    em,.emph{font-style:italic;color:#385485;}
+    .paper-entry strong{font-size:1.07em;letter-spacing:.02em;}
+    .media,.small{font-style:italic;color:#6077a8;}
+    .side-info a,.content a{color:var(--l2);font-weight:500;transition:color .13s;}
+    .side-info a:hover,.content a:hover{color:var(--l1);text-decoration:underline;}
+    a.plainlink{text-decoration:none;}
+    .paper-entry{margin-bottom:2em;}
+    .paper-links{font-size:.97em;}
+    .paper-links a{margin-right:.38em;}
+    .abstract-btn{border:none;background:none;color:var(--ac);text-decoration:underline;cursor:pointer;font:inherit;padding-left:7px;font-weight:500;transition:color .16s;}
+    .abstract-btn:hover{color:var(--l1);}
+    .abstract-content{display:none;margin:.54em 0 .7em .2em;padding:0 3px;font-size:.99em;color:#223257;font-family:'CMU Sans Serif',Arial,sans-serif;border-left:2px solid #dde6f8;background:#fafcff;}
+    .code-title{font-weight:bold;color:var(--main);}
+    .code-desc{color:#607196;font-size:.99em;margin-top:3px;line-height:1.6;}
+    footer{font-size:.93em;color:#888;margin-top:2.5em;margin-bottom:.7em;}
+    .disclaimer{color:#aaa;font-size:.95em;margin-bottom:1em;font-style:italic;}
+    /* Responsive design rules for tablets and phones */
+    @media(max-width:1100px){main,.content,nav,header{max-width:99vw;}.sidebar{max-width:190px;}.profile-pic{width:160px;height:160px;}nav{padding-left:180px;}}
+    @media(max-width:900px){nav{padding-left:0;}main{grid-template-columns:1fr;column-gap:0;}.sidebar,.content{max-width:99vw;}.sidebar{position:static;max-width:300px;margin:0 auto;}.profile-pic{width:128px;height:128px;margin-bottom:8px;}.expand-btn{display:block;}.contact-expand.collapsed{display:none;}}
+    @media(max-width:600px){.sidebar{max-width:99vw;}.profile-pic{width:90px;height:90px;}}
+  </style>
 </head>
 <body>
 <header>
@@ -57,14 +68,22 @@ footer{font-size:.93em;color:#888;margin-top:2.5em;margin-bottom:.7em;}
 </nav>
 </header>
 <main>
-<aside class="sidebar">
-<img src="https://diegobonelli.github.io/images/profiledb.png" loading="lazy" alt="Portrait of Diego Bonelli" class="profile-pic">
-<section class="side-info">
-<div style="text-align:center;margin-bottom:1em;" id="about"><h3>Diego Bonelli</h3><span>Research Economist</span><br>Banco de España</div>
-<button class="expand-btn" aria-expanded="true" aria-controls="contactinfo">Show Contact Information</button>
-<div class="contact-expand expanded" id="contactinfo">
-<h3 style="margin-top:1.1em;">Contact Information</h3>
-<ul class="contact-list">
+ <!-- Sidebar with profile and contact -->
+  <aside class="sidebar">
+    <img src="https://diegobonelli.github.io/images/profiledb.png" loading="lazy" alt="Portrait of Diego Bonelli" class="profile-pic">
+    <section class="side-info">
+      <!-- Name, title, institution -->
+      <div style="text-align:center;margin-bottom:1em;" id="about">
+        <h3>Diego Bonelli</h3>
+        <span>Research Economist</span><br>
+        Banco de España
+      </div>
+      <!-- Button for expanding/collapsing contact info on mobile -->
+      <button class="expand-btn" aria-expanded="true" aria-controls="contactinfo">Show Contact Information</button>
+      <!-- Contact block with icons and links -->
+      <div class="contact-expand expanded" id="contactinfo">
+        <h3 style="margin-top:1.1em;">Contact Information</h3>
+        <ul class="contact-list">
 <li><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 6.08 11.54 6.33 11.78.37.36.97.36 1.34 0C12.92 20.54 19 14.25 19 9c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Alcalá 48 Madrid, Spain</li>
 <li><svg viewBox="0 0 24 24"><path d="M12 2L1 7v2h2v9a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V11h4v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V9h2V7L12 2zm7 5.18V7H5v.18L12 4l7 3.18z"/></svg><a class="plainlink" href="https://github.com/DiegoBonelli" style="color:var(--main)" target="_blank" rel="noopener noreferrer">Banco de España</a></li>
 <li><svg viewBox="0 0 24 24"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0l8 7 8-7H4zm16 2.1l-6.5 5.7a2 2 0 0 1-2.6 0L4 8.1V18h16V8.1z"/></svg><a class="plainlink" href="https://www.bde.es/" style="color:var(--main);">diego.bonelli@bde.es</a></li>
@@ -97,33 +116,73 @@ You can find my CV <a class="plainlink" href="https://diegobonelli.github.io/fil
 <footer>&copy; 2025 Diego Bonelli<div class="disclaimer">Disclaimer: The views expressed on this website do not necessarily reflect those of the Banco de España or the Eurosystem.</div></footer>
 </section>
 </main>
+<!-- Core JavaScript: expansion, toggles, and nav highlight -->
 <script>
+/* Show/hide a section such as abstract or contact, updates button text */
 function toggleSection(id,btn,show,hide){
-var el=document.getElementById(id);
-if(!el)return;
-var on=el.style.display!=="block";
-el.style.display=on?"block":"none";
-if(btn)btn.textContent=on?hide:show,btn.setAttribute("aria-expanded",String(on));
+  var el=document.getElementById(id);
+  if(!el)return;
+  var on=el.style.display!=="block";
+  el.style.display=on?"block":"none";
+  if(btn)btn.textContent=on?hide:show,btn.setAttribute("aria-expanded",String(on));
 }
+/* DOM ready: setup all interactions and sidebar for mobile */
 document.addEventListener('DOMContentLoaded',function(){
-var contactInfo=document.getElementById('contactinfo'),expandBtn=document.querySelector('.expand-btn');
-var isMobile=()=>window.matchMedia("(max-width:900px)").matches;
-let resizeTimeout;
-function updateContactDisplay(){clearTimeout(resizeTimeout);resizeTimeout=setTimeout(()=>{if(isMobile()){expandBtn.style.display="block";if(!contactInfo.classList.contains('expanded')&&!contactInfo.classList.contains('collapsed')){contactInfo.classList.add('collapsed');expandBtn.textContent="Show Contact Information";expandBtn.setAttribute("aria-expanded","false");}}else{expandBtn.style.display="none";contactInfo.classList.remove('collapsed');contactInfo.classList.add('expanded');expandBtn.setAttribute("aria-expanded","true");}},100);}
-updateContactDisplay();
-window.addEventListener('resize',updateContactDisplay);
-expandBtn.addEventListener('click',function(){
-if(contactInfo.classList.contains('collapsed')){contactInfo.classList.remove('collapsed');contactInfo.classList.add('expanded');expandBtn.textContent="Hide Contact Information";expandBtn.setAttribute("aria-expanded","true");}
-else{contactInfo.classList.remove('expanded');contactInfo.classList.add('collapsed');expandBtn.textContent="Show Contact Information";expandBtn.setAttribute("aria-expanded","false");}
-});
-var links=document.querySelectorAll('nav a[href*="#"]');
-var sids=['about','papers','code'];
-var secs=sids.map(id=>document.getElementById(id)||document.getElementById(id+'-text')).filter(Boolean);
-function updateActiveSection(){
-var y=window.scrollY+110;
-for(var i=secs.length-1;i>=0;i--){if(secs[i]&&secs[i].offsetTop<=y){links.forEach(a=>a.classList.remove('active'));if(links[i])links[i].classList.add('active');break;}}
-}
-window.addEventListener('scroll',updateActiveSection,{passive:true});updateActiveSection();
+  var contactInfo=document.getElementById('contactinfo'),
+      expandBtn=document.querySelector('.expand-btn');
+  var isMobile=()=>window.matchMedia("(max-width:900px)").matches;
+  let resizeTimeout;
+  /* Sidebar contact show/hide on mobile; toggle by resizing */
+  function updateContactDisplay(){
+    clearTimeout(resizeTimeout);
+    resizeTimeout=setTimeout(()=>{
+      if(isMobile()){
+        expandBtn.style.display="block";
+        if(!contactInfo.classList.contains('expanded')&&!contactInfo.classList.contains('collapsed')){
+          contactInfo.classList.add('collapsed');
+          expandBtn.textContent="Show Contact Information";
+          expandBtn.setAttribute("aria-expanded","false");
+        }
+      }else{
+        expandBtn.style.display="none";
+        contactInfo.classList.remove('collapsed');
+        contactInfo.classList.add('expanded');
+        expandBtn.setAttribute("aria-expanded","true");
+      }
+    },100);}
+  updateContactDisplay();
+  window.addEventListener('resize',updateContactDisplay);
+  /* Expand/collapse contact list on button click (mobile) */
+  expandBtn.addEventListener('click',function(){
+    if(contactInfo.classList.contains('collapsed')){
+      contactInfo.classList.remove('collapsed');
+      contactInfo.classList.add('expanded');
+      expandBtn.textContent="Hide Contact Information";
+      expandBtn.setAttribute("aria-expanded","true");
+    }else{
+      contactInfo.classList.remove('expanded');
+      contactInfo.classList.add('collapsed');
+      expandBtn.textContent="Show Contact Information";
+      expandBtn.setAttribute("aria-expanded","false");
+    }
+  });
+  /* Navigation links highlight according to scroll position */
+  var links=document.querySelectorAll('nav a[href*="#"]');
+  var sids=['about','papers','code'];
+  var secs=sids.map(id=>document.getElementById(id)||document.getElementById(id+'-text')).filter(Boolean);
+  function updateActiveSection(){
+    var y=window.scrollY+110;
+    for(var i=secs.length-1;i>=0;i--){
+      if(secs[i]&&secs[i].offsetTop<=y){
+        links.forEach(a=>a.classList.remove('active'));
+        if(links[i])links[i].classList.add('active');
+        break;
+      }
+    }
+  }
+  window.addEventListener('scroll',updateActiveSection,{passive:true});
+  updateActiveSection(); // Run initially
 });
 </script>
-</body></html>
+</body>
+</html>
