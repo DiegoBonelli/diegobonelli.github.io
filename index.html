@@ -24,7 +24,6 @@
   /* ----------- Semantic/Component colors ----------- */
   --code-desc:  #607196;   /* Used in code project descriptions */
   --disclaimer: #aaa;      /* Disclaimer font color (footer) */
-  --media:      #6077a8;   /* Media label color */
   --emph:       #385485;   /* For emphasized (em) text, e.g. .emph class */
   --footer:     #888888;   /* Footer text color */
 
@@ -79,7 +78,6 @@
     strong,b{font-weight:700;}
     em,.emph{font-style:italic;color:var(--emph);}
     .paper-entry strong{font-size:1.07em;letter-spacing:.02em;}
-    .media,.small{font-style:italic;color:var(--media);}
     .side-info a,.content a{color:var(--l2);font-weight:500;transition:color .13s;}
     .side-info a:hover,.content a:hover{color:var(--l1);text-decoration:underline;}
     a.plainlink{text-decoration:none;}
@@ -95,13 +93,11 @@ display: inline-block;
   border: 1.5px solid var(--ac);
   border-radius: 4px;
   margin-right: .3em;
-  padding-bottom: 13px;
-
+  padding-bottom:13px;
   text-align: center;
   line-height: 1em;
   font-size: 1em;
   font-weight: 700;
-  vertical-align: -0.15em;
   transition: border-color 0.18s, color 0.18s, background 0.18s;
   background: var(--white);
   color: var(--ac);
@@ -186,7 +182,7 @@ footer{font-size:.93em;color:var(--footer);margin-top:2.5em;margin-bottom:2.1em;
       <button class="abstract-btn" onclick="toggleSection('abs1',this,'+ Abstract','- Abstract')" aria-expanded="false">
   <span class="icon-square">+</span>Abstract</button><br>
       <span class="content">Joint with <a>Berardino Palazzo</a> and <a>Ram Yamarthy</a></span><br>
-      <span class="media">Media: <a>SUERF Policy Note</a></span><br>
+      <span class="content">Media: <a>SUERF Policy Note</a></span><br>
       <span class="paper-links">
         [<a>SSRN</a>][<a>BDE WP</a>][<a>FED WP</a>]
       </span>
@@ -211,7 +207,7 @@ footer{font-size:.93em;color:var(--footer);margin-top:2.5em;margin-bottom:2.1em;
       <strong>Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</strong>
       <button class="abstract-btn" onclick="toggleSection('abs3',this,'+ Abstract','- Abstract')" aria-expanded="false">
   <span class="icon-square">+</span>Abstract</button><br>
-        <span class="content">Joint with <a>Carsten Bienz</a>, <a>Aksel Mjøs</a>, <a>Francisco Santos</a> <span class="small">(Revise and Resubmit)</span></span>
+        <span class="content">Joint with <a>Carsten Bienz</a>, <a>Aksel Mjøs</a>, <a>Francisco Santos</a> <span class="emph">(Revise and Resubmit)</span></span>
       <div class="abstract-content" id="abs3" aria-live="polite">
     We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures impact performance. The incentive contracts in our sample are heterogeneous, with firms using both quantitative and qualitative targets. We find that higher potential bonuses tied to quantitative targets, such as the information ratio (IR), lead to better year-end IRs. In contrast, placing more weight on qualitative goals tends to reduce IR. Additionally, fund managers at risk of missing mid-year bonus thresholds actively try to boost returns, but these efforts often backfire, resulting in worse overall performance and a lower IR.
       </div>
