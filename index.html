@@ -175,11 +175,45 @@ function toggleSection(id, btn, show, hide){
   if(icon) icon.textContent = isOpen ? "+" : "−";
   btn.childNodes[2].nodeValue = "Abstract";
 }
-// NO JS for contact panel; all that logic and references are gone.
 document.addEventListener('DOMContentLoaded',function(){
-  // ...nav scroll highlighting unchanged...
+  var contactInfo=document.getElementById('contactinfo'),
+      expandBtn=document.querySelector('.expand-btn');
+  var isMobile=()=>window.matchMedia("(max-width:900px)").matches;
+  let resizeTimeout;
+  function updateContactDisplay(){
+    clearTimeout(resizeTimeout);
+    resizeTimeout=setTimeout(()=>{
+      if(isMobile()){
+        expandBtn.style.display="block";
+        if(!contactInfo.classList.contains('expanded')&&!contactInfo.classList.contains('collapsed')){
+          contactInfo.classList.add('collapsed');
+          expandBtn.textContent="Show Contact Information";
+          expandBtn.setAttribute("aria-expanded","false");
+        }
+      }else{
+        expandBtn.style.display="none";
+        contactInfo.classList.remove('collapsed');
+        contactInfo.classList.add('expanded');
+        expandBtn.setAttribute("aria-expanded","true");
+      }
+    },100);}
+  updateContactDisplay();
+  window.addEventListener('resize',updateContactDisplay);
+  expandBtn.addEventListener('click',function(){
+    if(contactInfo.classList.contains('collapsed')){
+      contactInfo.classList.remove('collapsed');
+      contactInfo.classList.add('expanded');
+      expandBtn.textContent="Hide Contact Information";
+      expandBtn.setAttribute("aria-expanded","true");
+    }else{
+      contactInfo.classList.remove('expanded');
+      contactInfo.classList.add('collapsed');
+      expandBtn.textContent="Show Contact Information";
+      expandBtn.setAttribute("aria-expanded","false");
+    }
+  });
   var links=document.querySelectorAll('nav a[href*="#"]');
-  var sids=['about','research','code'];
+  var sids=['about','papers','code'];
   var secs=sids.map(id=>document.getElementById(id)||document.getElementById(id+'-text')).filter(Boolean);
   function updateActiveSection(){
     var y=window.scrollY+110;
@@ -197,3 +231,7 @@ document.addEventListener('DOMContentLoaded',function(){
 </script>
 </body>
 </html>
+
+
+
+
