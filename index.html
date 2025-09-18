@@ -5,6 +5,10 @@
   <title>Diego Bonelli</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Diego Bonelli | Research Economist, Banco de España">
+  <!-- Place favicon links right after the meta tags: -->
+  <link rel="icon" type="image/x-icon" href="https://diegobonelli.github.io/files/images/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://diegobonelli.github.io/files/images/favicon.ico">
+
   <!-- NEW: Also use serif font for headings -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-sans-serif.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-serif.css"> <!-- NEW -->
@@ -261,10 +265,7 @@
   </style>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // This example: show "Working Papers" and "Code" if more than one section exists
-  // (You can edit this logic to use cookies, local storage, URL, or whatever you need)
   var isMultiPage = false;
-  // EXAMPLE: Show the links if BOTH #papers and #code exist on the page, or set by some flag
   if (document.getElementById('papers') || document.getElementById('code')) {
     isMultiPage = true;
   }
@@ -273,7 +274,6 @@ document.addEventListener('DOMContentLoaded', function() {
       el.style.display = "inline-block";
     });
   }
-  // About and CV always show!
 });
 </script>
 
