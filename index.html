@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-serif.css">
   <style>
     :root{
-      --main:#172444; --ac:#39578c; --bg:#ffffff; --l1:#2962A8; --l2:#4e8be8; --bd:#e0e4f7;
-      --white:#fff; --bg-faint:#ffffff; --black:#223257;
+      --main:#172444; --ac:#39578c; --bg:#f8fbff; --l1:#2962A8; --l2:#4e8be8; --bd:#e0e4f7;
+      --white:#fff; --bg-faint:#fafcff; --black:#223257;
       --code-desc:#607196; --disclaimer:#aaa; --media:#6077a8;
       --emph:#385485; --footer:#888888; --f:15px; --fs:1.04em; --cs:.88em; --ss:1.27em;
     }
@@ -32,17 +32,23 @@
       column-gap: 2.3em;
     }
     .sidebar{
-      display:flex;flex-direction:column;align-items:center;position:sticky;top:26px;padding-top:18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: sticky;
+      top: 26px;
+      padding-top: 18px;
     }
     .profile-pic{
-      width:186px;height:186px;aspect-ratio:1/1;object-fit:cover;border-radius:50%;margin-top:10px;box-shadow:0 2px 8px rgba(80,80,120,0.06);background:var(--bg-faint);border:2px solid var(--bd);transition: width 0.2s, height 0.2s;max-width: 100%;display: block;margin-left: auto;margin-right: auto;
+      width:186px; height:186px; aspect-ratio:1/1; object-fit:cover; border-radius:50%; margin-top:10px;
+      box-shadow:0 2px 8px rgba(80,80,120,0.06); background:var(--bg-faint); border:2px solid var(--bd);
+      transition: width 0.2s, height 0.2s; max-width: 100%; display: block; margin-left: auto; margin-right: auto;
     }
     .side-info{margin-top:1.2em;text-align:left;font-size:var(--fs);max-width:230px;}
     .side-info h3{margin:0 0 .18em;font-size:1.06em;font-weight:700;color:var(--ac);font-variant:small-caps;}
     .contact-list{padding:0;margin:.67em 0 .2em;list-style:none;font-size:var(--cs);}
     .contact-list li{margin-bottom:2px;}
     .contact-list svg{width:1em;height:1em;vertical-align:middle;fill:var(--main);margin-right:7px;}
-    /* CONTACT BUTTON (matches abstract) */
     .contact-btn {
       border:none;
       background:none;
@@ -86,7 +92,7 @@
     nav a{color:var(--main);text-decoration:none;margin-right:1.3em;font-size:1.15em;font-weight:bold;padding:3px 8px 3px 3px;border-radius:5px;transition:.13s;}
     nav a:hover,.active{color:var(--ac);}
     .content{max-width:830px;min-width:310px;padding-top:30px;font-size:var(--f);}
-    .section-title{color:var(--ac);font-family:'CMU Serif',serif;font-size:var(--ss);font-weight:700;margin:2.5em 0 .7em;background: var(--bg);letter-spacing:.08em;font-variant:small-caps;line-height:1.3;}
+    .section-title{color:var(--ac);font-family:'CMU Serif',serif;font-size:var(--ss);font-weight:700;margin:2.5em 0 .7em;background:linear-gradient(to right, #f6fafd 60%, var(--bg) 100%);letter-spacing:.08em;font-variant:small-caps;line-height:1.3;}
     strong,b{font-weight:700;}
     em,.emph{font-style:italic;color:var(--emph);}
     .paper-entry strong{font-size:1.07em;letter-spacing:.02em;}
@@ -112,10 +118,11 @@
     .code-desc{color:var(--code-desc);font-size:.99em;margin-top:3px;line-height:1.6;}
     footer{font-size:.93em;color:var(--footer);margin-top:2.5em;margin-bottom:2.1em;}
     .disclaimer{color:var(--disclaimer);font-size:.95em;margin-bottom:3em;font-style:italic;}
-    /* --- Only mobile styles (≤900px) for sidebar stacking and contact info retract --- */
+    /* --- Only mobile styles (≤900px) for sidebar and headline order --- */
     @media (max-width:900px){
       .layout {
-        display: block;
+        display: flex;
+        flex-direction: column;
         max-width: 100vw;
         padding: 0;
       }
@@ -127,11 +134,30 @@
         margin: 0 auto 1.5em auto;
         padding: 0;
         top:auto;
+        z-index: 1;
       }
-      .main-content, main {
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
         max-width: 100vw;
         margin: 0;
         padding: 0;
+      }
+      nav {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin-top: 0;
+        margin-bottom: 0;
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        overflow-x: auto;
+        font-size: clamp(1em, 3.4vw, 1.15em);
+        gap: 0.32em;
+        padding: 0.7em 0 0.4em 0;
       }
       .profile-pic {
         width: min(56vw, 240px);
@@ -141,7 +167,11 @@
         min-height: 100px;
         margin-top: 18px;
       }
-      .content{max-width:99vw;padding-top:10px;}
+      .content {
+        max-width: 99vw;
+        padding-top: 10px;
+        order: 3;
+      }
       .contact-btn {display:inline-flex;}
       .contact-expand {
         max-height:1000px;
@@ -155,27 +185,8 @@
         opacity:0.1 !important;
         padding:0!important;
       }
-      header, nav {
-        width: 100vw!important;
-        max-width: 100vw!important;
-        min-width: 0!important;
-        margin: 0!important;
-        left: 0!important;
-        right: 0!important;
-        transform: none!important;
-        padding: 0!important;
-      }
-      nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        overflow-x: auto;
-        font-size: clamp(1em, 3.4vw, 1.15em);
-        gap: 0.32em;
-        padding: 0.7em 0 0.4em 0;
-        width: 100vw!important;
-        max-width: 100vw!important;
+      header {
+        display: none; /* Don't render <header> tag on mobile, use nav in main-content */
       }
       nav a {
         font-size: clamp(1em, 4.3vw, 1.18em);
@@ -191,7 +202,9 @@
       .contact-expand.collapsed {max-height:none!important;opacity:1!important;display:block!important;padding:0!important;}
       .layout {display: grid;grid-template-columns: 230px 1fr;align-items:start;column-gap:2.3em;}
       .sidebar {position:sticky;top:26px;padding-top:18px;}
+      .main-content { display: flex; flex-direction: column; width: 100%; }
       .profile-pic {width:186px;height:186px;}
+      header {display: none;} /* Hide header on desktop; using main-content nav */
     }
   </style>
 </head>
@@ -307,6 +320,7 @@
     </div>
   </div>
 </main>
+
 <script>
 function toggleSection(id, btn, show, hide){
   var el = document.getElementById(id);
@@ -368,7 +382,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  // --- Navigation scroll highlighter ---
+  // --- Navigation scroll highlighter (unchanged) ---
   var links = document.querySelectorAll('nav a[href*="#"]');
   var sids = ['about','research','code'];
   var secs = sids.map(id=>document.getElementById(id)||document.getElementById(id+'-text')).filter(Boolean);
