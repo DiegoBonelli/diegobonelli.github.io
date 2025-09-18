@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-sans-serif.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-serif.css"> <!-- NEW -->
   <style>
+    
     :root {
       --main-color: #172444;             /* CHANGED: deeper text blue */
       --main-link: #2962A8;              /* CHANGED: updated signature blue for nav/links */
@@ -253,15 +254,37 @@
       .sidebar { max-width: 99vw; }
       .profile-pic { width: 90px; height: 90px;}       /* CHANGED */
     }
+
+.nav-sectional {
+  display: none;
+}
   </style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // This example: show "Working Papers" and "Code" if more than one section exists
+  // (You can edit this logic to use cookies, local storage, URL, or whatever you need)
+  var isMultiPage = false;
+  // EXAMPLE: Show the links if BOTH #papers and #code exist on the page, or set by some flag
+  if (document.getElementById('papers') || document.getElementById('code')) {
+    isMultiPage = true;
+  }
+  if (isMultiPage) {
+    document.querySelectorAll('.nav-sectional').forEach(function(el) {
+      el.style.display = "inline-block";
+    });
+  }
+  // About and CV always show!
+});
+</script>
+
 </head>
 <body>
-  <div class="headline">
-    <a href="#about">About</a>
-    <a href="#papers">Working Papers</a>
-    <a href="#code">Code</a>
-    <a href="https://diegobonelli.github.io/files/CV.pdf">CV</a>
-  </div>
+<div class="headline" id="mainnav">
+  <a href="#about">About</a>
+  <a href="#papers" class="nav-sectional">Working Papers</a>
+  <a href="#code" class="nav-sectional">Code</a>
+  <a href="https://diegobonelli.github.io/files/CV.pdf">CV</a>
+</div>
   <div class="page-grid">
     <div class="sidebar">
       <img src="https://diegobonelli.github.io/images/profiledb.png" alt="Diego Bonelli" class="profile-pic">
