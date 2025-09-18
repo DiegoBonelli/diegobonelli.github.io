@@ -55,12 +55,12 @@ display: inline-block;
   width: 1em;
   height: 1em;
   border: 1.5px solid var(--ac);
-  border-radius: 5px;
-  margin-right: .35em;
+  border-radius: 4px;
+  margin-right: .3em;
   text-align: center;
-  line-height: 0.9em;
-  font-size: 0.9em;
-  font-weight: 500;
+  line-height: 1em;
+  font-size: 1em;
+  font-weight: 700;
   vertical-align: 0em;
   transition: border-color 0.18s, color 0.18s, background 0.18s;
   background: #fff;
@@ -193,7 +193,7 @@ function toggleSection(id, btn, show, hide){
   btn.setAttribute("aria-expanded", (!isOpen).toString());
   var icon = btn.querySelector('.icon-square');
   if(icon) icon.textContent = isOpen ? "+" : "−";
-  btn.childNodes[2].nodeValue = isOpen ? "Abstract" : "Hide Abstract";
+  btn.childNodes[2].nodeValue = isOpen ? "Abstract" : "Abstract";
 }
 
 /* Show/hide a section such as abstract or contact, updates button text */
