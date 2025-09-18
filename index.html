@@ -263,19 +263,7 @@
   display: none;
 }
   </style>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var isMultiPage = false;
-  if (document.getElementById('papers') || document.getElementById('code')) {
-    isMultiPage = true;
-  }
-  if (isMultiPage) {
-    document.querySelectorAll('.nav-sectional').forEach(function(el) {
-      el.style.display = "inline-block";
-    });
-  }
-});
-</script>
+
 
 </head>
 <body>
@@ -393,6 +381,20 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
   <script>
+     document.addEventListener('DOMContentLoaded', function() {
+      var isMultiPage = false;
+      if (document.getElementById('papers') || document.getElementById('code')) {
+        isMultiPage = true;
+      }
+      if (isMultiPage) {
+        document.querySelectorAll('.nav-sectional').forEach(function(el) {
+          el.style.display = "inline-block";
+        });
+        document.querySelectorAll('.nav-sectional-content').forEach(function(el) {
+          el.style.display = "";
+        });
+      }
+    });
     // JS CODE UNCHANGED
     function toggleSection(elementId, button, showText, hideText) {
       const element = document.getElementById(elementId);
