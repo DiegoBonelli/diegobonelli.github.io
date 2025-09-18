@@ -51,19 +51,21 @@
     .abstract-btn{border:none;
 background:none;color:var(--ac);text-decoration:underline;cursor:pointer;font:inherit;padding-left:7px;font-weight:500;transition:color .16s;}
 .abstract-btn .icon-square {
-  display: inline-block;
-  width: 1em; height: 1em;
-  border: 1.8px solid var(--ac);
+display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1.5px solid var(--ac);
   border-radius: 5px;
-  margin-right: 0.2em;
+  margin-right: .35em;
   text-align: center;
-  line-height: 1em;
-  font-weight: bold;
-  font-size: 1em;
-  vertical-align: 0.1em;
-  transition: border-color 0.18s, color 0.18s;
-  background: none;
+  line-height: 0.9em;
+  font-size: 0.9em;
+  font-weight: 500;
+  vertical-align: 0em;
+  transition: border-color 0.18s, color 0.18s, background 0.18s;
+  background: #fff;
   color: var(--ac);
+  box-sizing: border-box;
 }
 .abstract-btn[aria-expanded="true"] .icon-square {color: var(--ac); background:none;}
 .abstract-content{display:none;margin:.54em 0 .7em .2em;padding:0 3px;font-size:.99em;color:#223257;font-family:'CMU Sans Serif',Arial,sans-serif;background:#fafcff;  text-align: justify;      /* <--- Justify all main content */
@@ -137,7 +139,7 @@ background:none;color:var(--ac);text-decoration:underline;cursor:pointer;font:in
     <!-- Paper 2 -->
     <div class="paper-entry">
       <strong>Inflation Risk and Yield Spread Changes</strong>
-      <button class="abstract-btn" onclick="toggleSection('abs1',this,'+ Abstract','- Abstract')" aria-expanded="false">
+      <button class="abstract-btn" onclick="toggleSection('abs2',this,'+ Abstract','- Abstract')" aria-expanded="false">
   <span class="icon-square">+</span> Abstract</button><br>
         <span class="paper-links">
         [<a ...>SSRN</a>]
@@ -149,7 +151,7 @@ background:none;color:var(--ac);text-decoration:underline;cursor:pointer;font:in
     <!-- Paper 3 -->
     <div class="paper-entry">
       <strong>Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</strong>
-      <button class="abstract-btn" onclick="toggleSection('abs1',this,'+ Abstract','- Abstract')" aria-expanded="false">
+      <button class="abstract-btn" onclick="toggleSection('abs3',this,'+ Abstract','- Abstract')" aria-expanded="false">
   <span class="icon-square">+</span> Abstract</button><br>
         <span class="content">Joint with <a ...>Carsten Bienz</a>, <a ...>Aksel Mjøs</a>, <a ...>Francisco Santos</a> <span class="small">(Revise and Resubmit)</span></span>
       <div class="abstract-content" id="abs3" aria-live="polite">
