@@ -48,12 +48,26 @@
     .paper-links{font-size:.97em;}
     .paper-links a{margin-right:.2em;margin-left:.2em;}
 
-
- .abstract-btn{border:none;
+    .abstract-btn{border:none;
 background:none;color:var(--ac);text-decoration:underline;cursor:pointer;font:inherit;padding-left:7px;font-weight:500;transition:color .16s;}
-    .abstract-btn:hover{color:var(--l1);}
-    .abstract-content{display:none;margin:.54em 0 .7em .2em;padding:0 3px;font-size:.99em;color:#223257;font-family:'CMU Sans Serif',Arial,sans-serif;background:#fafcff;  text-align: justify;      /* <--- Justify all main content */
- }
+.abstract-btn .icon-square {
+  display: inline-block;
+  width: 1em; height: 1em;
+  border: 1.8px solid var(--ac);
+  border-radius: 5px;
+  margin-right: 0.2em;
+  text-align: center;
+  line-height: 1em;
+  font-weight: bold;
+  font-size: 1em;
+  vertical-align: 0.1em;
+  transition: border-color 0.18s, color 0.18s;
+  background: none;
+  color: var(--ac);
+}
+.abstract-btn[aria-expanded="true"] .icon-square {color: var(--ac); background:none;}
+.abstract-content{display:none;margin:.54em 0 .7em .2em;padding:0 3px;font-size:.99em;color:#223257;font-family:'CMU Sans Serif',Arial,sans-serif;background:#fafcff;  text-align: justify;      /* <--- Justify all main content */
+
     .code-title{font-weight:bold;color:var(--main);}
     .code-desc{color:#607196;font-size:.99em;margin-top:3px;line-height:1.6;}
     footer{font-size:.93em;color:#888;margin-top:2.5em;margin-bottom:.7em;}
@@ -109,10 +123,9 @@ background:none;color:var(--ac);text-decoration:underline;cursor:pointer;font:in
     <!-- Paper 1 -->
     <div class="paper-entry">
       <strong>Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</strong>
-      <button class="abstract-btn" onclick="toggleSection('abs1',this,'+ Abstract','− Hide Abstract')" aria-expanded="false">
+      <button class="abstract-btn" onclick="toggleSection('abs1',this,'+ Abstract','- Hide Abstract')" aria-expanded="false">
   <span class="icon-square">+</span> Abstract
 </button><br>
-   <!--    <button class="abstract-btn" onclick="toggleSection('abs1',this,'Abstract','Hide Abstract')">Abstract</button><br>-->
       <span class="content">Joint with <a ...>Berardino Palazzo</a> and <a ...>Ram Yamarthy</a></span><br>
       <span class="media">Media: <a ...>SUERF Policy Note</a></span><br>
       <span class="paper-links">
