@@ -205,7 +205,8 @@ nav a {
       .contact-expand {max-height:none!important;opacity:1!important;display:block!important;padding:0!important;}
       .contact-expand.collapsed {max-height:none!important;opacity:1!important;display:block!important;padding:0!important;}
 
-  main{display:grid;grid-template-columns:clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max)) 1fr;align-items:start;column-gap:2.3em;}
+  main{display:grid;grid-template-columns:clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max)) 1fr;align-items:start;column-gap:2.3em;
+  line-height:1.9;}
 
       .sidebar{position:sticky;top:26px;padding-top:18px;}
       .profile-pic {width:186px;height:186px;}
@@ -227,10 +228,10 @@ nav a {
 </header>
 <main>
   <!-- Sidebar with profile and contact -->
-  <aside class="sidebar">
+  <aside class="sidebar" id="about">
     <img src="https://diegobonelli.github.io/images/profiledb.png" loading="lazy" alt="Picture of Diego Bonelli" class="profile-pic">
     <section class="side-info">
-      <div style="text-align:center;margin-bottom:1em;" id="about">
+      <div style="text-align:center;margin-bottom:1em;" >
         <h3 style="font-size:1.4em;">Diego Bonelli</h3>
         <span>Research Economist</span><br>
         Banco de España
