@@ -106,13 +106,17 @@ main{
   padding:0;
 }
 .sidebar {
-  position: static;
-  max-width: 99vw;
-  margin: 0 auto 1.5em auto;
-  padding: 0;
-  top:auto;
-}
-.profile-pic {
+    width: 100%;
+    max-width: 99vw;
+    min-width: 0;
+    margin: 0 auto 1.5em auto;
+    padding: 0;
+    top: auto;
+    position: static;
+    box-sizing: border-box;
+  }
+
+  .profile-pic {
     width: min(56vw, 180px);
     height: min(56vw, 180px);
     aspect-ratio: 1 / 1;
