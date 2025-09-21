@@ -295,7 +295,7 @@ footer {
 }
 
 /* --- Only mobile styles (≤900px) --- */
-@media (max-width:900px){
+@media (max-width:1000px){
   main {
     display: block;
     max-width: 100vw;
@@ -350,10 +350,7 @@ footer {
     opacity:0.1 !important;
     padding:0!important;
   }
-    .contact-btn .icon-square, .abstract-btn .icon-square {
-  width: 1.15em;
-  height: 1.15em;
-}
+
   header, nav {
     width: 100vw!important;
     max-width: 100vw!important;
@@ -390,9 +387,13 @@ footer {
 }
 
 /* --- Desktop & grid --- */
-@media (min-width:901px) {
+@media (min-width:1001px) {
   .contact-btn { display:none!important; }
   .contact-expand, .contact-expand.collapsed { display:block!important; max-height:none!important; opacity:1!important; padding:0!important; }
+      .contact-btn .icon-square, .abstract-btn .icon-square {
+  width: 1.15em;
+  height: 1.15em;
+}
   main {
     display:grid;
     grid-template-columns:clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max)) 1fr;
