@@ -340,7 +340,28 @@
       margin-bottom: 3em;
       font-style: italic;
     }
-
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main: #d7e4ff;
+        --accent: #7ea2ff;
+        --bg: #0e121b;
+        --sidebar-bg: #0e121b;
+        --card-bg: #0e121b;
+        --border-color: #232a3a;
+        --title-color: #9cc0ff;
+        --hover-bg: #0b1020;
+        --link: #7ea2ff;
+        --link-hover: #a9c1ff;
+        --black: #d7e4ff;
+        --footer: #9aa3b7;
+        --disclaimer: #7f889f;
+        --media: #9ab2e0;
+        --emph: #b8ccff;
+        --code-desc: #9db1db;
+        --small: #9fb0d1;
+      }
+    }
     /* --- Only mobile styles (≤1000px) --- */
     @media (max-width:1000px) {
       main {
