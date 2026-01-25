@@ -1,588 +1,745 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta name="google-site-verification" content="U6kMsBGfztoVC8SmGK7Iy8MS8H0CYibz6-2kAy8riOo" />
-<meta charset="UTF-8">
-<title>Diego Bonelli</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Diego Bonelli | Research Economist, Banco de España">
-<link rel="icon" href="https://diegobonelli.github.io/images/favicon.ico">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-sans-serif.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-serif.css">
-<style>
-:root {
-  /* Main theme colors */
-  --main: #172444;
-  --accent: #39578c;
-  --bg: #fff;
-  --sidebar-bg: #fff;
-  --card-bg: #fff;
-  --border-color: #e0e4f7;
-  --title-color: #39578c;
-  --hover-bg: #fff;
-  --link: #4e8be8;
-  --link-hover:#4e8be8;/* #2962A8;*/
-  --black: #223257;
-  --footer: #888888;
-  --disclaimer: #aaa;
-  --media: #6077a8;
-  --emph: #385485;
-  --code-desc: #607196;
-  --small: #888;
-  /* Font families */
-  --font-main: 'CMU Sans Serif', Arial, sans-serif;
-  --font-serif: 'CMU Serif', serif;
-  /* Font sizes */
-  --font-size: 15px;
-  --section-size: 1.27em;
-  --side-size: 1.04em;
-  --contact-size: .88em;
-  --nav-size: 1.15em;
-  --title-size: 1.4em;
-  --section-title-size: 1.06em;
-  --code-size: 1em;
-  /* Sizing and spacing */
-  --radius: 10px;
-  --profile-size: 186px;
-  --min-profile-size: 80px;
-  --profile-mobile-size: 180px;
-  --sidebar-min: 150px;
-  --sidebar-ideal: 15vw;
-  --sidebar-max: 230px;
-  --max-content: 830px;
-  --min-content: 310px;
-  --column-gap: 2.3em;
-  --margin-main: 36px 0 0;
-  --margin-title: 2.5em 0 .7em;
-  --margin-bottom: 1.3em;
-  /* Transitions */
-  --transition: color .13s;
-  --transition-slow: color .18s, border-color .18s, background .18s;
-}
+  <meta name="google-site-verification" content="U6kMsBGfztoVC8SmGK7Iy8MS8H0CYibz6-2kAy8riOo" />
+  <meta charset="UTF-8">
+  <title>Diego Bonelli</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Diego Bonelli | Research Economist, Banco de España">
+  <link rel="icon" href="https://diegobonelli.github.io/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-sans-serif.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-serif.css">
+  <style>
+    :root {
+      /* Main theme colors */
+      --main: #172444;
+      --accent: #39578c;
+      --bg: #fff;
+      --sidebar-bg: #fff;
+      --card-bg: #fff;
+      --border-color: #e0e4f7;
+      --title-color: #39578c;
+      --hover-bg: #fff;
+      --link: #4e8be8;
+      --link-hover: #2f62c2;
+      --black: #223257;
+      --footer: #666666;
+      --disclaimer: #777777;
+      --media: #6077a8;
+      --emph: #385485;
+      --code-desc: #607196;
+      --small: #888;
+      /* Font families */
+      --font-main: 'CMU Sans Serif', Arial, sans-serif;
+      --font-serif: 'CMU Serif', serif;
+      /* Font sizes */
+      --font-size: 15px;
+      --section-size: 1.27em;
+      --side-size: 1.04em;
+      --contact-size: .88em;
+      --nav-size: 1.15em;
+      --title-size: 1.4em;
+      --section-title-size: 1.06em;
+      --code-size: 1em;
+      /* Sizing and spacing */
+      --radius: 10px;
+      --profile-size: 186px;
+      --min-profile-size: 80px;
+      --profile-mobile-size: 180px;
+      --sidebar-min: 150px;
+      --sidebar-ideal: 15vw;
+      --sidebar-max: 230px;
+      --max-content: 830px;
+      --min-content: 310px;
+      --column-gap: 2.3em;
+      --margin-main: 36px 0 0;
+      --margin-title: 2.5em 0 .7em;
+      --margin-bottom: 1.3em;
+      /* Transitions */
+      --transition: color .13s;
+      --transition-slow: color .18s, border-color .18s, background .18s;
+    }
 
-body {
-  font-family: var(--font-main);
-  background: var(--bg);
-  color: var(--main);
-  font-size: var(--font-size);
-  line-height: 1.5em;
-  margin: 0;
-  padding: 0 0em;
-  text-align: justify;
-}
-header, main {
-  max-width: 1080px;
-  margin: auto;
-}
-nav {
-  display: flex;
-  gap: .7em;
-  align-items: center;
-  color: var(--accent);
-  font-family: var(--font-serif);
-  font-size: var(--section-size);
-  font-variant: small-caps;
-  font-weight: 700;
-  margin: var(--margin-main);
-  flex-wrap: wrap;
-}
-nav a {
-  color: var(--main);
-  text-decoration: none;
-  margin-right: 1.3em;
-  font-size: var(--nav-size);
-  font-weight: bold;
-  padding: 3px 8px 3px 3px;
-  border-radius: 5px;
-  transition: var(--transition);
-}
-nav a:hover, .active {
-  color: var(--accent);
-}
-main {
-  display: grid;
-  grid-template-columns: clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max)) 1fr;
-  align-items: start;
-  column-gap: var(--column-gap);
-}
-.sidebar {
-  width: clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max));
-  min-width: var(--sidebar-min);
-  max-width: var(--sidebar-max);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: sticky;
-  top: 26px;
-  padding-top: 18px;
-  background: var(--sidebar-bg);
-  border-radius: var(--radius);
-}
-.profile-pic {
-  width: var(--profile-size);
-  height: var(--profile-size);
-  object-fit: cover;
-  border-radius: 50%;
-  margin-top: 10px;
-  background: var(--bg);
-  border: 2px solid var(--border-color);
-  transition: width 0.2s, height 0.2s;
-  max-width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.side-info {
-  margin-top: 1.2em;
-  text-align: left;
-  font-size: var(--side-size);
-  max-width: 230px;
-}
-.side-info h3 {
-  margin: 0 0 .18em;
-  font-size: var(--section-title-size);
-  font-weight: 700;
-  color: var(--accent);
-  font-variant: small-caps;
-}
-.contact-list {
-  padding: 0;
-  margin: .67em 0 .2em;
-  list-style: none;
-  font-size: var(--contact-size);
-}
-.contact-list li {
-  margin-bottom: 2px;
-}
-.contact-list svg {
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  fill: var(--main);
-  margin-right: 7px;
-}
-.contact-btn,
-.abstract-btn {
-  border: none;
-  background: none;
-  color: var(--accent);
-  text-decoration: underline; 
-  text-decoration-thickness: 1pt;
-  cursor: pointer;
-  font: inherit;
-  padding-left: 7px;
-  font-weight: 700;
-  transition: color .16s;
-  font-size: 1em;
-  display: inline-flex;
-  align-items: center;
-  line-height: 1.2em;
-  margin-bottom: 0.1em;
-}
-.contact-btn .icon-square, .abstract-btn .icon-square {
-  display: inline-block;
-  width: 1.1em;
-  height: 1.1em;
-  border: 1.5px solid var(--accent);
-  border-radius: 4px;
-  margin-right: .3em;
-  text-align: center;
-  line-height: 1em;
-  font-size: 1em;
-  font-weight: 700;
-  background: var(--bg);
-  color: var(--accent);
-  box-sizing: border-box;
-  transition: var(--transition-slow);
-}
-.contact-btn[aria-expanded="true"] .icon-square {
-  color: var(--accent);
-  background: none;
-}
-.contact-expand {
-  display: block;
-}
-.contact-expand.collapsed {
-  display: none;
-}
-.content {
-  max-width: var(--max-content);
-  min-width: var(--min-content);
-  padding-top: 30px;
-  font-size: var(--font-size);
-}
-.section-title {
-  color: var(--accent);
-  font-family: var(--font-serif);
-  font-size: var(--section-size);
-  font-weight: 700;
-  margin: var(--margin-title);
-  background: var(--bg);
-  letter-spacing: .08em;
-  font-variant: small-caps;
-  line-height: 1.3;
-}
-em, .emph {
-  font-style: italic;
-  color: var(--emph);
-}
-.paper-entry strong {
-  font-size: 1.07em;
-  letter-spacing: .02em;
-}
-.media, .small {
-  font-style: italic;
-  color: var(--media);
-}
-.side-info a, .content a, a.plainlink, .paper-links a {
-  color: var(--link);
-  font-weight: 500;
-  transition: var(--transition);
-  text-decoration: none;
-  padding: 0px 0px;
-  border-radius: 3px;
-  display: inline-block;
-}
-.side-info a:hover, .content a:hover, a.plainlink:hover, .paper-links a:hover {
-  color: var(--link-hover);
-  text-decoration: underline;
-  background: var(--hover-bg);
-}
-a.plainlink {
-  text-decoration: none;
-}
-.paper-entry {
-  margin-bottom: 1em;
-}
-.paper-links {
-  font-size: .97em;
-}
-.paper-links a {
-  margin-right: .2em;
-  margin-left: .2em;
-}
+    body {
+      font-family: var(--font-main);
+      background: var(--bg);
+      color: var(--main);
+      font-size: var(--font-size);
+      line-height: 1.6em;
+      margin: 0;
+      padding: 0 0em;
+      text-align: left;
+      hyphens: auto;
+    }
 
-.abstract-content {
-  display: none;
-  margin: .54em 0 .7em .2em;
-  padding: 0 0px;
-  font-size: 1em;
-  color: var(--black);
-  font-family: var(--font-main);
-  background: var(--bg);
-  text-align: justify;
-}
-.code-title {
-  font-weight: bold;
-  color: var(--main);
-}
-.code-desc {
-  color: var(--code-desc);
-  font-size: var(--code-size);
-  margin-top: 3px;
-  line-height: 1.65;
-}
-footer {
-  font-size: .93em;
-  color: var(--footer);
-  margin-top: 2.5em;
-  margin-bottom: 2.1em;
-}
-.disclaimer {
-  color: var(--disclaimer);
-  font-size: .95em;
-  margin-bottom: 3em;
-  font-style: italic;
-}
+    header,
+    main {
+      max-width: 1080px;
+      margin: auto;
+    }
 
-/* --- Only mobile styles (≤1000px) --- */
-@media (max-width:1000px){
-  main {
-    display: block;
-    max-width: 100vw;
-    padding-top: 60px; /* Adjust to match actual nav height */
-    line-height: 2em;
-  }
-  .sidebar, .content {
-    margin-left: 12px;
-    margin-right: 12px;
-    width: auto;
-    max-width: calc(100vw - 24px);
-    box-sizing: border-box;
-    background: var(--bg);
-    border-radius: var(--radius);
-  }
-  .sidebar {
-    position: static;
-    margin-top: 0;
-    margin-bottom: 1.5em;
-    top: auto;
-  }
-  .profile-pic {
-    width: min(56vw, var(--profile-mobile-size));
-    height: min(56vw, var(--profile-mobile-size));
-    aspect-ratio: 1 / 1;
-    min-width: var(--min-profile-size);
-    min-height: var(--min-profile-size);
-    max-width: 99vw;
-    max-height: 99vw;
-    margin-top: 18px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .content {
-    max-width: calc(100vw - 24px);
-    padding-top: 10px;
-  }
+    nav {
+      display: flex;
+      gap: .7em;
+      align-items: center;
+      color: var(--accent);
+      font-family: var(--font-serif);
+      font-size: var(--section-size);
+      font-variant: small-caps;
+      font-weight: 700;
+      margin: var(--margin-main);
+      flex-wrap: wrap;
+    }
 
-  .contact-btn { display:inline-flex; }
-  .contact-expand {
-    max-height:1000px;
-    transition:max-height 0.28s cubic-bezier(.4,0,.2,1),opacity 0.18s;
-    overflow:hidden;
-    opacity:1;
-    padding-top:0.3em;
-  }
-  .contact-expand.collapsed {
-    max-height:0 !important;
-    opacity:0.1 !important;
-    padding:0!important;
-  }
-     .contact-btn .icon-square, .abstract-btn .icon-square {
-  border: 2px solid var(--accent);
-}
-.contact-btn, .abstract-btn {
-  font-weight: 700;
-}
-  header, nav {
-    width: 100vw!important;
-    max-width: 100vw!important;
-    min-width: 0 !important;
-    margin: 0!important;
-    left: 0!important;
-    right: 0!important;
-    transform: none!important;
-    padding: 0!important;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    overflow-x: auto;
-    font-size: clamp(1em, 3.4vw, 1.15em);
-    gap: 0.32em;
-    padding: 0.7em 0 0.4em 0;
-    width: 100vw!important;
-    max-width: 100vw!important;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background: var(--bg);
-  }
-  nav a {
-    font-size: clamp(1em, 4.3vw, 1.18em);
-    padding: 7px 17px;
-    font-weight: bold;
-    white-space: nowrap;
-    margin: 0 0.09em;
-  }
-}
+    nav a {
+      color: var(--main);
+      text-decoration: none;
+      margin-right: 1.3em;
+      font-size: var(--nav-size);
+      font-weight: bold;
+      padding: 3px 8px 3px 3px;
+      border-radius: 5px;
+      transition: var(--transition);
+    }
 
-/* --- Desktop & grid --- */
-@media (min-width:1001px) {
-  .contact-btn { display:none!important; }
-  .contact-expand, .contact-expand.collapsed { display:block!important; max-height:none!important; opacity:1!important; padding:0!important; }
- 
-  main {
-    display:grid;
-    grid-template-columns:clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max)) 1fr;
-    align-items:start;
-    column-gap:var(--column-gap);
-  }
-  .sidebar { position:sticky; top:26px; padding-top:18px; }
-  .profile-pic { width:var(--profile-size); height:var(--profile-size); }
-  nav {
-    margin-left: calc(clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max)) + 1.65em) !important;
-  }
-}
-</style>
+    nav a:hover,
+    .active {
+      color: var(--accent);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max)) 1fr;
+      align-items: start;
+      column-gap: var(--column-gap);
+    }
+
+    .sidebar {
+      width: clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max));
+      min-width: var(--sidebar-min);
+      max-width: var(--sidebar-max);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: sticky;
+      top: 26px;
+      padding-top: 18px;
+      background: var(--sidebar-bg);
+      border-radius: var(--radius);
+    }
+
+    .profile-pic {
+      width: min(100%, var(--profile-size));
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 10px;
+      background: var(--bg);
+      border: 2px solid var(--border-color);
+      transition: width 0.2s, height 0.2s;
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .side-info {
+      margin-top: 1.2em;
+      text-align: left;
+      font-size: var(--side-size);
+      max-width: 230px;
+    }
+
+    .side-info h3 {
+      margin: 0 0 .18em;
+      font-size: var(--section-title-size);
+      font-weight: 700;
+      color: var(--accent);
+      font-variant: small-caps;
+    }
+
+    .contact-list {
+      padding: 0;
+      margin: .67em 0 .2em;
+      list-style: none;
+      font-size: var(--contact-size);
+    }
+
+    .contact-list li {
+      margin-bottom: 2px;
+    }
+
+    .contact-list svg {
+      width: 1em;
+      height: 1em;
+      vertical-align: middle;
+      fill: var(--main);
+      margin-right: 7px;
+    }
+
+    .contact-btn,
+    .abstract-btn {
+      border: none;
+      background: none;
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: 1pt;
+      cursor: pointer;
+      font: inherit;
+      padding-left: 7px;
+      font-weight: 700;
+      transition: color .16s;
+      font-size: 1em;
+      display: inline-flex;
+      align-items: center;
+      line-height: 1.2em;
+      margin-bottom: 0.1em;
+    }
+
+    .contact-btn .icon-square,
+    .abstract-btn .icon-square {
+      display: inline-block;
+      width: 1.1em;
+      height: 1.1em;
+      border: 1.5px solid var(--accent);
+      border-radius: 4px;
+      margin-right: .3em;
+      text-align: center;
+      line-height: 1em;
+      font-size: 1em;
+      font-weight: 700;
+      background: var(--bg);
+      color: var(--accent);
+      box-sizing: border-box;
+      transition: var(--transition-slow);
+    }
+
+    .contact-btn[aria-expanded="true"] .icon-square {
+      color: var(--accent);
+      background: none;
+    }
+
+    .contact-expand {
+      display: block;
+    }
+
+    .contact-expand.collapsed {
+      display: none;
+    }
+
+    .content {
+      max-width: var(--max-content);
+      min-width: var(--min-content);
+      padding-top: 30px;
+      font-size: var(--font-size);
+    }
+
+    .section-title {
+      color: var(--accent);
+      font-family: var(--font-serif);
+      font-size: var(--section-size);
+      font-weight: 700;
+      margin: var(--margin-title);
+      background: var(--bg);
+      letter-spacing: .08em;
+      font-variant: small-caps;
+      line-height: 1.3;
+    }
+
+    em,
+    .emph {
+      font-style: italic;
+      color: var(--emph);
+    }
+
+    .paper-entry strong {
+      font-size: 1.07em;
+      letter-spacing: .02em;
+    }
+
+    .media,
+    .small {
+      font-style: italic;
+      color: var(--media);
+    }
+
+    .side-info a,
+    .content a,
+    a.plainlink,
+    .paper-links a {
+      color: var(--link);
+      font-weight: 500;
+      transition: var(--transition);
+      text-decoration: none;
+      padding: 0px 0px;
+      border-radius: 3px;
+      display: inline-block;
+    }
+
+    .side-info a:hover,
+    .content a:hover,
+    a.plainlink:hover,
+    .paper-links a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+      background: var(--hover-bg);
+    }
+
+    a.plainlink {
+      text-decoration: none;
+    }
+
+    .paper-entry {
+      margin-bottom: 1em;
+    }
+
+    .paper-links {
+      font-size: .97em;
+    }
+
+    .paper-links a {
+      margin-right: .2em;
+      margin-left: .2em;
+    }
+
+    .abstract-content {
+      display: none;
+      margin: .54em 0 .7em .2em;
+      padding: 0 0px;
+      font-size: 1em;
+      color: var(--black);
+      font-family: var(--font-main);
+      background: var(--bg);
+      text-align: left;
+    }
+
+    .code-title {
+      font-weight: bold;
+      color: var(--main);
+    }
+
+    .code-desc {
+      color: var(--code-desc);
+      font-size: var(--code-size);
+      margin-top: 3px;
+      line-height: 1.65;
+    }
+
+    footer {
+      font-size: .93em;
+      color: var(--footer);
+      margin-top: 2.5em;
+      margin-bottom: 2.1em;
+    }
+
+    .disclaimer {
+      color: var(--disclaimer);
+      font-size: .95em;
+      margin-bottom: 3em;
+      font-style: italic;
+    }
+
+    /* --- Only mobile styles (≤1000px) --- */
+    @media (max-width:1000px) {
+      main {
+        display: block;
+        max-width: 100vw;
+        padding-top: 0;
+        line-height: 1.7em;
+      }
+
+      .sidebar,
+      .content {
+        margin-left: 12px;
+        margin-right: 12px;
+        width: auto;
+        max-width: calc(100vw - 24px);
+        box-sizing: border-box;
+        background: var(--bg);
+        border-radius: var(--radius);
+      }
+
+      .sidebar {
+        position: static;
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        top: auto;
+      }
+
+      .profile-pic {
+        width: min(56vw, var(--profile-mobile-size));
+        height: min(56vw, var(--profile-mobile-size));
+        aspect-ratio: 1 / 1;
+        min-width: var(--min-profile-size);
+        min-height: var(--min-profile-size);
+        max-width: 99vw;
+        max-height: 99vw;
+        margin-top: 18px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .content {
+        max-width: calc(100vw - 24px);
+        min-width: 0;
+        padding-top: 10px;
+      }
+
+      .contact-btn {
+        display: inline-flex;
+      }
+
+      .contact-expand {
+        max-height: 1000px;
+        transition: max-height 0.28s cubic-bezier(.4, 0, .2, 1), opacity 0.18s;
+        overflow: hidden;
+        opacity: 1;
+        padding-top: 0.3em;
+      }
+
+      .contact-expand.collapsed {
+        max-height: 0 !important;
+        opacity: 0.1 !important;
+        padding: 0 !important;
+      }
+
+      .contact-btn .icon-square,
+      .abstract-btn .icon-square {
+        border: 2px solid var(--accent);
+      }
+
+      .contact-btn,
+      .abstract-btn {
+        font-weight: 700;
+      }
+
+      header,
+      nav {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        transform: none !important;
+        padding: 0 !important;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        overflow-x: visible;
+        flex-wrap: wrap;
+        font-size: clamp(1em, 3.4vw, 1.15em);
+        gap: 0.32em;
+        padding: 0.7em 0 0.4em 0;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: var(--bg);
+      }
+
+      nav a {
+        font-size: clamp(1em, 4.3vw, 1.18em);
+        padding: 7px 17px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin: 0 0.09em;
+      }
+    }
+
+    /* --- Desktop & grid --- */
+    @media (min-width:1001px) {
+      .contact-btn {
+        display: none !important;
+      }
+
+      .contact-expand,
+      .contact-expand.collapsed {
+        display: block !important;
+        max-height: none !important;
+        opacity: 1 !important;
+        padding: 0 !important;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: clamp(var(--sidebar-min), var(--sidebar-ideal), var(--sidebar-max)) 1fr;
+        align-items: start;
+        column-gap: var(--column-gap);
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 26px;
+        padding-top: 18px;
+      }
+
+      .profile-pic {
+        width: min(100%, var(--profile-size));
+        height: auto;
+        aspect-ratio: 1 / 1;
+      }
+
+      nav {
+        margin-left: 0 !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header>
-<nav aria-label="Main navigation">
-<a href="#about">About</a>
-<a href="#research">Research</a>
-<a href="#code">Code</a>
-<a href="https://diegobonelli.github.io/files/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-</nav>
-</header>
-<main>
-  <aside class="sidebar" id="about">
-    <img src="https://diegobonelli.github.io/images/profiledb.png" loading="lazy" alt="Picture of Diego Bonelli" class="profile-pic">
-    <section class="side-info">
-      <div style="text-align:center;margin-bottom:1em;" >
-        <h3 style="font-size:var(--title-size);">Diego Bonelli</h3>
-        <span>Research Economist</span><br>
-        Banco de España
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#code">Code</a>
+      <a href="https://diegobonelli.github.io/files/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+    </nav>
+  </header>
+  <main>
+    <aside class="sidebar" id="about">
+      <img src="https://diegobonelli.github.io/images/profiledb.png" loading="lazy" alt="Picture of Diego Bonelli"
+        class="profile-pic">
+      <section class="side-info">
+        <div style="text-align:center;margin-bottom:1em;">
+          <h3 style="font-size:var(--title-size);">Diego Bonelli</h3>
+          <span>Research Economist</span><br>
+          Banco de España
+        </div>
+        <button class="contact-btn" aria-expanded="false" aria-controls="contactinfo">
+          <span class="icon-square">+</span>
+          <span>Contact Information</span>
+        </button>
+        <div class="contact-expand collapsed" id="contactinfo">
+          <h3 style="margin-top:1.1em;">Contact Information</h3>
+          <ul class="contact-list">
+            <li><svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 6.08 11.54 6.33 11.78.37.36.97.36 1.34 0C12.92 20.54 19 14.25 19 9c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
+              </svg>Alcalá 48 Madrid, Spain</li>
+            <li><svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2L1 7v2h2v9a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V11h4v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V9h2V7L12 2zm7 5.18V7H5v.18L12 4l7 3.18z" />
+              </svg><a class="plainlink" style="color:var(--main)" href="https://www.bde.es/" target="_blank"
+                rel="noopener noreferrer">Banco de España</a></li>
+            <li><svg viewBox="0 0 24 24">
+                <path
+                  d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0l8 7 8-7H4zm16 2.1l-6.5 5.7a2 2 0 0 1-2.6 0L4 8.1V18h16V8.1z" />
+              </svg><a class="plainlink" style="color:var(--main)"
+                href="mailto:diego.bonelli@bde.es">diego.bonelli@bde.es</a></li>
+            <li><svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.11 2.91.85.09-.65.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.27-.45-1.33.1-2.78 0 0 .84-.28 2.75 1.06A9.43 9.43 0 0 1 12 6.78c.85.004 1.7.11 2.5.32 1.9-1.34 2.74-1.06 2.74-1.06.55 1.45.21 2.51.1 2.78.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.93.68 1.88 0 1.36-.01 2.45-.01 2.78 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
+              </svg><a class="plainlink" style="color:var(--main)" href="https://github.com/DiegoBonelli"
+                target="_blank" rel="noopener noreferrer">Github</a></li>
+            <li><svg viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zm-46.44-341A53.24 53.24 0 11106.52 0a53.25 53.25 0 010 106.52A53.25 53.25 0 0153.84 106.52zm394.24 341h-92.68V302.4c0-34.7-12.44-58.4-43.55-58.4-23.77 0-37.9 16-44.18 31.4-2.27 5.6-2.84 13.4-2.84 21.3V448h-92.78s1.24-241.9 0-266.1h92.68v37.7c12.31-19 34.37-46.2 83.59-46.2 61 0 106.72 39.9 106.72 125.4V448z" />
+              </svg><a class="plainlink" style="color:var(--main)" href="https://www.linkedin.com/in/diego-bonelli"
+                target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><svg viewBox="0 0 24 24">
+                <path
+                  d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 7H13V3.5zM6 4h6v5h5v11H6V4zm2 7h8v2H8v-2zm0 4h8v2H8v-2z" />
+              </svg><a class="plainlink" style="color:var(--main)" href="https://diegobonelli.github.io/files/CV.pdf"
+                target="_blank" rel="noopener noreferrer">CV</a></li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+    <section class="content">
+      <div id="about-text" style="margin-bottom:1.2em;">
+        I am a research economist at <a class="plainlink" href="https://www.bde.es/" target="_blank"
+          rel="noopener noreferrer">Banco de España</a> in the Financial Analysis Division. My research interests
+        include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in
+        finance from the <a class="plainlink" href="https://www.nhh.no/en/departments/finance/" target="_blank"
+          rel="noopener noreferrer">Norwegian School of Economics</a>.<br><br>
+        You can find my CV <a class="plainlink" href="https://diegobonelli.github.io/files/CV.pdf" target="_blank"
+          rel="noopener noreferrer">here</a>.
       </div>
-      <button class="contact-btn" aria-expanded="false" aria-controls="contactinfo">
-        <span class="icon-square">+</span>
-        <span>Contact Information</span>
-      </button>
-      <div class="contact-expand collapsed" id="contactinfo">
-        <h3 style="margin-top:1.1em;">Contact Information</h3>
-        <ul class="contact-list">
-          <li><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 6.08 11.54 6.33 11.78.37.36.97.36 1.34 0C12.92 20.54 19 14.25 19 9c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Alcalá 48 Madrid, Spain</li>
-          <li><svg viewBox="0 0 24 24"><path d="M12 2L1 7v2h2v9a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V11h4v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V9h2V7L12 2zm7 5.18V7H5v.18L12 4l7 3.18z"/></svg><a class="plainlink" style="color:var(--main)" href="https://www.bde.es/" target="_blank" rel="noopener noreferrer" >Banco de España</a></li>
-          <li><svg viewBox="0 0 24 24"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0l8 7 8-7H4zm16 2.1l-6.5 5.7a2 2 0 0 1-2.6 0L4 8.1V18h16V8.1z"/></svg><a class="plainlink" style="color:var(--main)" href="mailto:diego.bonelli@bde.es">diego.bonelli@bde.es</a></li>
-          <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.11 2.91.85.09-.65.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.27-.45-1.33.1-2.78 0 0 .84-.28 2.75 1.06A9.43 9.43 0 0 1 12 6.78c.85.004 1.7.11 2.5.32 1.9-1.34 2.74-1.06 2.74-1.06.55 1.45.21 2.51.1 2.78.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.36.32.68.93.68 1.88 0 1.36-.01 2.45-.01 2.78 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/></svg><a class="plainlink" style="color:var(--main)" href="https://github.com/DiegoBonelli" target="_blank" rel="noopener noreferrer">Github</a></li>
-          <li><svg viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-341A53.24 53.24 0 11106.52 0a53.25 53.25 0 010 106.52A53.25 53.25 0 0153.84 106.52zm394.24 341h-92.68V302.4c0-34.7-12.44-58.4-43.55-58.4-23.77 0-37.9 16-44.18 31.4-2.27 5.6-2.84 13.4-2.84 21.3V448h-92.78s1.24-241.9 0-266.1h92.68v37.7c12.31-19 34.37-46.2 83.59-46.2 61 0 106.72 39.9 106.72 125.4V448z"/></svg><a class="plainlink" style="color:var(--main)" href="https://www.linkedin.com/in/diego-bonelli" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><svg viewBox="0 0 24 24"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 7H13V3.5zM6 4h6v5h5v11H6V4zm2 7h8v2H8v-2zm0 4h8v2H8v-2z"/></svg><a class="plainlink" style="color:var(--main)" href="https://diegobonelli.github.io/files/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
-        </ul>
-      </div>
-    </section>
-  </aside>
-  <section class="content">
-    <div id="about-text" style="margin-bottom:1.2em;">
-      I am a research economist at <a class="plainlink" href="https://www.bde.es/" target="_blank" rel="noopener noreferrer">Banco de España</a> in the Financial Analysis Division. My research interests include asset pricing, credit markets, and financial intermediation. Before joining BdE, I received a Ph.D. in finance from the <a class="plainlink" href="https://www.nhh.no/en/departments/finance/" target="_blank" rel="noopener noreferrer">Norwegian School of Economics</a>.<br><br>
-      You can find my CV <a class="plainlink" href="https://diegobonelli.github.io/files/CV.pdf" target="_blank" rel="noopener noreferrer">here</a>.
-    </div>
-    <div class="section-title" id="research">Working Papers</div>
-    <div class="paper-entry">
-      <span  style="color:var(--main);font-weight:700;">Good Inflation, Bad Inflation, and the Dynamics of Credit Risk</span>
-      <button class="abstract-btn" onclick="toggleSection('abs1',this,'+ Abstract','- Abstract')" aria-expanded="false"><span class="icon-square">+</span>Abstract</button><br>
-      <span class="content">Joint with
-        <a class="plainlink" href="https://sites.google.com/view/berardinopalazzo/home" target="_blank" rel="noopener noreferrer">Berardino Palazzo</a> and
-        <a class="plainlink" href="https://ramsyamarthy.wixsite.com/home" target="_blank" rel="noopener noreferrer">Ram Yamarthy</a>
-      </span><br>
-      <span class="content">Media: <a class="plainlink" href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/" target="_blank" rel="noopener noreferrer">SUERF Policy Note</a></span><br>
-      <span class="paper-links">
-        [<a class="plainlink" href="files/GIBI.pdf" target="_blank" rel="noopener noreferrer">Link</a>]
-        [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269" target="_blank" rel="noopener noreferrer">SSRN</a>]
-        [<a class="plainlink" href="https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html" target="_blank" rel="noopener noreferrer">BDE WP</a>]
-        [<a class="plainlink" href="https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm" target="_blank" rel="noopener noreferrer">FED WP</a>]
-      </span>
-      <div class="abstract-content" id="abs1" aria-live="polite">
-        Movements in expected inflation affect firm-level credit spreads in a time-varying manner. In times of “good inflation,” when inflation news is perceived by investors to be positively correlated with real economic growth, increases in expected inflation substantially reduce corporate credit spreads. Meanwhile in times of “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics are mostly driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth covariance and persistent macroeconomic expectations.
-      </div>
-    </div>
-    <div class="paper-entry">
-      <span style="color:var(--main);font-weight:700;">Inflation Risk and Yield Spread Changes</span>
-      <button class="abstract-btn" onclick="toggleSection('abs2',this,'+ Abstract','- Abstract')" aria-expanded="false"><span class="icon-square">+</span>Abstract</button><br>
-      <span class="paper-links">
-        [<a class="plainlink" href='files/IRYSC.pdf' target="_blank" rel="noopener noreferrer">Link</a>]
-        [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512" target="_blank" rel="noopener noreferrer">SSRN</a>]
-      </span>
-      <div class="abstract-content" id="abs2" aria-live="polite">
-Inflation risk explains a significant share of the systematic residual variation in yield spread changes beyond credit factors and intermediation frictions. Movements in expected inflation directly affect the real value of debt and, consequently, bond prices. I show that shocks to inflation expectations, volatility, and cyclicality – derived from inflation swap prices – are important determinants of yield spread movements. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity. To rationalize the findings, I show that the same patterns emerge in a model of debt rollover risk with stochastic inflation and sticky cash flows.      </div>
-    </div>
-    <div class="paper-entry">
-      <span style="color:var(--main);font-weight:700;">Outcomes, Risk Taking and Incentives: Evidence from Asset Managers</span>
-      <button class="abstract-btn" onclick="toggleSection('abs3',this,'+ Abstract','- Abstract')" aria-expanded="false"><span class="icon-square">+</span>Abstract</button><br>
-      <span class="content">Joint with
-        <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/" target="_blank" rel="noopener noreferrer">Carsten Bienz</a>, <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/aksel-mjos/" target="_blank" rel="noopener noreferrer">Aksel Mjøs</a>, and <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/francisco-santos/" target="_blank" rel="noopener noreferrer">Francisco Santos</a>
-        <span class="emph">(Revise and Resubmit)</span><br>
+      <div class="section-title" id="research">Working Papers</div>
+      <div class="paper-entry">
+        <span style="color:var(--main);font-weight:700;">Good Inflation, Bad Inflation, and the Dynamics of Credit
+          Risk</span>
+        <button class="abstract-btn" onclick="toggleSection('abs1',this,'+ Abstract','- Abstract')"
+          aria-expanded="false"><span class="icon-square">+</span>Abstract</button><br>
+        <span class="content">Joint with
+          <a class="plainlink" href="https://sites.google.com/view/berardinopalazzo/home" target="_blank"
+            rel="noopener noreferrer">Berardino Palazzo</a> and
+          <a class="plainlink" href="https://ramsyamarthy.wixsite.com/home" target="_blank"
+            rel="noopener noreferrer">Ram Yamarthy</a>
+        </span><br>
+        <span class="content">Media: <a class="plainlink"
+            href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/"
+            target="_blank" rel="noopener noreferrer">SUERF Policy Note</a></span><br>
         <span class="paper-links">
-          [<a class="plainlink" href='files/BI.pdf' target="_blank" rel="noopener noreferrer">Link</a>]
-        [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5915642" target="_blank" rel="noopener noreferrer">SSRN</a>]
-      </span>
-      <div class="abstract-content" id="abs3" aria-live="polite">
-      We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures impact performance. The incentive contracts in our sample are heterogeneous, with firms rewarding fund managers based on both quantitative and qualitative targets. We find that higher potential bonuses tied to quantitative metrics, such as the information ratio, lead to better risk-adjusted performance at year-end. Managers at risk of missing bonus thresholds attempt to boost performance through portfolio adjustments, but these efforts backfire, resulting in worse outcomes in the latter part of the year.
+          [<a class="plainlink" href="files/GIBI.pdf" target="_blank" rel="noopener noreferrer">Link</a>]
+          [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269" target="_blank"
+            rel="noopener noreferrer">SSRN</a>]
+          [<a class="plainlink"
+            href="https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html"
+            target="_blank" rel="noopener noreferrer">BDE WP</a>]
+          [<a class="plainlink"
+            href="https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm"
+            target="_blank" rel="noopener noreferrer">FED WP</a>]
+        </span>
+        <div class="abstract-content" id="abs1" aria-live="polite">
+          Movements in expected inflation affect firm-level credit spreads in a time-varying manner. In times of “good
+          inflation,” when inflation news is perceived by investors to be positively correlated with real economic
+          growth, increases in expected inflation substantially reduce corporate credit spreads. Meanwhile in times of
+          “bad inflation,” these effects are attenuated and the opposite can take place. These dynamics are mostly
+          driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a
+          time-varying inflation-growth covariance and persistent macroeconomic expectations.
+        </div>
       </div>
-    </div>
-    <div class="section-title" id="code">Code</div>
-    <div class="code-card">
-      <div class="code-title">Cleaning Academic and Enhanced Trace <a class="plainlink" href="https://github.com/DiegoBonelli/Trace_Cleaning" target="_blank" rel="noopener noreferrer">View Code</a></div>
-      <div class="code-desc">Code to clean Academic and Enhanced Trace in R.</div>
-    </div>
-    <div class="code-card">
-      <div class="code-title">Merging CRSP and Trace <a class="plainlink" href="https://github.com/DiegoBonelli/Trace_Linking_Table" target="_blank" rel="noopener noreferrer">View Code</a></div>
-      <div class="code-desc">Code to link Trace bonds to firms in CRSP.</div>
-    </div>
-    <footer>&copy; 2025 Diego Bonelli
-      <div class="disclaimer">
-        Disclaimer: The views expressed on this website do not necessarily reflect those of the Banco de España or the Eurosystem.
+      <div class="paper-entry">
+        <span style="color:var(--main);font-weight:700;">Inflation Risk and Yield Spread Changes</span>
+        <button class="abstract-btn" onclick="toggleSection('abs2',this,'+ Abstract','- Abstract')"
+          aria-expanded="false"><span class="icon-square">+</span>Abstract</button><br>
+        <span class="paper-links">
+          [<a class="plainlink" href='files/IRYSC.pdf' target="_blank" rel="noopener noreferrer">Link</a>]
+          [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512" target="_blank"
+            rel="noopener noreferrer">SSRN</a>]
+        </span>
+        <div class="abstract-content" id="abs2" aria-live="polite">
+          Inflation risk explains a significant share of the systematic residual variation in yield spread changes
+          beyond credit factors and intermediation frictions. Movements in expected inflation directly affect the real
+          value of debt and, consequently, bond prices. I show that shocks to inflation expectations, volatility, and
+          cyclicality – derived from inflation swap prices – are important determinants of yield spread movements.
+          Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken
+          with refinancing intensity. To rationalize the findings, I show that the same patterns emerge in a model of
+          debt rollover risk with stochastic inflation and sticky cash flows. </div>
       </div>
-    </footer>
-  </section>
-</main>
-<script>
-function toggleSection(id, btn, show, hide){
-  var el = document.getElementById(id);
-  if (!el) return;
-  var isOpen = el.style.display === "block";
-  el.style.display = isOpen ? "none" : "block";
-  btn.setAttribute("aria-expanded", (!isOpen).toString());
-  var icon = btn.querySelector('.icon-square');
-  if(icon) icon.textContent = isOpen ? "+" : "−";
-  btn.childNodes[2].nodeValue = "Abstract";
-}
-document.addEventListener('DOMContentLoaded', function(){
-  var contactInfo = document.getElementById('contactinfo'),
-      contactBtn = document.querySelector('.contact-btn');
-  function isMobile() {return window.matchMedia("(max-width:900px)").matches;}
-  function setContactForScreen() {
-    if(!contactBtn || !contactInfo) return;
-    if(isMobile()){
-      contactBtn.style.display = "inline-flex";
-      if(!contactInfo.classList.contains('collapsed') && !contactInfo.classList.contains('expanded')){
-        contactInfo.classList.add('collapsed');
-        contactBtn.setAttribute("aria-expanded", "false");
-        var icon = contactBtn.querySelector('.icon-square');
-        if(icon) icon.textContent = "+";
-      }
-      if(contactInfo.classList.contains('expanded')){
-        contactBtn.setAttribute("aria-expanded", "true");
-        var icon = contactBtn.querySelector('.icon-square');
-        if(icon) icon.textContent = "−";
-      }
-    }else{
-      contactBtn.style.display = "none";
-      contactInfo.classList.remove('collapsed');
-      contactInfo.classList.add('expanded');
-      contactBtn.setAttribute("aria-expanded", "true");
-      var icon = contactBtn.querySelector('.icon-square');
-      if(icon) icon.textContent = "−";
+      <div class="paper-entry">
+        <span style="color:var(--main);font-weight:700;">Outcomes, Risk Taking and Incentives: Evidence from Asset
+          Managers</span>
+        <button class="abstract-btn" onclick="toggleSection('abs3',this,'+ Abstract','- Abstract')"
+          aria-expanded="false"><span class="icon-square">+</span>Abstract</button><br>
+        <span class="content">Joint with
+          <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/" target="_blank"
+            rel="noopener noreferrer">Carsten Bienz</a>, <a class="plainlink"
+            href="https://www.nhh.no/en/employees/faculty/aksel-mjos/" target="_blank" rel="noopener noreferrer">Aksel
+            Mjøs</a>, and <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/francisco-santos/"
+            target="_blank" rel="noopener noreferrer">Francisco Santos</a>
+          <span class="emph">(Revise and Resubmit)</span><br>
+          <span class="paper-links">
+            [<a class="plainlink" href='files/BI.pdf' target="_blank" rel="noopener noreferrer">Link</a>]
+            [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5915642" target="_blank"
+              rel="noopener noreferrer">SSRN</a>]
+          </span>
+          <div class="abstract-content" id="abs3" aria-live="polite">
+            We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures
+            impact performance. The incentive contracts in our sample are heterogeneous, with firms rewarding fund
+            managers based on both quantitative and qualitative targets. We find that higher potential bonuses tied to
+            quantitative metrics, such as the information ratio, lead to better risk-adjusted performance at year-end.
+            Managers at risk of missing bonus thresholds attempt to boost performance through portfolio adjustments, but
+            these efforts backfire, resulting in worse outcomes in the latter part of the year.
+          </div>
+      </div>
+      <div class="section-title" id="code">Code</div>
+      <div class="code-card">
+        <div class="code-title">Cleaning Academic and Enhanced Trace <a class="plainlink"
+            href="https://github.com/DiegoBonelli/Trace_Cleaning" target="_blank" rel="noopener noreferrer">View
+            Code</a></div>
+        <div class="code-desc">Code to clean Academic and Enhanced Trace in R.</div>
+      </div>
+      <div class="code-card">
+        <div class="code-title">Merging CRSP and Trace <a class="plainlink"
+            href="https://github.com/DiegoBonelli/Trace_Linking_Table" target="_blank" rel="noopener noreferrer">View
+            Code</a></div>
+        <div class="code-desc">Code to link Trace bonds to firms in CRSP.</div>
+      </div>
+      <footer>&copy; 2025 Diego Bonelli
+        <div class="disclaimer">
+          Disclaimer: The views expressed on this website do not necessarily reflect those of the Banco de España or the
+          Eurosystem.
+        </div>
+      </footer>
+    </section>
+  </main>
+  <script>
+    function toggleSection(id, btn, show, hide) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      var isOpen = el.style.display === "block";
+      el.style.display = isOpen ? "none" : "block";
+      btn.setAttribute("aria-expanded", (!isOpen).toString());
+      var icon = btn.querySelector('.icon-square');
+      if (icon) icon.textContent = isOpen ? "+" : "−";
+      btn.childNodes[2].nodeValue = "Abstract";
     }
-  }
-  setContactForScreen();
-  window.addEventListener('resize', setContactForScreen);
-  if(contactBtn){
-    contactBtn.addEventListener('click', function(){
-      var icon = contactBtn.querySelector('.icon-square');
-      if(contactInfo.classList.contains('collapsed')){
-        contactInfo.classList.remove('collapsed');
-        contactInfo.classList.add('expanded');
-        contactBtn.setAttribute("aria-expanded","true");
-        if(icon) icon.textContent = "−";
-      }else{
-        contactInfo.classList.remove('expanded');
-        contactInfo.classList.add('collapsed');
-        contactBtn.setAttribute("aria-expanded","false");
-        if(icon) icon.textContent = "+";
+    document.addEventListener('DOMContentLoaded', function () {
+      var contactInfo = document.getElementById('contactinfo'),
+        contactBtn = document.querySelector('.contact-btn');
+      function isMobile() { return window.matchMedia("(max-width:900px)").matches; }
+      function setContactForScreen() {
+        if (!contactBtn || !contactInfo) return;
+        if (isMobile()) {
+          contactBtn.style.display = "inline-flex";
+          if (!contactInfo.classList.contains('collapsed') && !contactInfo.classList.contains('expanded')) {
+            contactInfo.classList.add('collapsed');
+            contactBtn.setAttribute("aria-expanded", "false");
+            var icon = contactBtn.querySelector('.icon-square');
+            if (icon) icon.textContent = "+";
+          }
+          if (contactInfo.classList.contains('expanded')) {
+            contactBtn.setAttribute("aria-expanded", "true");
+            var icon = contactBtn.querySelector('.icon-square');
+            if (icon) icon.textContent = "−";
+          }
+        } else {
+          contactBtn.style.display = "none";
+          contactInfo.classList.remove('collapsed');
+          contactInfo.classList.add('expanded');
+          contactBtn.setAttribute("aria-expanded", "true");
+          var icon = contactBtn.querySelector('.icon-square');
+          if (icon) icon.textContent = "−";
+        }
       }
+      setContactForScreen();
+      window.addEventListener('resize', setContactForScreen);
+      if (contactBtn) {
+        contactBtn.addEventListener('click', function () {
+          var icon = contactBtn.querySelector('.icon-square');
+          if (contactInfo.classList.contains('collapsed')) {
+            contactInfo.classList.remove('collapsed');
+            contactInfo.classList.add('expanded');
+            contactBtn.setAttribute("aria-expanded", "true");
+            if (icon) icon.textContent = "−";
+          } else {
+            contactInfo.classList.remove('expanded');
+            contactInfo.classList.add('collapsed');
+            contactBtn.setAttribute("aria-expanded", "false");
+            if (icon) icon.textContent = "+";
+          }
+        });
+      }
+      var links = document.querySelectorAll('nav a[href*="#"]');
+      var sids = ['about', 'research', 'code'];
+      var secs = sids.map(id => document.getElementById(id) || document.getElementById(id + '-text')).filter(Boolean);
+      function updateActiveSection() {
+        var y = window.scrollY + 110;
+        for (var i = secs.length - 1; i >= 0; i--) {
+          if (secs[i] && secs[i].offsetTop <= y) {
+            links.forEach(a => a.classList.remove('active'));
+            if (links[i]) links[i].classList.add('active');
+            break;
+          }
+        }
+      }
+      window.addEventListener('scroll', updateActiveSection, { passive: true });
+      updateActiveSection();
     });
-  }
-  var links = document.querySelectorAll('nav a[href*="#"]');
-  var sids = ['about','research','code'];
-  var secs = sids.map(id=>document.getElementById(id)||document.getElementById(id+'-text')).filter(Boolean);
-  function updateActiveSection(){
-    var y = window.scrollY+110;
-    for(var i=secs.length-1;i>=0;i--){
-      if(secs[i] && secs[i].offsetTop<=y){
-        links.forEach(a=>a.classList.remove('active'));
-        if(links[i])links[i].classList.add('active');
-        break;
-      }
-    }
-  }
-  window.addEventListener('scroll',updateActiveSection,{passive:true});
-  updateActiveSection();
-});
-</script>
+  </script>
 </body>
+
 </html>
