@@ -407,6 +407,10 @@
       margin-bottom: 1em;
     }
 
+    .paper-entry .abstract-btn {
+      margin-top: .4em;
+    }
+
     .paper-links {
       font-size: .97em;
     }
@@ -782,7 +786,7 @@
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Outcomes, Risk Taking and Incentives: Evidence from Asset
           Managers</span>
-        <button type="button" class="abstract-btn" aria-controls="abs3" onclick="toggleSection('abs3',this,'+ Abstract','- Abstract')"
+        <button type="button" class="abstract-btn" aria-controls="abs3"
           aria-expanded="false"><span class="icon-square" aria-hidden="true"></span><span class="btn-label">Abstract</span></button><br>
 
           <span class="emph">Journal of Corporate Finance, 2026 - </span>
@@ -811,7 +815,7 @@
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Good Inflation, Bad Inflation, and the Dynamics of Credit
           Risk</span>
-        <button type="button" class="abstract-btn" aria-controls="abs1" onclick="toggleSection('abs1',this,'+ Abstract','- Abstract')"
+        <button type="button" class="abstract-btn" aria-controls="abs1"
           aria-expanded="false"><span class="icon-square" aria-hidden="true"></span><span class="btn-label">Abstract</span></button><br>
         <span class="content">Joint with
           <a class="plainlink" href="https://sites.google.com/view/berardinopalazzo/home" target="_blank"
@@ -844,7 +848,7 @@
       </div>
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Inflation Risk and Yield Spread Changes</span>
-        <button type="button" class="abstract-btn" aria-controls="abs2" onclick="toggleSection('abs2',this,'+ Abstract','- Abstract')"
+        <button type="button" class="abstract-btn" aria-controls="abs2"
           aria-expanded="false"><span class="icon-square" aria-hidden="true"></span><span class="btn-label">Abstract</span></button><br>
         <span class="paper-links">
           [<a class="plainlink" href='files/IRYSC.pdf' target="_blank" rel="noopener noreferrer">Link</a>]
@@ -898,7 +902,7 @@
     </section>
   </main>
   <script>
-    function toggleSection(id, btn, show, hide) {
+    function toggleSection(id, btn) {
       var el = document.getElementById(id);
       if (!el) return;
       var isOpen = !el.hasAttribute("hidden");
@@ -934,6 +938,14 @@
       }
       setContactForScreen();
       window.addEventListener('resize', setContactForScreen);
+      var abstractBtns = document.querySelectorAll('.abstract-btn[aria-controls]');
+      abstractBtns.forEach(function (btn) {
+        btn.addEventListener('click', function (ev) {
+          ev.preventDefault();
+          var targetId = btn.getAttribute('aria-controls');
+          if (targetId) toggleSection(targetId, btn);
+        });
+      });
       if (contactBtn) {
         contactBtn.addEventListener('click', function () {
           if (contactInfo.classList.contains('collapsed')) {
