@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diegobonelli.github.io/sitemap.xml

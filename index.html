@@ -7,6 +7,69 @@
   <title>Diego Bonelli</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Diego Bonelli | Research Economist, Banco de España">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Diego Bonelli",
+      "jobTitle": "Research Economist",
+      "url": "https://diegobonelli.github.io/",
+      "email": "mailto:diego.bonelli@bde.es",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Banco de España",
+        "url": "https://www.bde.es/"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Norwegian School of Economics",
+        "url": "https://www.nhh.no/en/departments/finance/"
+      },
+      "sameAs": [
+        "https://github.com/DiegoBonelli",
+        "https://www.linkedin.com/in/diego-bonelli",
+        "https://diegobonelli.github.io/files/CV.pdf"
+      ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Outcomes, Risk Taking and Incentives: Evidence from Asset Managers",
+      "datePublished": "2026",
+      "isPartOf": {
+        "@type": "Periodical",
+        "name": "Journal of Corporate Finance"
+      },
+      "author": [
+        { "@type": "Person", "name": "Diego Bonelli" },
+        { "@type": "Person", "name": "Carsten Bienz" },
+        { "@type": "Person", "name": "Aksel Mjos" },
+        { "@type": "Person", "name": "Francisco Santos" }
+      ],
+      "url": "https://www.sciencedirect.com/science/article/pii/S0929119926000325"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Good Inflation, Bad Inflation, and the Dynamics of Credit Risk",
+      "author": [
+        { "@type": "Person", "name": "Diego Bonelli" },
+        { "@type": "Person", "name": "Berardino Palazzo" },
+        { "@type": "Person", "name": "Ram Yamarthy" }
+      ],
+      "url": "https://diegobonelli.github.io/files/GIBI.pdf",
+      "sameAs": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "headline": "Inflation Risk and Yield Spread Changes",
+      "author": { "@type": "Person", "name": "Diego Bonelli" },
+      "url": "https://diegobonelli.github.io/files/IRYSC.pdf",
+      "sameAs": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512"
+    }
+  ]
+}
+  </script>
   <link rel="icon" href="https://diegobonelli.github.io/images/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-sans-serif.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-serif.css">
@@ -184,36 +247,85 @@
       border: none;
       background: none;
       color: var(--accent);
-      text-decoration: underline;
-      text-decoration-thickness: 1pt;
+      text-decoration: none;
       cursor: pointer;
       font: inherit;
-      padding-left: 7px;
+      padding: 0;
       font-weight: 700;
       transition: color .16s;
       font-size: 1em;
       display: inline-flex;
       align-items: center;
-      line-height: 1.2em;
+      gap: .34em;
+      line-height: 1.2;
       margin-bottom: 0.1em;
     }
 
     .contact-btn .icon-square,
     .abstract-btn .icon-square {
       display: inline-block;
-      width: 1.1em;
-      height: 1.1em;
+      position: relative;
+      width: 1.12em;
+      height: 1.12em;
+      flex: 0 0 1.12em;
       border: 1.5px solid var(--accent);
       border-radius: 4px;
-      margin-right: .3em;
-      text-align: center;
-      line-height: 1em;
+      margin-right: 0;
+      line-height: 1.12em;
       font-size: 1em;
       font-weight: 700;
       background: var(--bg);
       color: var(--accent);
       box-sizing: border-box;
       transition: var(--transition-slow);
+      text-decoration: none;
+      font-family: var(--font-main);
+      overflow: hidden;
+      text-indent: -9999px;
+      white-space: nowrap;
+    }
+
+    .contact-btn .icon-square::before,
+    .abstract-btn .icon-square::before,
+    .contact-btn .icon-square::after,
+    .abstract-btn .icon-square::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: currentColor;
+      border-radius: 1px;
+      transform: translate(-50%, -50%);
+      transition: opacity .12s;
+    }
+
+    .contact-btn .icon-square::before,
+    .abstract-btn .icon-square::before {
+      width: .56em;
+      height: 1.5px;
+    }
+
+    .contact-btn .icon-square::after,
+    .abstract-btn .icon-square::after {
+      width: 1.5px;
+      height: .56em;
+    }
+
+    .contact-btn[aria-expanded="true"] .icon-square::after,
+    .abstract-btn[aria-expanded="true"] .icon-square::after {
+      opacity: 0;
+    }
+
+    .btn-label {
+      display: inline-block;
+      line-height: 1.2;
+      text-decoration: none;
+    }
+
+    .abstract-btn .btn-label {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: .08em;
     }
 
     .contact-btn[aria-expanded="true"] .icon-square {
@@ -305,7 +417,7 @@
     }
 
     .abstract-content {
-      display: none;
+      display: block;
       margin: .54em 0 .7em .2em;
       padding: 0 0px;
       font-size: 1em;
@@ -313,6 +425,14 @@
       font-family: var(--font-main);
       background: var(--bg);
       text-align: left;
+    }
+
+    .abstract-content[hidden] {
+      display: none !important;
+    }
+
+    .abstract-content.open {
+      display: block;
     }
 
     .code-title {
@@ -384,6 +504,10 @@
 
     /* --- Only mobile styles (≤1000px) --- */
     @media (max-width:1000px) {
+      body {
+        hyphens: none;
+      }
+
       main {
         display: block;
         max-width: 100vw;
@@ -429,6 +553,52 @@
         max-width: calc(100vw - 24px);
         min-width: 0;
         padding-top: 10px;
+        text-align: left;
+        line-height: 1.6;
+      }
+
+      #about-text {
+        text-align: left;
+        line-height: 1.6;
+      }
+
+      .section-title {
+        margin: 2.1em 0 .6em;
+        text-align: left;
+        letter-spacing: .06em;
+      }
+
+      .paper-entry {
+        margin-bottom: 1em;
+      }
+
+      .paper-entry>span[style*="font-weight:700"],
+      .paper-entry .abstract-btn {
+        line-height: 1.2;
+      }
+
+      .paper-entry .paper-links a {
+        margin: 0 .16em 0 0;
+      }
+
+      .content a,
+      .paper-links a,
+      a.plainlink {
+        display: inline;
+      }
+
+      .abstract-content {
+        margin: .52em 0 .64em .1em;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      .code-title,
+      .code-desc,
+      footer,
+      .disclaimer {
+        text-align: left;
+        overflow-wrap: anywhere;
       }
 
       .contact-btn {
@@ -451,7 +621,7 @@
 
       .contact-btn .icon-square,
       .abstract-btn .icon-square {
-        border: 2px solid var(--accent);
+        border-width: 1.5px;
       }
 
       .contact-btn,
@@ -558,8 +728,8 @@
           Banco de España
         </div>
         <button class="contact-btn" aria-expanded="false" aria-controls="contactinfo">
-          <span class="icon-square">+</span>
-          <span>Contact Information</span>
+          <span class="icon-square" aria-hidden="true"></span>
+          <span class="btn-label">Contact Information</span>
         </button>
         <div class="contact-expand collapsed" id="contactinfo">
           <h3 style="margin-top:1.1em;">Contact Information</h3>
@@ -612,8 +782,8 @@
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Outcomes, Risk Taking and Incentives: Evidence from Asset
           Managers</span>
-        <button class="abstract-btn" onclick="toggleSection('abs3',this,'+ Abstract','- Abstract')"
-          aria-expanded="false"><span class="icon-square">+</span>Abstract</button><br>
+        <button type="button" class="abstract-btn" aria-controls="abs3" onclick="toggleSection('abs3',this,'+ Abstract','- Abstract')"
+          aria-expanded="false"><span class="icon-square" aria-hidden="true"></span><span class="btn-label">Abstract</span></button><br>
 
           <span class="emph">Journal of Corporate Finance, 2026 - </span>
         <span class="content">Joint with
@@ -627,7 +797,7 @@
                 rel="noopener noreferrer">Link</a>]
               [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5915642" target="_blank"
                 rel="noopener noreferrer">SSRN</a>]</span> 
-          <div class="abstract-content" id="abs3" aria-live="polite">
+          <div class="abstract-content" id="abs3" aria-live="polite" hidden>
             We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures
             impact performance. The incentive contracts in our sample are heterogeneous, with firms rewarding fund
             managers based on both quantitative and qualitative targets. We find that higher potential bonuses tied to
@@ -641,8 +811,8 @@
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Good Inflation, Bad Inflation, and the Dynamics of Credit
           Risk</span>
-        <button class="abstract-btn" onclick="toggleSection('abs1',this,'+ Abstract','- Abstract')"
-          aria-expanded="false"><span class="icon-square">+</span>Abstract</button><br>
+        <button type="button" class="abstract-btn" aria-controls="abs1" onclick="toggleSection('abs1',this,'+ Abstract','- Abstract')"
+          aria-expanded="false"><span class="icon-square" aria-hidden="true"></span><span class="btn-label">Abstract</span></button><br>
         <span class="content">Joint with
           <a class="plainlink" href="https://sites.google.com/view/berardinopalazzo/home" target="_blank"
             rel="noopener noreferrer">Berardino Palazzo</a> and
@@ -663,7 +833,7 @@
             href="https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm"
             target="_blank" rel="noopener noreferrer">FED WP</a>]
         </span>
-        <div class="abstract-content" id="abs1" aria-live="polite">
+        <div class="abstract-content" id="abs1" aria-live="polite" hidden>
           Movements in expected inflation affect firm-level credit spreads in a time-varying manner. In times of “good
           inflation,” when inflation news is perceived by investors to be positively correlated with real economic
           growth, increases in expected inflation substantially reduce corporate credit spreads. Meanwhile in times of
@@ -674,8 +844,8 @@
       </div>
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Inflation Risk and Yield Spread Changes</span>
-        <button class="abstract-btn" onclick="toggleSection('abs2',this,'+ Abstract','- Abstract')"
-          aria-expanded="false"><span class="icon-square">+</span>Abstract</button><br>
+        <button type="button" class="abstract-btn" aria-controls="abs2" onclick="toggleSection('abs2',this,'+ Abstract','- Abstract')"
+          aria-expanded="false"><span class="icon-square" aria-hidden="true"></span><span class="btn-label">Abstract</span></button><br>
         <span class="paper-links">
           [<a class="plainlink" href='files/IRYSC.pdf' target="_blank" rel="noopener noreferrer">Link</a>]
           [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512" target="_blank"
@@ -685,7 +855,7 @@
             target="_blank" rel="noopener noreferrer">BDE WP</a>]
         </span>
         <span class="emph">(Revise and Resubmit)</span><br>
-        <div class="abstract-content" id="abs2" aria-live="polite">
+        <div class="abstract-content" id="abs2" aria-live="polite" hidden>
           Inflation risk explains a significant share of the systematic residual variation in yield spread changes
           beyond credit factors and intermediation frictions. Movements in expected inflation directly affect the real
           value of debt and, consequently, bond prices. I show that shocks to inflation expectations, volatility, and
@@ -694,7 +864,7 @@
           with refinancing intensity. To rationalize the findings, I show that the same patterns emerge in a model of
           debt rollover risk with stochastic inflation and sticky cash flows. </div>
       </div>
-      <div class="section-title">Work in Progress</Progress></div>
+      <div class="section-title">Work in Progress</div>
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Firm Payouts and Innovation Under Asymmetric Information</span><br>
         <span class="content">Joint with
@@ -702,8 +872,8 @@
             Errico</a>, <a class="plainlink" href="https://www.luigipollio.net/" target="_blank"
             rel="noopener noreferrer">Luigi Pollio</a>, and <a class="plainlink"
             href="https://sites.google.com/view/iacopovarotto/home" target="_blank" rel="noopener noreferrer">Iacopo
-            Varotto</a><br>
-          <span class="paper-links">
+            Varotto</a>
+        </span>
       </div>
 
       <div class="section-title" id="code">Code</div>
@@ -731,12 +901,14 @@
     function toggleSection(id, btn, show, hide) {
       var el = document.getElementById(id);
       if (!el) return;
-      var isOpen = el.style.display === "block";
-      el.style.display = isOpen ? "none" : "block";
+      var isOpen = !el.hasAttribute("hidden");
+      el.classList.toggle("open", !isOpen);
+      if (isOpen) {
+        el.setAttribute("hidden", "");
+      } else {
+        el.removeAttribute("hidden");
+      }
       btn.setAttribute("aria-expanded", (!isOpen).toString());
-      var icon = btn.querySelector('.icon-square');
-      if (icon) icon.textContent = isOpen ? "+" : "−";
-      btn.childNodes[2].nodeValue = "Abstract";
     }
     document.addEventListener('DOMContentLoaded', function () {
       var contactInfo = document.getElementById('contactinfo'),
@@ -749,38 +921,29 @@
           if (!contactInfo.classList.contains('collapsed') && !contactInfo.classList.contains('expanded')) {
             contactInfo.classList.add('collapsed');
             contactBtn.setAttribute("aria-expanded", "false");
-            var icon = contactBtn.querySelector('.icon-square');
-            if (icon) icon.textContent = "+";
           }
           if (contactInfo.classList.contains('expanded')) {
             contactBtn.setAttribute("aria-expanded", "true");
-            var icon = contactBtn.querySelector('.icon-square');
-            if (icon) icon.textContent = "−";
           }
         } else {
           contactBtn.style.display = "none";
           contactInfo.classList.remove('collapsed');
           contactInfo.classList.add('expanded');
           contactBtn.setAttribute("aria-expanded", "true");
-          var icon = contactBtn.querySelector('.icon-square');
-          if (icon) icon.textContent = "−";
         }
       }
       setContactForScreen();
       window.addEventListener('resize', setContactForScreen);
       if (contactBtn) {
         contactBtn.addEventListener('click', function () {
-          var icon = contactBtn.querySelector('.icon-square');
           if (contactInfo.classList.contains('collapsed')) {
             contactInfo.classList.remove('collapsed');
             contactInfo.classList.add('expanded');
             contactBtn.setAttribute("aria-expanded", "true");
-            if (icon) icon.textContent = "−";
           } else {
             contactInfo.classList.remove('expanded');
             contactInfo.classList.add('collapsed');
             contactBtn.setAttribute("aria-expanded", "false");
-            if (icon) icon.textContent = "+";
           }
         });
       }
