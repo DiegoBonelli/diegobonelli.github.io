@@ -4,9 +4,30 @@
 <head>
   <meta name="google-site-verification" content="U6kMsBGfztoVC8SmGK7Iy8MS8H0CYibz6-2kAy8riOo" />
   <meta charset="UTF-8">
-  <title>Diego Bonelli</title>
+  <title>Diego Bonelli | Research Economist, Banco de España</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Diego Bonelli | Research Economist, Banco de España">
+  <meta name="description" content="Diego Bonelli is a research economist at Banco de España studying macro-finance, credit markets, and financial intermediation. PhD from the Norwegian School of Economics.">
+  <meta name="author" content="Diego Bonelli">
+  <meta name="keywords" content="Diego Bonelli, research economist, Banco de España, macro-finance, credit markets, financial intermediation, inflation risk, credit spreads, corporate bonds, TRACE, asset managers, incentives">
+  <link rel="canonical" href="https://diegobonelli.github.io/">
+  <!-- Open Graph -->
+  <meta property="og:type"        content="profile">
+  <meta property="og:url"         content="https://diegobonelli.github.io/">
+  <meta property="og:title"       content="Diego Bonelli | Research Economist, Banco de España">
+  <meta property="og:description" content="Research economist at Banco de España working on macro-finance, credit markets, and financial intermediation. PhD from the Norwegian School of Economics.">
+  <meta property="og:image"       content="https://diegobonelli.github.io/images/db-310x310.png">
+  <meta property="og:image:alt"   content="Diego Bonelli, Research Economist">
+  <meta property="og:locale"      content="en_US">
+  <meta property="profile:first_name" content="Diego">
+  <meta property="profile:last_name"  content="Bonelli">
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary">
+  <meta name="twitter:title"       content="Diego Bonelli | Research Economist, Banco de España">
+  <meta name="twitter:description" content="Research economist at Banco de España working on macro-finance, credit markets, and financial intermediation. PhD from the Norwegian School of Economics.">
+  <meta name="twitter:image"       content="https://diegobonelli.github.io/images/db-310x310.png">
+  <meta name="twitter:image:alt"   content="Diego Bonelli, Research Economist">
+  <!-- Robots -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -30,7 +51,18 @@
       "sameAs": [
         "https://github.com/DiegoBonelli",
         "https://www.linkedin.com/in/diego-bonelli",
-        "https://diegobonelli.github.io/files/CV.pdf"
+        "https://diegobonelli.github.io/files/CV.pdf",
+        "https://scholar.google.es/citations?user=MS87LpEAAAAJ",
+        "https://www.bde.es/wbe/es/areas-actuacion/analisis-e-investigacion/investigadores/investigadores-orden-alfabetico/diego-bonelli.html"
+      ],
+      "description": "Research economist at Banco de España, Financial Analysis Division, specializing in macro-finance, credit markets, and financial intermediation. PhD from the Norwegian School of Economics.",
+      "knowsAbout": [
+        "macro-finance",
+        "credit markets",
+        "financial intermediation",
+        "inflation risk",
+        "corporate bond spreads",
+        "asset management incentives"
       ]
     },
     {
@@ -52,6 +84,8 @@
     {
       "@type": "ScholarlyArticle",
       "headline": "Good Inflation, Bad Inflation, and the Dynamics of Credit Risk",
+      "description": "Movements in expected inflation affect firm-level credit spreads in a time-varying manner. In times of 'good inflation,' when inflation news is perceived by investors to be positively correlated with real economic growth, increases in expected inflation substantially reduce corporate credit spreads. Meanwhile in times of 'bad inflation,' these effects are attenuated and the opposite can take place. These dynamics are mostly driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth covariance and persistent macroeconomic expectations.",
+      "keywords": ["inflation risk", "credit spreads", "credit risk premia", "macro-finance", "inflation-growth covariance", "corporate bonds"],
       "author": [
         { "@type": "Person", "name": "Diego Bonelli" },
         { "@type": "Person", "name": "Berardino Palazzo" },
@@ -63,6 +97,8 @@
     {
       "@type": "ScholarlyArticle",
       "headline": "Inflation Risk and Yield Spread Changes",
+      "description": "Inflation risk explains a significant share of the systematic residual variation in yield spread changes beyond credit factors and intermediation frictions. I show that shocks to inflation expectations, volatility, and cyclicality – derived from inflation swap prices – are important determinants of yield spread movements. Loading patterns become more pronounced with higher ex-ante default risk and cash-flow flexibility but weaken with refinancing intensity.",
+      "keywords": ["inflation risk", "yield spreads", "corporate bonds", "TRACE", "inflation swaps", "debt rollover risk", "credit markets"],
       "author": { "@type": "Person", "name": "Diego Bonelli" },
       "url": "https://diegobonelli.github.io/files/IRYSC.pdf",
       "sameAs": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512"
@@ -71,12 +107,13 @@
 }
   </script>
   <link rel="icon" href="https://diegobonelli.github.io/images/favicon.ico">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-sans-serif.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/computer-modern-font@1.0.0/css/cmu-serif.css">
   <style>
     :root {
       /* Main theme colors */
-      --main: #172444;
+      --main: #182038;
       --accent: #39578c;
       --bg: #fff;
       --sidebar-bg: #fff;
@@ -86,10 +123,10 @@
       --hover-bg: #fff;
       --link: #4e8be8;
       --link-hover: #2f62c2;
-      --black: #223257;
+      --black: #1e2330;
       --footer: #666666;
       --disclaimer: #777777;
-      --media: #6077a8;
+      --media: #fff;
       --emph: #385485;
       --code-desc: #607196;
       --small: #888;
@@ -166,9 +203,14 @@
       transition: var(--transition);
     }
 
-    nav a:hover,
-    .active {
+    nav a:hover {
       color: var(--accent);
+    }
+
+    nav a.active {
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 2px;
     }
 
     main {
@@ -371,8 +413,9 @@
       color: var(--emph);
     }
 
-    .paper-entry strong {
-      font-size: 1.07em;
+    .paper-entry strong,
+    .paper-entry > span[style*="font-weight:700"] {
+      font-size: 1.13em;
       letter-spacing: .02em;
     }
 
@@ -409,7 +452,7 @@
     }
 
     .paper-entry {
-      margin-bottom: 1em;
+      margin-bottom: 1.6em;
     }
 
     .paper-entry .abstract-btn {
@@ -421,8 +464,12 @@
     }
 
     .paper-links a {
-      margin-right: .2em;
-      margin-left: .2em;
+      margin-right: .1em;
+      margin-left: .1em;
+    }
+
+    .paper-links a:first-child {
+      margin-left: 0;
     }
 
     .abstract-content {
@@ -483,9 +530,9 @@
         /* Hover states - gentle highlight */
 
         /* Text colors */
-        --main: #e5e5e5;
+        --main: #ffff;
         /* Primary text - soft white */
-        --black: #e5e5e5;
+        --black: #ffff;
         /* Matches main */
         --footer: #a3a3a3;
         /* Footer/secondary text - neutral gray */
@@ -493,11 +540,10 @@
         /* Muted text */
         --small: #a3a3a3;
         /* Small text */
-        --emph: #f5f5f5;
+        --emph: #fff;
         /* Emphasized text - brighter */
         --code-desc: #b8b8b8;
         /* Code descriptions */
-
         /* Interactive colors */
         --accent: #4e8be8;
         /* Less saturated, easier on eyes */
@@ -578,7 +624,7 @@
       }
 
       .paper-entry {
-        margin-bottom: 1em;
+        margin-bottom: 1.4em;
       }
 
       .paper-entry>span[style*="font-weight:700"],
@@ -721,14 +767,15 @@
   <header>
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
-      <a href="#research">Research</a>
+      <a href="#publications">Research</a>
       <a href="#code">Code</a>
       <a href="https://diegobonelli.github.io/files/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
     </nav>
   </header>
   <main>
     <aside class="sidebar" id="about">
-      <img src="https://diegobonelli.github.io/images/profiledb.png" loading="lazy" alt="Picture of Diego Bonelli"
+      <img src="https://diegobonelli.github.io/images/profiledb.png" loading="eager" fetchpriority="high"
+        width="186" height="186" alt="Diego Bonelli, Research Economist at Banco de España"
         class="profile-pic">
       <section class="side-info">
         <div style="text-align:center;margin-bottom:1em;">
@@ -750,8 +797,9 @@
             <li><svg viewBox="0 0 24 24">
                 <path
                   d="M12 2L1 7v2h2v9a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V11h4v7a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V9h2V7L12 2zm7 5.18V7H5v.18L12 4l7 3.18z" />
-              </svg><a class="plainlink" style="color:var(--main)" href="https://www.bde.es/" target="_blank"
-                rel="noopener noreferrer">Banco de España</a></li>
+              </svg><a class="plainlink" style="color:var(--main)"
+                href="https://www.bde.es/wbe/es/areas-actuacion/analisis-e-investigacion/investigadores/investigadores-orden-alfabetico/diego-bonelli.html"
+                target="_blank" rel="noopener noreferrer">Banco de España</a></li>
             <li><svg viewBox="0 0 24 24">
                 <path
                   d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0l8 7 8-7H4zm16 2.1l-6.5 5.7a2 2 0 0 1-2.6 0L4 8.1V18h16V8.1z" />
@@ -767,6 +815,12 @@
                   d="M100.28 448H7.4V148.9h92.88zm-46.44-341A53.24 53.24 0 11106.52 0a53.25 53.25 0 010 106.52A53.25 53.25 0 0153.84 106.52zm394.24 341h-92.68V302.4c0-34.7-12.44-58.4-43.55-58.4-23.77 0-37.9 16-44.18 31.4-2.27 5.6-2.84 13.4-2.84 21.3V448h-92.78s1.24-241.9 0-266.1h92.68v37.7c12.31-19 34.37-46.2 83.59-46.2 61 0 106.72 39.9 106.72 125.4V448z" />
               </svg><a class="plainlink" style="color:var(--main)" href="https://www.linkedin.com/in/diego-bonelli"
                 target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><svg viewBox="0 0 24 24">
+                <path
+                  d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" />
+              </svg><a class="plainlink" style="color:var(--main)"
+                href="https://scholar.google.es/citations?user=MS87LpEAAAAJ&hl=es"
+                target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
             <li><svg viewBox="0 0 24 24">
                 <path
                   d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 7H13V3.5zM6 4h6v5h5v11H6V4zm2 7h8v2H8v-2zm0 4h8v2H8v-2z" />
@@ -787,24 +841,24 @@
           rel="noopener noreferrer">here</a>.
       </div>
 
-      <div class="section-title" id="research">Publications</div>
+      <div class="section-title" id="publications">Publications</div>
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Outcomes, Risk-taking, and Incentives: Evidence from Asset Managers</span>
         <button type="button" class="abstract-btn" aria-controls="abs3"
           aria-expanded="false"><span class="icon-square" aria-hidden="true"></span><span class="btn-label">Abstract</span></button><br>
 
           <span class="emph">Journal of Corporate Finance, 2026 - </span>
-        <span class="content">Joint with
+        Joint with
           <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/carsten-gero-bienz/" target="_blank"
             rel="noopener noreferrer">Carsten Bienz</a>, <a class="plainlink"
             href="https://www.nhh.no/en/employees/faculty/aksel-mjos/" target="_blank" rel="noopener noreferrer">Aksel
             Mjøs</a>, and <a class="plainlink" href="https://www.nhh.no/en/employees/faculty/francisco-santos/"
-            target="_blank" rel="noopener noreferrer">Francisco Santos</a></span><br>
+            target="_blank" rel="noopener noreferrer">Francisco Santos</a><br>
             <span class="paper-links">
-              [<a class="plainlink" href="https://www.sciencedirect.com/science/article/pii/S0929119926000325" target="_blank"
-                rel="noopener noreferrer">Link</a>]
-              [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5915642" target="_blank"
-                rel="noopener noreferrer">SSRN</a>]</span> 
+              <a class="plainlink" href="https://www.sciencedirect.com/science/article/pii/S0929119926000325" target="_blank"
+                rel="noopener noreferrer">Link</a> &middot;
+              <a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5915642" target="_blank"
+                rel="noopener noreferrer">SSRN</a></span>
           <div class="abstract-content" id="abs3" aria-live="polite" hidden>
             We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures
             impact performance. The incentive contracts in our sample are heterogeneous, with firms rewarding fund
@@ -815,31 +869,30 @@
           </div>
       </div>
 
-      <div class="section-title">Working Papers</div>
+      <div class="section-title" id="working-papers">Working Papers</div>
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Good Inflation, Bad Inflation, and the Dynamics of Credit
           Risk</span>
         <button type="button" class="abstract-btn" aria-controls="abs1"
           aria-expanded="false"><span class="icon-square" aria-hidden="true"></span><span class="btn-label">Abstract</span></button><br>
-        <span class="content">Joint with
+        Joint with
           <a class="plainlink" href="https://sites.google.com/view/berardinopalazzo/home" target="_blank"
             rel="noopener noreferrer">Berardino Palazzo</a> and
           <a class="plainlink" href="https://ramsyamarthy.wixsite.com/home" target="_blank"
-            rel="noopener noreferrer">Ram Yamarthy</a>
-        </span><br>
-        <span class="content">Media: <a class="plainlink"
+            rel="noopener noreferrer">Ram Yamarthy</a><br>
+        <span class="media">Media: <a class="plainlink"
             href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/"
             target="_blank" rel="noopener noreferrer">SUERF Policy Note</a></span><br>
         <span class="paper-links">
-          [<a class="plainlink" href="files/GIBI.pdf" target="_blank" rel="noopener noreferrer">Link</a>]
-          [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269" target="_blank"
-            rel="noopener noreferrer">SSRN</a>]
-          [<a class="plainlink"
+          <a class="plainlink" href="files/GIBI.pdf" target="_blank" rel="noopener noreferrer">Link</a> &middot;
+          <a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269" target="_blank"
+            rel="noopener noreferrer">SSRN</a> &middot;
+          <a class="plainlink"
             href="https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html"
-            target="_blank" rel="noopener noreferrer">BDE WP</a>]
-          [<a class="plainlink"
+            target="_blank" rel="noopener noreferrer">BDE WP</a> &middot;
+          <a class="plainlink"
             href="https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.htm"
-            target="_blank" rel="noopener noreferrer">FED WP</a>]
+            target="_blank" rel="noopener noreferrer">FED WP</a>
         </span>
         <div class="abstract-content" id="abs1" aria-live="polite" hidden>
           Movements in expected inflation affect firm-level credit spreads in a time-varying manner. In times of “good
@@ -854,15 +907,15 @@
         <span style="color:var(--main);font-weight:700;">Inflation Risk and Yield Spread Changes</span>
         <button type="button" class="abstract-btn" aria-controls="abs2"
           aria-expanded="false"><span class="icon-square" aria-hidden="true"></span><span class="btn-label">Abstract</span></button><br>
-        <span class="paper-links">
-          [<a class="plainlink" href='files/IRYSC.pdf' target="_blank" rel="noopener noreferrer">Link</a>]
-          [<a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512" target="_blank"
-            rel="noopener noreferrer">SSRN</a>]
-          [<a class="plainlink"
-            href="https://www.bde.es/wbe/en/publicaciones/analisis-economico-investigacion/documentos-trabajo/inflation-risk-and-yield-spread-changes.html"
-            target="_blank" rel="noopener noreferrer">BDE WP</a>]
-        </span>
         <span class="emph">(Revise and Resubmit)</span><br>
+        <span class="paper-links">
+          <a class="plainlink" href='files/IRYSC.pdf' target="_blank" rel="noopener noreferrer">Link</a> &middot;
+          <a class="plainlink" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512" target="_blank"
+            rel="noopener noreferrer">SSRN</a> &middot;
+          <a class="plainlink"
+            href="https://www.bde.es/wbe/en/publicaciones/analisis-economico-investigacion/documentos-trabajo/inflation-risk-and-yield-spread-changes.html"
+            target="_blank" rel="noopener noreferrer">BDE WP</a>
+        </span><br>
         <div class="abstract-content" id="abs2" aria-live="polite" hidden>
           Inflation risk explains a significant share of the systematic residual variation in yield spread changes
           beyond credit factors and intermediation frictions. Movements in expected inflation directly affect the real
@@ -875,27 +928,28 @@
       <div class="section-title">Work in Progress (Selected)</div>
       <div class="paper-entry">
         <span style="color:var(--main);font-weight:700;">Firm Payouts and Innovation Under Asymmetric Information</span><br>
-        <span class="content">Joint with
+        Joint with
           <a class="plainlink" href="https://www.marcoerrico.net/" target="_blank" rel="noopener noreferrer">Marco
             Errico</a>, <a class="plainlink" href="https://www.luigipollio.net/" target="_blank"
             rel="noopener noreferrer">Luigi Pollio</a>, and <a class="plainlink"
             href="https://sites.google.com/view/iacopovarotto/home" target="_blank" rel="noopener noreferrer">Iacopo
             Varotto</a>
-        </span>
       </div>
 
       <div class="section-title" id="code">Code</div>
       <div class="code-card">
-        <div class="code-title">Cleaning Academic and Enhanced Trace <a class="plainlink"
+        <div class="code-title">Cleaning Academic and Enhanced TRACE <a class="plainlink"
             href="https://github.com/DiegoBonelli/Trace_Cleaning" target="_blank" rel="noopener noreferrer">View
             Code</a></div>
-        <div class="code-desc">Code to clean Academic and Enhanced Trace in R.</div>
+        <div class="code-desc">R code to clean Academic TRACE and Enhanced TRACE corporate bond transaction data.
+          Implements standard filters from the empirical market microstructure literature to remove cancellations,
+          corrections, and reporting errors from FINRA bond trade data.</div>
       </div>
       <div class="code-card">
-        <div class="code-title">Merging CRSP and Trace <a class="plainlink"
+        <div class="code-title">Merging CRSP and TRACE <a class="plainlink"
             href="https://github.com/DiegoBonelli/Trace_Linking_Table" target="_blank" rel="noopener noreferrer">View
             Code</a></div>
-        <div class="code-desc">Code to link Trace bonds to firms in CRSP.</div>
+        <div class="code-desc">R code to construct a linking table between TRACE bonds and CRSP equities.</div>
       </div>
       <footer>&copy; 2026 Diego Bonelli
         <div class="disclaimer">
@@ -964,7 +1018,7 @@
         });
       }
       var links = document.querySelectorAll('nav a[href*="#"]');
-      var sids = ['about', 'research', 'code'];
+      var sids = ['about', 'publications', 'code'];
       var secs = sids.map(id => document.getElementById(id) || document.getElementById(id + '-text')).filter(Boolean);
       function updateActiveSection() {
         var y = window.scrollY + 110;
