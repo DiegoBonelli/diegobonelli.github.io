@@ -14,12 +14,43 @@
     content="Research Economist at Banco de España. Macro-finance, credit markets, and financial intermediation." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://diegobonelli.github.io" />
+  <meta property="og:image" content="https://diegobonelli.github.io/images/profiledb.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Diego Bonelli - Research Economist" />
+  <meta name="twitter:description" content="Research Economist at Banco de España. Macro-finance, credit markets, and financial intermediation." />
+  <meta name="twitter:image" content="https://diegobonelli.github.io/images/profiledb.jpg" />
+  <link rel="canonical" href="https://diegobonelli.github.io/" />
 
   <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://diegobonelli.github.io/#person",
+        "name": "Diego Bonelli",
+        "url": "https://diegobonelli.github.io",
+        "image": "https://diegobonelli.github.io/images/profiledb.jpg",
+        "jobTitle": "Research Economist",
+        "email": "diego.bonelli@bde.es",
+        "worksFor": { "@type": "Organization", "name": "Banco de España", "url": "https://www.bde.es" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Norwegian School of Economics (NHH)" },
+        "knowsAbout": ["Macro-finance", "Asset pricing", "Credit markets", "Financial intermediation", "Inflation risk", "Credit risk"],
+        "sameAs": [
+          "https://scholar.google.es/citations?user=MS87LpEAAAAJ&hl=es",
+          "https://github.com/DiegoBonelli",
+          "https://www.linkedin.com/in/diego-bonelli"
+        ]
+      },
+      { "@type": "ScholarlyArticle", "headline": "Outcomes, Risk-taking, and Incentives: Evidence from Asset Managers", "author": [ { "@type": "Person", "name": "Diego Bonelli" }, { "@type": "Person", "name": "Carsten Bienz" }, { "@type": "Person", "name": "Aksel Mjøs" }, { "@type": "Person", "name": "Francisco Santos" } ], "datePublished": "2026", "isPartOf": { "@type": "Periodical", "name": "Journal of Corporate Finance" }, "url": "https://www.sciencedirect.com/science/article/pii/S0929119926000325" },
+      { "@type": "ScholarlyArticle", "headline": "Good Inflation, Bad Inflation, and the Dynamics of Credit Risk", "author": [ { "@type": "Person", "name": "Diego Bonelli" }, { "@type": "Person", "name": "Berardino Palazzo" }, { "@type": "Person", "name": "Ram Yamarthy" } ], "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269" },
+      { "@type": "ScholarlyArticle", "headline": "Inflation Risk and Yield Spread Changes", "author": [ { "@type": "Person", "name": "Diego Bonelli" } ], "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512" }
+    ]
+  }
+  </script>
+
   <script>
     (function () {
       try {
@@ -31,9 +62,14 @@
     }());
   </script>
   <style>
+    /* Self-hosted Inter (no third-party font CDN). */
+    @font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/inter-400.woff2") format("woff2"); }
+    @font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/inter-500.woff2") format("woff2"); }
+    @font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/inter-600.woff2") format("woff2"); }
+    @font-face { font-family: "Inter"; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/inter-700.woff2") format("woff2"); }
+
     :root {
       --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --font-serif: Georgia, "Times New Roman", serif;
       --bg: #0d1117;
       --surface: #161b22;
       --border: #30363d;
@@ -44,10 +80,10 @@
       --soft: rgba(127, 176, 255, .12);
       --radius: 6px;
       --fast: 180ms cubic-bezier(.16, 1, .3, 1);
-      --page-max: 1140px;
-      --content-max: 860px;
+      --page-max: 1200px;
+      --content-max: 900px;
       --sidebar: clamp(245px, 22vw, 300px);
-      --gap: clamp(50px, 6vw, 84px);
+      --gap: clamp(40px, 4.5vw, 64px);
     }
 
     [data-theme="light"] {
@@ -67,12 +103,15 @@
     body {
       background: var(--bg);
       color: var(--text);
-      font: 200 16px/1.64 var(--font-sans);
+      font: 400 16px/1.64 var(--font-sans);
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
       transition: background-color .3s ease, color .3s ease;
     }
     a { color: inherit; text-decoration: none; }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+      outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px;
+    }
     p { margin: 0; }
     img { max-width: 100%; display: block; }
     section { scroll-margin-top: 94px; }
@@ -115,7 +154,7 @@
       gap: 14px;
     }
     .brand {
-      font: 600 1.05rem/1 var(--font-serif);
+      font: 600 1rem/1 var(--font-sans);
       white-space: nowrap;
     }
     .brand:hover { color: var(--accent); }
@@ -126,7 +165,7 @@
       gap: 16px;
     }
     .nav a {
-      font-size: .84rem;
+      font-size: .85rem;
       color: var(--muted);
       border-bottom: 1px solid transparent;
       padding: .25rem 0;
@@ -224,9 +263,9 @@
     }
     .profile h1 {
       margin: 18px 0 6px;
-      font: 400 clamp(1.4rem, 1.15rem + .7vw, 1.8rem)/1.12 var(--font-serif);
+      font: 600 1.5rem/1.15 var(--font-sans);
     }
-    .profile p { color: var(--muted); font-size: .94rem; }
+    .profile p { color: var(--muted); font-size: .85rem; }
     .socials {
       margin-top: 14px;
       display: flex;
@@ -255,7 +294,7 @@
     }
 
     .intro {
-      padding: 28px 0 34px;
+      padding: 20px 0 28px;
     }
     .eyebrow {
       margin-bottom: 12px;
@@ -267,11 +306,12 @@
     }
     .bio {
       max-width: 74ch;
-      color: var(--muted);
-      font-size: clamp(1.02rem, .97rem + .2vw, 1.12rem);
+      color: var(--text);
+      font-size: 1rem;
     }
     .bio a { color: var(--accent); border-bottom: 1px solid transparent; }
     .bio a:hover { color: var(--accent-strong); border-bottom-color: currentColor; }
+    .bio + .bio { margin-top: 14px; }
 
     .cycle {
       color: var(--accent);
@@ -281,41 +321,61 @@
     }
     .cycle.out { opacity: 0; transform: translateY(5px); }
 
-    .section { padding: 50px 0; }
+    .section { padding: 6px 0; }
+    #code { margin-top: 28px; }
     .title {
-      margin: 0 0 26px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid var(--muted);
-      font: 400 clamp(1.45rem, 1.12rem + .8vw, 1.85rem)/1.15 var(--font-serif);
+      margin: 0 0 12px;
+      padding-bottom: 9px;
+      border-bottom: 1px solid var(--border);
+      font: 600 1.25rem/1.2 var(--font-sans);
     }
     .group {
-      margin: 34px 0 10px;
+      margin: 16px 0 5px;
       color: var(--accent);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .14em;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .12em;
       text-transform: uppercase;
     }
 
-    .entry,
-    .project {
-      border-bottom: 1px solid var(--border);
-      padding: 19px 0 21px;
+    .entry {
+      padding: 0;
+      margin-bottom: 16px;
     }
-    .entry:hover,
-    .project:hover { border-color: var(--muted); }
+    .entry:last-child { margin-bottom: 0; }
 
     .entry-title {
-      margin: 0 0 7px;
+      margin: 0;
       font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.45;
+      font-weight: 600;
+      line-height: 1.5rem;
+      transition: color var(--fast);
     }
+    .entry-title strong { font-weight: inherit; }
+    .entry:hover .entry-title { color: var(--accent); }
+    .repo-link {
+      margin-left: 10px;
+      font-size: .8rem;
+      font-weight: 500;
+      color: var(--accent);
+      border-bottom: 1px solid transparent;
+      white-space: nowrap;
+      transition: color var(--fast), border-color var(--fast);
+    }
+    .repo-link:hover { color: var(--accent-strong); border-bottom-color: currentColor; }
+    .repo-link::after {
+      content: "↗";
+      font-size: .85em;
+      opacity: 0;
+      transform: translate(-4px, 2px);
+      transition: opacity var(--fast), transform 220ms cubic-bezier(.2, .8, .2, 1);
+    }
+    .repo-link:hover::after { opacity: 1; transform: translate(2px, -2px); }
     .entry-meta {
       margin: 0;
       color: var(--muted);
-      font-size: .86rem;
-      line-height: 1.55;
+      font-size: .85rem;
+      line-height: 1.5rem;
     }
     .entry-meta a {
       color: var(--accent);
@@ -329,8 +389,7 @@
     .status {
       margin-left: .35rem;
       color: var(--muted);
-      font-size: .76rem;
-      font-style: italic;
+      font-size: .85rem;
     }
 
     details summary { list-style: none; cursor: pointer; }
@@ -338,26 +397,27 @@
     .abstract-toggle {
       margin-left: .24rem;
       color: var(--muted);
-      font-size: .74rem;
-      font-style: italic;
+      font-size: .75rem;
     }
     .abstract-toggle::after { content: " [+]"; font-style: normal; }
     details[open] .abstract-toggle::after { content: " [-]"; }
     .abstract {
-      margin-top: 12px;
+      margin-top: 8px;
       padding-left: 12px;
       border-left: 2px solid var(--border);
       color: var(--muted);
-      font-size: .93rem;
-      line-height: 1.66;
+      font-size: .85rem;
+      line-height: 1.58;
     }
 
     .links {
-      margin-top: 12px;
+      margin-top: 0;
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 8px;
+      gap: 0 10px;
       align-items: center;
+      line-height: 1.5rem;
+      min-height: 1.5rem;
     }
     .media-row {
       align-items: baseline;
@@ -365,11 +425,11 @@
     }
     .media-label {
       color: var(--muted);
-      font-size: .86rem;
+      font-size: .85rem;
       line-height: 1.55;
     }
     .media-link {
-      font-size: .86rem;
+      font-size: .85rem;
       line-height: 1.55;
       font-weight: 500;
     }
@@ -381,7 +441,7 @@
       padding: 0;
       background: transparent;
       color: var(--accent);
-      font-size: .78rem;
+      font-size: .85rem;
       font-weight: 600;
       letter-spacing: .02em;
       cursor: pointer;
@@ -406,28 +466,6 @@
       transform: translate(2px, -2px);
     }
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 28px;
-    }
-    .project h4 {
-      margin: 0 0 8px;
-      font-size: 1rem;
-      font-weight: 620;
-      line-height: 1.42;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .project h4 svg { width: 15px; height: 15px; color: var(--accent); }
-    .project p {
-      margin: 0 0 10px;
-      color: var(--muted);
-      font-size: .88rem;
-      line-height: 1.58;
-    }
-
     footer {
       border-top: 1px solid var(--muted);
       margin-top: 42px;
@@ -440,19 +478,19 @@
       gap: 16px 24px;
       flex-wrap: wrap;
     }
-    .address p { color: var(--muted); font-size: .84rem; }
-    .address p:first-child { color: var(--text); font-weight: 620; }
+    .address p { color: var(--muted); font-size: .85rem; }
+    .address p:first-child { color: var(--text); font-weight: 600; }
     .footer-links {
       display: flex;
       gap: 10px 14px;
       flex-wrap: wrap;
     }
-    .footer-links a { color: var(--muted); font-size: .84rem; }
+    .footer-links a { color: var(--muted); font-size: .85rem; }
     .footer-links a:hover { color: var(--accent); }
     .disclaimer {
       margin-top: 18px;
       color: var(--muted);
-      font-size: .84rem;
+      font-size: .85rem;
       line-height: 1.55;
     }
 
@@ -536,8 +574,7 @@
         width: calc(100% - 28px);
         padding-top: 92px;
       }
-      .projects { grid-template-columns: 1fr; gap: 0; }
-      .section { padding: 42px 0; }
+      .section { padding: 10px 0; }
     }
 
     @media (max-width: 580px) {
@@ -575,7 +612,7 @@
       <button id="menuBtn" class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
       <nav class="nav" id="nav" aria-label="Primary navigation">
         <a href="#home">Home</a>
-        <a href="#research">Research</a>
+        <a href="#publications">Research</a>
         <a href="#code">Code</a>
         <button id="themeBtn" class="theme-btn" aria-label="Toggle theme"></button>
       </nav>
@@ -622,15 +659,13 @@
           I am a research economist at
           <a href="https://www.bde.es/wbe/es/areas-actuacion/analisis-e-investigacion/investigadores/investigadores-orden-alfabetico/diego-bonelli.html" target="_blank" rel="noopener noreferrer">Banco de España</a>.
           Before joining BdE, I received a Ph.D. in finance from the
-          <a href="https://www.nhh.no/en/departments/finance" target="_blank" rel="noopener noreferrer">Norwegian School of Economics</a>.<br><br>
-          My research interests span <span class="cycle js-cycle">macro-finance</span>
+          <a href="https://www.nhh.no/en/departments/finance" target="_blank" rel="noopener noreferrer">Norwegian School of Economics</a>.
+          My research lies in macro-finance and empirical asset pricing, with a particular focus on credit markets and financial frictions. 
         </p>
       </section>
 
-      <section id="research" class="section">
-        <h2 class="title">Research</h2>
-
-        <h3 class="group">Published</h3>
+      <section id="publications" class="section">
+        <h2 class="title">Publications</h2>
         <article class="entry">
           <details>
             <summary>
@@ -643,12 +678,15 @@
             <p class="abstract">We study incentive contracts used by asset management firms in Norway, focusing on how bonus structures impact performance. The incentive contracts in our sample are heterogeneous, with firms rewarding fund managers based on both quantitative and qualitative targets. We find that higher potential bonuses tied to quantitative metrics such as the information ratio lead to better risk-adjusted performance at year-end. Managers at risk of missing bonus thresholds attempt to boost performance through portfolio adjustments, but these efforts backfire, resulting in worse outcomes in the latter part of the year.</p>
           </details>
           <div class="links">
+            <a href="files/BI.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
             <a href="https://www.sciencedirect.com/science/article/pii/S0929119926000325" target="_blank" rel="noopener noreferrer">Link</a>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5915642" target="_blank" rel="noopener noreferrer">SSRN</a>
-          </div>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5915642" target="_blank" rel="noopener noreferrer">SSRN</a>          </div>
         </article>
 
-        <h3 class="group">Working Papers</h3>
+      </section>
+
+      <section id="working-papers" class="section">
+        <h2 class="title">Working Papers</h2>
         <article class="entry">
           <details>
             <summary>
@@ -660,12 +698,10 @@
             <p class="abstract">Movements in expected inflation affect firm-level credit spreads in a time-varying manner. In times of good inflation, when inflation news is perceived by investors to be positively correlated with real economic growth, increases in expected inflation substantially reduce corporate credit spreads. Meanwhile in times of bad inflation, these effects are attenuated and the opposite can take place. These dynamics are mostly driven by movements in credit risk premia and naturally arise in an equilibrium asset pricing model with a time-varying inflation-growth covariance and persistent macroeconomic expectations.</p>
           </details>
           <div class="links">
-            <a href="files/GIBI.pdf" target="_blank"
-              rel="noopener noreferrer">PDF</a>
-              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269" target="_blank"
-                rel="noopener noreferrer">SSRN</a>
-                <a href="https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html">BDE WP</a><a href="https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.html" target="_blank" rel="noopener noreferrer">FED WP</a>
-        </div>
+            <a href="files/GIBI.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4798269" target="_blank" rel="noopener noreferrer">SSRN</a>
+            <a href="https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/good-inflation-bad-inflation-implications-for-risky-asset-prices.html" target="_blank" rel="noopener noreferrer">BdE WP</a>
+            <a href="https://www.federalreserve.gov/econres/feds/good-inflation-bad-inflation-implications-for-risky-asset-prices.html" target="_blank" rel="noopener noreferrer">Fed WP</a>          </div>
         <div class="links media-row">
          <span class="media-label">Media:</span>
          <a class="media-link" href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/good-inflation-bad-inflation-and-the-dynamics-of-credit-risk/"
@@ -684,14 +720,16 @@
           </details>
           <div class="links">
             <a href="files/IRYSC.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512"  target="_blank" rel="noopener noreferrer">SSRN</a>
-            <a href="https://www.bde.es/wbe/en/publicaciones/analisis-economico-investigacion/documentos-trabajo/inflation-risk-and-yield-spread-changes.html" target="_blank" rel="noopener noreferrer">BDE WP</a>
-        </div>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4299512" target="_blank" rel="noopener noreferrer">SSRN</a>
+            <a href="https://www.bde.es/wbe/en/publicaciones/analisis-economico-investigacion/documentos-trabajo/inflation-risk-and-yield-spread-changes.html" target="_blank" rel="noopener noreferrer">BdE WP</a>        </div>
 
 
         </article>
 
-        <h3 class="group">In Progress</h3>
+      </section>
+
+      <section id="in-progress" class="section">
+        <h2 class="title">In Progress</h2>
         <article class="entry">
           <h4 class="entry-title"><strong>Firm Payouts and Innovation Under Asymmetric Information</strong></h4>
           <p class="entry-meta">with 
@@ -709,25 +747,25 @@
 
       <section id="code" class="section">
         <h2 class="title">Code</h2>
-        <div class="projects">
-          <article class="project">
-            <h4>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-              Cleaning Academic &amp; Enhanced TRACE
-            </h4>
-            <p>R code to clean TRACE corporate bond transaction data following standard academic procedures: removing erroneous entries, trade reversals, and outliers.</p>
-            <a class="ghost" href="https://github.com/DiegoBonelli/Trace_Cleaning" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </article>
+        <article class="entry">
+          <h4 class="entry-title">Cleaning Academic &amp; Enhanced TRACE <a class="repo-link" href="https://github.com/DiegoBonelli/Trace_Cleaning" target="_blank" rel="noopener noreferrer">GitHub</a></h4>
+          <p class="entry-meta">R code to clean TRACE corporate bond transaction data following standard academic procedures: removing erroneous entries, trade reversals, and outliers.</p>
+        </article>
 
-          <article class="project">
-            <h4>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
-              Merging CRSP &amp; TRACE
-            </h4>
-            <p>R code to link TRACE bond transactions to CRSP equities via CUSIP-based matching, enabling cross-market analysis of firms' debt and equity.</p>
-            <a class="ghost" href="https://github.com/DiegoBonelli/Trace_Linking_Table" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </article>
-        </div>
+        <article class="entry">
+          <h4 class="entry-title">Merging CRSP &amp; TRACE <a class="repo-link" href="https://github.com/DiegoBonelli/Trace_Linking_Table" target="_blank" rel="noopener noreferrer">GitHub</a></h4>
+          <p class="entry-meta">R code to link TRACE bond transactions to CRSP equities via CUSIP-based matching, enabling cross-market analysis of firms' debt and equity.</p>
+        </article>
+
+        <article class="entry">
+          <h4 class="entry-title">Building the SEC Form 13F Holdings Panel <a class="repo-link" href="https://github.com/DiegoBonelli/edgar_13F" target="_blank" rel="noopener noreferrer">GitHub</a></h4>
+          <p class="entry-meta">R code to turn SEC Form 13F filings — legacy text filings and the post-2013 structured datasets — into a deduplicated panel of U.S. institutional investment-manager holdings, stored as Parquet and queryable with DuckDB.</p>
+        </article>
+
+        <article class="entry">
+          <h4 class="entry-title">Cleaning SEC Form 8-K Filings <a class="repo-link" href="https://github.com/DiegoBonelli/edgar_8k" target="_blank" rel="noopener noreferrer">GitHub</a></h4>
+          <p class="entry-meta">R code to download and clean SEC Form 8-K filings from EDGAR using the Loughran–McDonald Stage One algorithm, stored as Parquet partitioned by year and quarter.</p>
+        </article>
       </section>
     </main>
 
@@ -735,7 +773,7 @@
       <div class="footer-row">
         <div class="address">
           <p>Banco de España</p>
-          <p>Alcala 48, Madrid</p>
+          <p>Alcalá 48, Madrid</p>
         </div>
         <div class="footer-links">
           <a href="mailto:diego.bonelli@bde.es">Email</a>
